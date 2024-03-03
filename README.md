@@ -1,6 +1,8 @@
 > [!IMPORTANT]
 > The following links contain a flashable versions of the operating system that can be used to avoid running the setup scripts. If you flash one of these images, you don't have to do anything else.
+>
 > 64GB: https://archive.org/details/35-xxp-en-64-gb-os-240130-xfce-noroms.-7z 
+>
 > 16GB: https://archive.org/details/35-xxp-en-16-gb-240130-xfce-noroms.-7z 
 
 > [!WARNING]  
