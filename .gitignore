@@ -1,0 +1,4 @@
+
+resources/shadow
+resources/etc/ssh/sshd_config
+install_ssh.sh

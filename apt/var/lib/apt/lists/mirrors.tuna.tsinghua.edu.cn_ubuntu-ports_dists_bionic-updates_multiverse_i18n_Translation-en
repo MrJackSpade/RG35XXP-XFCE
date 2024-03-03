@@ -1,0 +1,1062 @@
+Package: boinc-virtualbox
+Description-md5: 690093958a0070907b98b36b21fb062c
+Description-en: metapackage for virtualbox-savvy projects
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (righteously) often find it an unbearable nuisance to
+ care for the exact configuration of BOINC for virtualbox-based projects.
+ This package adds a series of dependencies from the contrib
+ section to the regular boinc package. This also meant this binary
+ package to be redistributed in the contrib section of Debian.
+
+Package: broadcom-sta-common
+Description-md5: a6bd57d95d48308610bc995bd8922939
+Description-en: Common files for the Broadcom STA Wireless driver
+ Broadcom STA is a binary-only device driver to support the following IEEE
+ 802.11a/b/g/n wireless network cards: BCM4311-, BCM4312-, BCM4313-,
+ BCM4321-, BCM4322-, BCM43142-, BCM43224-, BCM43225-, BCM43227-, BCM43228-,
+ BCM4331-, BCM4360-, and BCM4352-based hardware.
+ .
+ This package contains the common files and it should not be installed manually
+ (it will be installed automatically as needed).
+
+Package: broadcom-sta-dkms
+Description-md5: 4c9c20d84937e0293fe598f44d785bce
+Description-en: dkms source for the Broadcom STA Wireless driver
+ Broadcom STA is a binary-only device driver to support the following IEEE
+ 802.11a/b/g/n wireless network cards: BCM4311-, BCM4312-, BCM4313-,
+ BCM4321-, BCM4322-, BCM43142-, BCM43224-, BCM43225-, BCM43227-, BCM43228-,
+ BCM4331-, BCM4360-, and BCM4352-based hardware.
+ .
+ This package provides the source code for the wl kernel modules and makes use
+ of the DKMS build utility to install them for the running kernel. The
+ alternative package broadcom-sta-source can be used instead in case of build
+ problems.
+ .
+ The wireless-tools package is also required in order to make use of these
+ modules. Kernel source or headers are required to compile these modules.
+
+Package: broadcom-sta-source
+Description-md5: 5bb170970da4a03f1c53b6f0202148ef
+Description-en: Source for the Broadcom STA Wireless driver
+ Broadcom STA is a binary-only device driver to support the following IEEE
+ 802.11a/b/g/n wireless network cards: BCM4311-, BCM4312-, BCM4313-,
+ BCM4321-, BCM4322-, BCM43142-, BCM43224-, BCM43225-, BCM43227-, BCM43228-,
+ BCM4331-, BCM4360-, and BCM4352-based hardware.
+ .
+ This package provides the source code for the wl kernel modules. It makes use
+ of kernel-package or module-assistant build systems. The alternative
+ broadcom-sta-dkms package can be installed instead and might be easier to use
+ with simple system configurations.
+ .
+ The wireless-tools package is also required in order to make use of these
+ modules.  Kernel source or headers are required to compile these modules.
+
+Package: browser-plugin-freshplayer-pepperflash
+Description-md5: efb8cdb83d2a1db04174dfb14143ebd9
+Description-en: PPAPI-host NPAPI-plugin adapter for pepperflash
+ The main goal of the project is to get PPAPI (Chrome) plugins
+ working in Firefox (and any other web-browser supporting NPAPI plugins).
+ It implements a wrapper which behaves like
+ browser to PPAPI plugin and implements NPAPI plugin interface
+ for browser to use.
+ .
+ This particular implementation doesn't implement any sandboxing,
+ which means any malicious code can break through plugin security
+ as there are no additional barriers.  This is the same level of security as
+ NPAPI Flash have.
+ .
+ Flash plugin for Linux provided by adobe stopped at version 11.2; for
+ chrome/chromium users there is pepperflash plugin but it's not supported by
+ firefox/iceweasel/other browsers.
+ .
+ This package allows one to use the Pepper Flash plugin from Chrome
+ in NPAPI web browsers.
+
+Package: cuda-drivers-fabricmanager-450
+Description-md5: 6715a1a6e39ab2cdf04d9fe216556c20
+Description-en: Meta-package for FM and Driver
+ Convenience meta-package for installing fabricmanager and the cuda-drivers
+ meta-package simultaneously while keeping version equivalence. This meta-
+ package is branch-specific.
+
+Package: cuda-drivers-fabricmanager-460
+Description-md5: 9eb2a396b56a6795e2a5e70ccb87e231
+Description-en: Transitional package for cuda-drivers-fabricmanager-510
+ This is a transitional package for cuda-drivers-fabricmanager-510, and can be
+ safely removed after the installation is complete.
+
+Package: cuda-drivers-fabricmanager-470
+Description-md5: 6715a1a6e39ab2cdf04d9fe216556c20
+Description-en: Meta-package for FM and Driver
+ Convenience meta-package for installing fabricmanager and the cuda-drivers
+ meta-package simultaneously while keeping version equivalence. This meta-
+ package is branch-specific.
+
+Package: cuda-drivers-fabricmanager-510
+Description-md5: c042110895aa3a6abc431d431fc85bed
+Description-en: Transitional package for cuda-drivers-fabricmanager-515
+ This is a transitional package for cuda-drivers-fabricmanager-515, and can be
+ safely removed after the installation is complete.
+
+Package: cuda-drivers-fabricmanager-525
+Description-md5: 6715a1a6e39ab2cdf04d9fe216556c20
+Description-en: Meta-package for FM and Driver
+ Convenience meta-package for installing fabricmanager and the cuda-drivers
+ meta-package simultaneously while keeping version equivalence. This meta-
+ package is branch-specific.
+
+Package: flashplugin-installer
+Description-md5: d5c76ee6a0bc334e3bb2c2c58101f4f8
+Description-en: Adobe Flash Player plugin installer (transitional package)
+ This is a transitional package to ensure that the EOL Flash Player is
+ uninstalled. It can be safely removed.
+
+Package: jhove
+Description-md5: febe0cb6a55fdf2af5baf3d3965883ac
+Description-en: JSTOR/Harvard Object Validation Environment
+ Perform format-specific identification, validation, and
+ characterization of digital objects.
+
+Package: libclamunrar7
+Description-md5: cc91b3ee0883ae72d88576f9ca8c850e
+Description-en: anti-virus utility for Unix - unrar support
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav7, which can be used by other software.
+ .
+ This package provides support for RAR packaged files or mail attachments.
+ Support will be available once this package is installed and clamd or a local
+ clamscan is restarted.
+
+Package: libclamunrar9
+Description-md5: 81aaa76cb9df5259f364d29eeca2acc6
+Description-en: anti-virus utility for Unix - unrar support
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav9, which can be used by other software.
+ .
+ This package provides support for RAR packaged files or mail attachments.
+ Support will be available once this package is installed and clamd or a local
+ clamscan is restarted.
+
+Package: libcuda1-331
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+Description-en: Transitional package for libcuda1-340
+ This is a transitional package for libcuda1-340, and can be
+ safely removed after the installation is complete.
+
+Package: libcuda1-331-updates
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+Description-en: Transitional package for libcuda1-340
+ This is a transitional package for libcuda1-340, and can be
+ safely removed after the installation is complete.
+
+Package: libcuda1-340-updates
+Description-md5: a10363c018e08f69fb7494b3d411a6f6
+Description-en: Transitional package for libcuda1-340
+ This is a transitional package for libcuda1-340, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-cfg1-460-server
+Description-md5: cb050b095256eb473f75ed696b9e1e34
+Description-en: Transitional package for libnvidia-cfg1-470-server
+ This is a transitional package for libnvidia-cfg1-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-common-455
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Description-en: Shared files used by the NVIDIA libraries
+ This package provides a set of files that are required by the NVIDIA
+ libraries.
+
+Package: libnvidia-common-460-server
+Description-md5: 6f895c6bf1f300c22961cd467a0eae18
+Description-en: Transitional package for libnvidia-common-470-server
+ This is a transitional package for libnvidia-common-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-compute-460-server
+Description-md5: 7265bd637391c85afafb120e3e4a21a2
+Description-en: Transitional package for libnvidia-compute-470-server
+ This is a transitional package for libnvidia-compute-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-decode-460-server
+Description-md5: 7a72469e6c824e108236de5908d93127
+Description-en: Transitional package for libnvidia-decode-470-server
+ This is a transitional package for libnvidia-decode-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-encode-460-server
+Description-md5: 289ef4987adbb50107f5a44aa1db1592
+Description-en: Transitional package for libnvidia-encode-470-server
+ This is a transitional package for libnvidia-encode-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-extra-460-server
+Description-md5: 61c004324db3bfa037b05326276df685
+Description-en: Transitional package for libnvidia-extra-470-server
+ This is a transitional package for libnvidia-extra-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-fbc1-460-server
+Description-md5: 2a6879b251d31627d7583bc440c9c79e
+Description-en: Transitional package for libnvidia-fbc1-470-server
+ This is a transitional package for libnvidia-fbc1-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-gl-460-server
+Description-md5: 91e3086f7e00cf0f784f62a752763812
+Description-en: Transitional package for libnvidia-gl-470-server
+ This is a transitional package for libnvidia-gl-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-ifr1-460-server
+Description-md5: ed52a09eaf0505c85b07dc03d533ed89
+Description-en: Transitional package for libnvidia-ifr1-470-server
+ This is a transitional package for libnvidia-ifr1-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-nscq-450
+Description-md5: 06d90fb68ae67655c00815a4db03a64e
+Description-en: NVSwitch Configuration and Query library
+ NVIDIA NVSwitch Configuration and Query (NSCQ) library provides a
+ stable driver API used by DCGM for monitoring NVSwitch devices.
+
+Package: libnvidia-nscq-460
+Description-md5: a5a3ff49e04b212952436176f612dac4
+Description-en: Transitional package for libnvidia-nscq-510
+ This is a transitional package for libnvidia-nscq-510, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-nscq-470
+Description-md5: 06d90fb68ae67655c00815a4db03a64e
+Description-en: NVSwitch Configuration and Query library
+ NVIDIA NVSwitch Configuration and Query (NSCQ) library provides a
+ stable driver API used by DCGM for monitoring NVSwitch devices.
+
+Package: libnvidia-nscq-510
+Description-md5: ba05d1c177ba9c73c05d203919c8b1f5
+Description-en: Transitional package for libnvidia-nscq-515
+ This is a transitional package for libnvidia-nscq-515, and can be
+ safely removed after the installation is complete.
+
+Package: libnvidia-nscq-525
+Description-md5: 06d90fb68ae67655c00815a4db03a64e
+Description-en: NVSwitch Configuration and Query library
+ NVIDIA NVSwitch Configuration and Query (NSCQ) library provides a
+ stable driver API used by DCGM for monitoring NVSwitch devices.
+
+Package: linux-modules-nvidia-390-5.0.0-1020-oem-osp1
+Description-md5: d11af816aa0b40c3e01ae81c685611c7
+Description-en: Linux kernel nvidia modules for version 5.0.0-1020
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1020.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1022-oem-osp1
+Description-md5: 816dc83816ad8417fd8632fa297f463e
+Description-en: Linux kernel nvidia modules for version 5.0.0-1022
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1022.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1024-oem-osp1
+Description-md5: ffa482eb899e18df802a5238eaaf39ad
+Description-en: Linux kernel nvidia modules for version 5.0.0-1024
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1024.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1025-oem-osp1
+Description-md5: 35cdfa864b28b4000c9c89dd08c0d719
+Description-en: Linux kernel nvidia modules for version 5.0.0-1025
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1025.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1027-oem-osp1
+Description-md5: 79487d0da1f11bdb56759b97ce6f479d
+Description-en: Linux kernel nvidia modules for version 5.0.0-1027
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1027.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1028-oem-osp1
+Description-md5: 690b79def01843f2a268878b49fa055b
+Description-en: Linux kernel nvidia modules for version 5.0.0-1028
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1028.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1030-oem-osp1
+Description-md5: c56350f085c0dbc5691eba7c0bf1cb6a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1030
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1030.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1033-oem-osp1
+Description-md5: 0f596533567f766789a5e857002d8d09
+Description-en: Linux kernel nvidia modules for version 5.0.0-1033
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1033.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1037-oem-osp1
+Description-md5: 5d2056983cc1ff1ce91694bc9597ba03
+Description-en: Linux kernel nvidia modules for version 5.0.0-1037
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1037.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1039-oem-osp1
+Description-md5: 48a17352c16061274ed02b740d3c243a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1039
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1039.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1040-oem-osp1
+Description-md5: a285da86406311d6acc6845e5462a841
+Description-en: Linux kernel nvidia modules for version 5.0.0-1040
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1040.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1043-oem-osp1
+Description-md5: 4e76a63786f96ff5af95b02daeb9a1c9
+Description-en: Linux kernel nvidia modules for version 5.0.0-1043
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1043.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1046-oem-osp1
+Description-md5: 50e3866220d8f8de2b1bcac6a726fe1a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1046
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1046.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1047-oem-osp1
+Description-md5: 0f3d59fa1a48e5a5a7fb5e0bfc47eb15
+Description-en: Linux kernel nvidia modules for version 5.0.0-1047
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1047.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1050-oem-osp1
+Description-md5: afc09280c9dc3dc4321b9e527f8e102c
+Description-en: Linux kernel nvidia modules for version 5.0.0-1050
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1050.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1052-oem-osp1
+Description-md5: 6c3ce13a131f3533d4bf327e9a5cc597
+Description-en: Linux kernel nvidia modules for version 5.0.0-1052
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1052.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1059-oem-osp1
+Description-md5: 5a3463961d863f2f7ad800537dd61fb5
+Description-en: Linux kernel nvidia modules for version 5.0.0-1059
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1059.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1062-oem-osp1
+Description-md5: a90a1af477739d2e9c6120886de5e454
+Description-en: Linux kernel nvidia modules for version 5.0.0-1062
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1062.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1063-oem-osp1
+Description-md5: 303464ef61b19cd06b33de2e9c385ecf
+Description-en: Linux kernel nvidia modules for version 5.0.0-1063
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1063.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1065-oem-osp1
+Description-md5: 989048cf48a117c87e5ba9d52d1fb29b
+Description-en: Linux kernel nvidia modules for version 5.0.0-1065
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1065.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1067-oem-osp1
+Description-md5: be4a1913e1f4f1a16fad32659e838d55
+Description-en: Linux kernel nvidia modules for version 5.0.0-1067
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1067.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1068-oem-osp1
+Description-md5: 63d1f5cad4a080e7c7219680d5e1c92e
+Description-en: Linux kernel nvidia modules for version 5.0.0-1068
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1068.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1069-oem-osp1
+Description-md5: d8ed2986613ca79b2d156de0aa4539fb
+Description-en: Linux kernel nvidia modules for version 5.0.0-1069
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1069.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1070-oem-osp1
+Description-md5: d71b13b9fd28cdae6ab6c3c0f6c00eb0
+Description-en: Linux kernel nvidia modules for version 5.0.0-1070
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1070.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-390-5.0.0-1071-oem-osp1
+Description-md5: 78ca0569a4085a3aa05c912542e127ac
+Description-en: Linux kernel nvidia modules for version 5.0.0-1071
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1071.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1020-oem-osp1
+Description-md5: d11af816aa0b40c3e01ae81c685611c7
+Description-en: Linux kernel nvidia modules for version 5.0.0-1020
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1020.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1022-oem-osp1
+Description-md5: 816dc83816ad8417fd8632fa297f463e
+Description-en: Linux kernel nvidia modules for version 5.0.0-1022
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1022.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1024-oem-osp1
+Description-md5: ffa482eb899e18df802a5238eaaf39ad
+Description-en: Linux kernel nvidia modules for version 5.0.0-1024
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1024.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1025-oem-osp1
+Description-md5: 35cdfa864b28b4000c9c89dd08c0d719
+Description-en: Linux kernel nvidia modules for version 5.0.0-1025
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1025.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1027-oem-osp1
+Description-md5: 79487d0da1f11bdb56759b97ce6f479d
+Description-en: Linux kernel nvidia modules for version 5.0.0-1027
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1027.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1028-oem-osp1
+Description-md5: 690b79def01843f2a268878b49fa055b
+Description-en: Linux kernel nvidia modules for version 5.0.0-1028
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1028.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1030-oem-osp1
+Description-md5: c56350f085c0dbc5691eba7c0bf1cb6a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1030
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1030.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1033-oem-osp1
+Description-md5: 0f596533567f766789a5e857002d8d09
+Description-en: Linux kernel nvidia modules for version 5.0.0-1033
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1033.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1037-oem-osp1
+Description-md5: 5d2056983cc1ff1ce91694bc9597ba03
+Description-en: Linux kernel nvidia modules for version 5.0.0-1037
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1037.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1039-oem-osp1
+Description-md5: 48a17352c16061274ed02b740d3c243a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1039
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1039.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1040-oem-osp1
+Description-md5: a285da86406311d6acc6845e5462a841
+Description-en: Linux kernel nvidia modules for version 5.0.0-1040
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1040.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1043-oem-osp1
+Description-md5: 4e76a63786f96ff5af95b02daeb9a1c9
+Description-en: Linux kernel nvidia modules for version 5.0.0-1043
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1043.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1046-oem-osp1
+Description-md5: 50e3866220d8f8de2b1bcac6a726fe1a
+Description-en: Linux kernel nvidia modules for version 5.0.0-1046
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1046.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1047-oem-osp1
+Description-md5: 0f3d59fa1a48e5a5a7fb5e0bfc47eb15
+Description-en: Linux kernel nvidia modules for version 5.0.0-1047
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1047.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1050-oem-osp1
+Description-md5: afc09280c9dc3dc4321b9e527f8e102c
+Description-en: Linux kernel nvidia modules for version 5.0.0-1050
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1050.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1052-oem-osp1
+Description-md5: 6c3ce13a131f3533d4bf327e9a5cc597
+Description-en: Linux kernel nvidia modules for version 5.0.0-1052
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1052.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1059-oem-osp1
+Description-md5: 5a3463961d863f2f7ad800537dd61fb5
+Description-en: Linux kernel nvidia modules for version 5.0.0-1059
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1059.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1062-oem-osp1
+Description-md5: a90a1af477739d2e9c6120886de5e454
+Description-en: Linux kernel nvidia modules for version 5.0.0-1062
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1062.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1063-oem-osp1
+Description-md5: 303464ef61b19cd06b33de2e9c385ecf
+Description-en: Linux kernel nvidia modules for version 5.0.0-1063
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1063.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1065-oem-osp1
+Description-md5: 989048cf48a117c87e5ba9d52d1fb29b
+Description-en: Linux kernel nvidia modules for version 5.0.0-1065
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1065.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1067-oem-osp1
+Description-md5: be4a1913e1f4f1a16fad32659e838d55
+Description-en: Linux kernel nvidia modules for version 5.0.0-1067
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1067.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1068-oem-osp1
+Description-md5: 63d1f5cad4a080e7c7219680d5e1c92e
+Description-en: Linux kernel nvidia modules for version 5.0.0-1068
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1068.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1069-oem-osp1
+Description-md5: d8ed2986613ca79b2d156de0aa4539fb
+Description-en: Linux kernel nvidia modules for version 5.0.0-1069
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1069.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1070-oem-osp1
+Description-md5: d71b13b9fd28cdae6ab6c3c0f6c00eb0
+Description-en: Linux kernel nvidia modules for version 5.0.0-1070
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1070.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-nvidia-418-5.0.0-1071-oem-osp1
+Description-md5: 78ca0569a4085a3aa05c912542e127ac
+Description-en: Linux kernel nvidia modules for version 5.0.0-1071
+ This package contains the Linux kernel nvidia modules for version 5.0.0-1071.
+ .
+ You likely do not want to install this package directly. Instead, install the
+ linux-image-nvidia-FLAVOUR meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: nvidia-compute-utils-460-server
+Description-md5: c49672b5d7bdf5f5a49f730a45a3476d
+Description-en: Transitional package for nvidia-compute-utils-470-server
+ This is a transitional package for nvidia-compute-utils-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-dkms-460-server
+Description-md5: 01662f29bb4c89cefbffbaf47cfe690f
+Description-en: Transitional package for nvidia-dkms-470-server
+ This is a transitional package for nvidia-dkms-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-driver-460-server
+Description-md5: 38759ad397789c3521ee90384d57a2b0
+Description-en: Transitional package for nvidia-driver-470-server
+ This is a transitional package for nvidia-driver-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-450
+Description-md5: 3d49e1346de8fc10beaca066b0eb5df0
+Description-en: Fabric Manager for NVSwitch based systems.
+ Fabric Manager for NVIDIA NVSwitch based systems.
+
+Package: nvidia-fabricmanager-460
+Description-md5: 127ff08d88ec25e06d9075de2427bd02
+Description-en: Transitional package for nvidia-fabricmanager-#FLAVOUR#
+ This is a transitional package for nvidia-fabricmanager-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-470
+Description-md5: 3d49e1346de8fc10beaca066b0eb5df0
+Description-en: Fabric Manager for NVSwitch based systems.
+ Fabric Manager for NVIDIA NVSwitch based systems.
+
+Package: nvidia-fabricmanager-510
+Description-md5: 127ff08d88ec25e06d9075de2427bd02
+Description-en: Transitional package for nvidia-fabricmanager-#FLAVOUR#
+ This is a transitional package for nvidia-fabricmanager-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-525
+Description-md5: 3d49e1346de8fc10beaca066b0eb5df0
+Description-en: Fabric Manager for NVSwitch based systems.
+ Fabric Manager for NVIDIA NVSwitch based systems.
+
+Package: nvidia-fabricmanager-dev-450
+Description-md5: 565605cc6a127d423c88c38e5c2f9a26
+Description-en: Fabric Manager API headers and associated library
+ Fabric Manager API headers and associated library
+
+Package: nvidia-fabricmanager-dev-460
+Description-md5: 4c618489bfcef074354d2863174c8037
+Description-en: Transitional package for nvidia-fabricmanager-dev-510
+ This is a transitional package for nvidia-fabricmanager-dev-510, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-dev-470
+Description-md5: 565605cc6a127d423c88c38e5c2f9a26
+Description-en: Fabric Manager API headers and associated library
+ Fabric Manager API headers and associated library
+
+Package: nvidia-fabricmanager-dev-510
+Description-md5: d2e66eab593038c327ecd6f751864d99
+Description-en: Transitional package for nvidia-fabricmanager-dev-515
+ This is a transitional package for nvidia-fabricmanager-dev-515, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-dev-525
+Description-md5: 565605cc6a127d423c88c38e5c2f9a26
+Description-en: Fabric Manager API headers and associated library
+ Fabric Manager API headers and associated library
+
+Package: nvidia-headless-460-server
+Description-md5: cbfea7aa3361e0c4fbd1dfdace26b04e
+Description-en: Transitional package for nvidia-headless-470-server
+ This is a transitional package for nvidia-headless-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-headless-no-dkms-460-server
+Description-md5: 30301d925c7b2b020432da4eba442502
+Description-en: Transitional package for nvidia-headless-no-dkms-470-server
+ This is a transitional package for nvidia-headless-no-dkms-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-common-460-server
+Description-md5: 066196a6cb5dd96360d8d5b3df1687a5
+Description-en: Transitional package for nvidia-kernel-common-470-server
+ This is a transitional package for nvidia-kernel-common-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-kernel-source-460-server
+Description-md5: b189ae95f90758c502859ff72227e4bf
+Description-en: Transitional package for nvidia-kernel-source-470-server
+ This is a transitional package for nvidia-kernel-source-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-libopencl1-331
+Description-md5: c0bc1edc3452a373d95e34ed168d26d3
+Description-en: Transitional package for nvidia-libopencl1-340
+ This is a transitional package for nvidia-libopencl1-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-libopencl1-331-updates
+Description-md5: c0bc1edc3452a373d95e34ed168d26d3
+Description-en: Transitional package for nvidia-libopencl1-340
+ This is a transitional package for nvidia-libopencl1-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-libopencl1-340
+Description-md5: b847113bb2144ba87848ff3f7ae69ec2
+Description-en: NVIDIA OpenCL Driver and ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains NVIDIA's OpenCL implementation and the ICD Loader
+ library. This library supports only OpenCL 1.1.
+
+Package: nvidia-libopencl1-340-updates
+Description-md5: c0bc1edc3452a373d95e34ed168d26d3
+Description-en: Transitional package for nvidia-libopencl1-340
+ This is a transitional package for nvidia-libopencl1-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-opencl-icd-331
+Description-md5: 5698808952d1d1454e2b98d80ab83d79
+Description-en: Transitional package for nvidia-opencl-icd-340
+ This is a transitional package for nvidia-opencl-icd-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-opencl-icd-331-updates
+Description-md5: 5698808952d1d1454e2b98d80ab83d79
+Description-en: Transitional package for nvidia-opencl-icd-340
+ This is a transitional package for nvidia-opencl-icd-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-opencl-icd-340-updates
+Description-md5: 5698808952d1d1454e2b98d80ab83d79
+Description-en: Transitional package for nvidia-opencl-icd-340
+ This is a transitional package for nvidia-opencl-icd-340, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-utils-460-server
+Description-md5: 1b02cac21c5645f7df672f35403877f1
+Description-en: Transitional package for nvidia-utils-470-server
+ This is a transitional package for nvidia-utils-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: pepperflashplugin-nonfree
+Description-md5: 7fd35f25cdad2ba1f4c3a66f7e2b608c
+Description-en: Pepper Flash Player - browser plugin (dummy package)
+ The Adobe Flash Player is EoL and no longer available for download.
+ .
+ This package is now a dummy package taking care of the removal of a
+ previously installed Pepper Flash Player plugin. It can be safely removed.
+
+Package: virtualbox
+Description-md5: 30f96d22c1a6ca04db16bdc1e79ad965
+Description-en: x86 virtualization solution - base binaries
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the binaries for VirtualBox. Either the virtualbox-dkms
+ or the virtualbox-source package is also required in order to compile the
+ kernel modules needed for virtualbox. A graphical user interface for
+ VirtualBox is provided by the package virtualbox-qt.
+
+Package: virtualbox-dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+Description-en: x86 virtualization solution - kernel module sources for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module to be
+ build with dkms. Kernel sources or headers are required to compile this
+ module.
+
+Package: virtualbox-ext-pack
+Description-md5: d34299a0a1c7bf804958800947ea531c
+Description-en: extra capabilities for VirtualBox, downloader.
+ VirtualBox requires an extension pack to provide support for Remote
+ Desktop Protocol, USB 2.0, PXE booting for Intel network cards, etc.
+ This PUEL-licensed extension pack is free for personal use.
+ .
+ This package downloads the extension pack from internet during install.
+
+Package: virtualbox-guest-additions-iso
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+Description-en: guest additions iso image for VirtualBox
+ VirtualBox is a free x86 virtualization solution allowing a wide range of
+ x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides an iso image which contains the guest additions
+ for Linux, Solaris and Windows to be installed on the host system. The guest
+ systems then can mount the iso and install the guest additions from there.
+
+Package: virtualbox-guest-dkms
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+Description-en: x86 virtualization solution - guest addition module source for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules to be build with dkms. Kernel sources or headers are required to
+ compile these modules.
+
+Package: virtualbox-guest-dkms-hwe
+Description-md5: 5da76c89e724bb98d7f67d251fa8de7d
+Description-en: x86 virtualization solution - guest addition module source for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox-hwe guest addition kernel
+ modules to be build with dkms. Kernel sources or headers are required to
+ compile these modules.
+
+Package: virtualbox-guest-source
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+Description-en: x86 virtualization solution - guest addition module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules. The virtualbox-guest-utils package is also required in order to
+ make use of these modules. Kernel sources or headers are required to compile
+ these modules.
+ .
+ The source is placed under /usr/src, and after decompression it can
+ be built to produce a virtualbox-guest-modules-_KVERS_ providing
+ "virtualbox-guest-modules" package.
+
+Package: virtualbox-guest-source-hwe
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+Description-en: x86 virtualization solution - guest addition module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules. The virtualbox-guest-utils package is also required in order to
+ make use of these modules. Kernel sources or headers are required to compile
+ these modules.
+ .
+ The source is placed under /usr/src, and after decompression it can
+ be built to produce a virtualbox-guest-modules-_KVERS_ providing
+ "virtualbox-guest-modules" package.
+
+Package: virtualbox-guest-utils
+Description-md5: e69be43e48223cb949bed0ec7715d1e7
+Description-en: x86 virtualization solution - non-X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the non-X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine.
+ They provide closer integration and allow to share data through shared folders
+ between the host system and the virtual machine.
+ .
+ Either the virtualbox-guest-dkms or the virtualbox-guest-source package is
+ also required in order to compile the kernel modules needed for
+ virtualbox-guest-utils.
+
+Package: virtualbox-guest-utils-hwe
+Description-md5: e69be43e48223cb949bed0ec7715d1e7
+Description-en: x86 virtualization solution - non-X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the non-X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine.
+ They provide closer integration and allow to share data through shared folders
+ between the host system and the virtual machine.
+ .
+ Either the virtualbox-guest-dkms or the virtualbox-guest-source package is
+ also required in order to compile the kernel modules needed for
+ virtualbox-guest-utils.
+
+Package: virtualbox-guest-x11
+Description-md5: 3487afde0b114ec7e205b11f1dd3f7a5
+Description-en: x86 virtualization solution - X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the X11 guest utilities for VirtualBox. These utilities
+ are meant to be run inside the virtual machine.
+ They provide closer integration and improve the interactive performance.
+
+Package: virtualbox-guest-x11-hwe
+Description-md5: 3487afde0b114ec7e205b11f1dd3f7a5
+Description-en: x86 virtualization solution - X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the X11 guest utilities for VirtualBox. These utilities
+ are meant to be run inside the virtual machine.
+ They provide closer integration and improve the interactive performance.
+
+Package: virtualbox-qt
+Description-md5: 41ed29f36ba23b3ce0155f9a8efcff60
+Description-en: x86 virtualization solution - Qt based user interface
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the Qt based graphical user interface for VirtualBox.
+
+Package: virtualbox-source
+Description-md5: 53035ede584988f3413156cb7a5dbe8b
+Description-en: x86 virtualization solution - kernel module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module.
+ The virtualbox package is also required in order to make use of these
+ modules. Kernel sources or headers are required to compile this module.
+ .
+ The source is placed under /usr/src, and after decompression it can
+ be built to produce a virtualbox-modules-_KVERS_ providing
+ "virtualbox-modules" package.
+
+Package: xserver-xorg-video-nvidia-460-server
+Description-md5: 52fc36e34b93cef6cdb12512e282d5f2
+Description-en: Transitional package for xserver-xorg-video-nvidia-470-server
+ This is a transitional package for xserver-xorg-video-nvidia-470-server, and can be
+ safely removed after the installation is complete.
+
+Package: linux-firmware-raspi2
+Description-md5: 1eae7edc83929faa465de3cae99b870f
+Description-en: Raspberry Pi 2/3/4 GPU firmware and bootloaders
+ This package contains all the proprietary files necessary to boot a
+ Raspberry Pi 2/3/4 board.
+
+Package: flashplugin-downloader
+Description-md5: 66ea91f4e504085408ea841953dc65d0
+Description-en: Adobe Flash Player plugin installer (transitional package)
+ This package is a transitional package that can safely be removed after you installed
+ flashplugin-installer.
+

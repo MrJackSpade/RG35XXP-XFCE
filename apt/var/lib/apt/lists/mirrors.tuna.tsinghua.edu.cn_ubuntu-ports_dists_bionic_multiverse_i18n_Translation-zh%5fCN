@@ -1,0 +1,233 @@
+Package: a2mp3
+Description-md5: 34bf9bfd666661d758f44878e99f4c46
+Description-zh_CN: 用于优化mp3播放器音乐的程序
+ 这个小巧的程序能够把各类音频格式编码为适合你的mp3播放器使用的经过优化的mp3文件。
+ .
+ 目前仅支持ogg和mp3作为源文件格式。
+
+Package: abs-guide
+Description-md5: c70e528b8b624e5738bdbd1b89e8b349
+Description-zh_CN: Bash脚本高级指南
+ 对于shell脚本编程艺术的深入探讨
+ .
+ 这个教程假定学习者之前没有脚本语言及编程编写的经验，但是准备迅速成长为中级/高级使用者水平...同时始终未接触 UNIX(R) 知识。本教程可用做教
+ 学、自学指导书或者是用于SHELL脚本技巧的参考资源。在“学习脚本的最好方法就是写脚本”的前提下，希望学有余力的学习者多做练习和拥有丰富注释的实例。
+ .
+ 本书适合课堂上作为编程概念的入门简介
+
+Package: agrep
+Description-md5: 9be24e944ed9e33e495381c8828a2a36
+Description-zh_CN: 支持近似模式的文本搜索工具
+ agrep 是一个加入了以下改进的标准 grep 版本：
+ .
+  * 能够搜索近似的模式
+  * 基于记录而非基于行
+  * 使用 AND OR 逻辑进行多模式查询
+ .
+ 这个软件包包含了 glimpse's (4.x) 的最后一个 grep 的免费版本。
+
+Package: album
+Description-md5: 3eaaefa453087570fb45ac51eeccbe7c
+Description-zh_CN: HTML photo album generator with theme support
+ Album is a perl script that can create HTML photo albums for your
+ directories of images. It supports themes that determine the visual
+ appearance of the albums. Album creates thumbnails if necessary, and
+ 'medium sized' versions of images for web viewing to avoid large downloads
+ of original images. You can also customize your photo albums in many other
+ ways.
+ .
+ 本程序不需要一台能够运行的web服务器。一旦HTML生成，您可以直接将它放在您“www”目录下。
+
+Package: album-data
+Description-md5: 34adea76df6b2c02712e3838461edbb2
+Description-zh_CN: album 的主题，插件和翻译
+ Album 是一个用于为您的图集创建 HTML 相册的 perl 脚本。该包提供 album 的主题，插件和翻译。
+ .
+ The available languages are Catalan, Chinese, Czech, German, Spanish,
+ French, Hebrew, Hungarian, Italian, Korean, Dutch, Polish, Russian,
+ Swedish Chef, and Leet Hacker. The original Album package is in English.
+ .
+ Theme's demo site:     http://davepics.com/Theme_Album Translations
+ status:   http://marginalhacks.com/Hacks/album/Languages.html Screenshots
+ of themes: http://davepics.com/Theme_Album/
+
+Package: alien-arena
+Description-md5: de2b3d0db5845c79b22ffc0c38842f1b
+Description-zh_CN: 独立的三维第一人称在线死亡模式射击
+ ALIEN ARENA is a standalone 3D first person online death-match shooter
+ crafted from the original source code of Quake II and Quake III, released
+ by id Software under the GPL license. With features including 32-bit
+ graphics, a new particle engine and effects, light blooms, reflective
+ water, hi-resolution textures and skins, and hi-poly models and stain
+ maps, ALIEN ARENA pushes the envelope of graphical beauty rivaling today's
+ top games.
+ .
+ 该软件包将安装 Alien Arena 的 SDL 客户端。
+
+Package: amiwm
+Description-md5: dbc26246fea66e38d2fa982621ffcb8b
+Description-zh_CN: The Amiga look alike window manager
+ 这是amiwm，一个试着让你的工作站看起来像一个Amiga的X窗口管理器。“为什么？”您会问。这是作者所期望的。所以就是那样。
+
+Package: clustalx
+Description-md5: a79728f91dcfed21b62f89dea1743319
+Description-zh_CN: 核酸序列或蛋白质序列的多序列比对程序(图形界面)
+ 该软件包为 Clustal 多序列比对程序提供了一个图形用户界面。它为多序列比对、分析比对结果提供了
+ 一个集成的环境。序列比对结果会显示在屏幕的一个窗口里。在比对中会用多种颜色条来标注出保守区域。 对于专业演示，可以使用 texshade LaTeX
+ 或 boxshade 来着色。
+ .
+ 窗口顶部有下拉菜单，您可以从中选择所有传统的多序列比对所需的选项、参数等。您还可以通过复制、
+ 粘贴序列来改变比对的顺序；您可以从中选择一部分序列做另外的比对；您还可以选择比对区段的一部分 重新进行比对，并插入到原始的比对文件中去！
+ .
+ 此外，您还可以进行比对质量的分析，并用高亮标注出得分低的区段或异常的位点。
+
+Package: flashplugin-installer
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Description-zh_CN: Adobe Flash Player plugin installer
+ 下载和安装 Adobe Flash Player 插件。 Adobe Flash Player 插件支持播放在线媒体和其他动态内容。
+ .
+ Adobe Flash Player plugin 可适用于许多网络浏览器，包括：
+  * Firefox
+  * Chromium
+  * SeaMonkey
+  * Iceweasel
+  * Iceape
+  * Galeon
+  * Epiphany
+  * Konqueror
+ .
+ WARNING: Installing this Ubuntu package causes the Adobe Flash Player
+ plugin to be downloaded from the Adobe web site. The distribution license
+ of the Adobe Flash Player plugin is available at www.adobe.com. Installing
+ this Ubuntu package implies that you have accepted the terms of that
+ license.
+
+Package: mplayer-fonts
+Description-md5: dceb0f5ccdb83fb4c4dc6217ed8a7ad2
+Description-zh_CN: mplayer 的字体
+ 该软件包包含了 mplayer 显示 OSD 和字幕所需的字体(但非必需)。
+
+Package: mplayer-skins
+Description-md5: f0144d1a0cadf34e20f7b2a9bf911a24
+Description-zh_CN: Mplayer 软件包的皮肤
+ Mplayer 能播放大多数 mpeg，avi 和 asf 格式的文件，支持许多原生的以及 win32 DLL 解码器。您还可以用它来观看
+ VCD，DVD 甚至是 DivX 电影。Mplayer 的另一重要功能是广泛支持各种输出设备，例如
+ X11，Xv，DGA，OpenGL，SVGAlib，fbdev。您还可以使用 SDL 以及其它一些低端的输出设备(如
+ Matrox/3dfx/SiS)。这些设备大多数支持软件或硬件缩放，因此您可以全屏观看电影。
+ .
+ 该软件包包含了 mplayer 的部分皮肤。
+
+Package: playonlinux
+Description-md5: 729a863a5c2d8eb304d4e8e17ffbeafe
+Description-zh_CN: Wine 的前端界面
+ PlayOnLinux is a front-end for wine. It permits you to easily install
+ Windows Games and software on Linux. It is advised to have a functional
+ internet connection.
+
+Package: virtualbox
+Description-md5: 30f96d22c1a6ca04db16bdc1e79ad965
+Description-zh_CN: x86虚拟化解决方案 - 基本二进制程序
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ 这个软件包提供了VirtualBox的二进制文件。另外还需要virtualbox-dkms和 virtualbox-
+ source来编译运行VirtualBox所需要的内核模块。virtualbox-qt提供 VirtualBox的图形用户界面。
+
+Package: virtualbox-dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+Description-zh_CN: x86 virtualization solution - kernel module sources for dkms
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the source code for the virtualbox kernel module to
+ be build with dkms. Kernel sources or headers are required to compile this
+ module.
+
+Package: virtualbox-guest-additions-iso
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+Description-zh_CN: guest additions iso image for VirtualBox
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides an iso image which contains the guest additions for
+ Linux, Solaris and Windows to be installed on the host system. The guest
+ systems then can mount the iso and install the guest additions from there.
+
+Package: virtualbox-guest-dkms
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+Description-zh_CN: x86 virtualization solution - guest addition module source for dkms
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the source code for the virtualbox guest addition
+ kernel modules to be build with dkms. Kernel sources or headers are
+ required to compile these modules.
+
+Package: virtualbox-guest-source
+Description-md5: 4e8ea50b26a8f2bc5f4e7ef943a32a06
+Description-zh_CN: x86 virtualization solution - guest addition module source
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the source code for the virtualbox guest addition
+ kernel modules. The virtualbox-guest-utils package is also required in
+ order to make use of these modules. Kernel sources or headers are required
+ to compile these modules.
+ .
+ The source is placed under /usr/src, and after decompression it can be
+ built to produce a virtualbox-guest-modules-_KVERS_ providing "virtualbox-
+ guest-modules" package.
+
+Package: virtualbox-guest-utils
+Description-md5: e69be43e48223cb949bed0ec7715d1e7
+Description-zh_CN: x86 virtualization solution - non-X11 guest utilities
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the non-X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine. They provide
+ closer integration and allow to share data through shared folders between
+ the host system and the virtual machine.
+ .
+ Either the virtualbox-guest-dkms or the virtualbox-guest-source package is
+ also required in order to compile the kernel modules needed for
+ virtualbox-guest-utils.
+
+Package: virtualbox-guest-x11
+Description-md5: 3487afde0b114ec7e205b11f1dd3f7a5
+Description-zh_CN: x86 virtualization solution - X11 guest utilities
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine. They provide
+ closer integration and improve the interactive performance.
+
+Package: virtualbox-qt
+Description-md5: 41ed29f36ba23b3ce0155f9a8efcff60
+Description-zh_CN: x86 virtualization solution - Qt based user interface
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the Qt based graphical user interface for
+ VirtualBox.
+
+Package: virtualbox-source
+Description-md5: 53035ede584988f3413156cb7a5dbe8b
+Description-zh_CN: x86 virtualization solution - kernel module source
+ VirtualBox是x86虚拟化自由软件，它可以使Windows, DOS, BSD以及Linux等大量 x86操作系统运行在Linux系统上。
+ .
+ This package provides the source code for the virtualbox kernel module.
+ The virtualbox package is also required in order to make use of these
+ modules. Kernel sources or headers are required to compile this module.
+ .
+ The source is placed under /usr/src, and after decompression it can be
+ built to produce a virtualbox-modules-_KVERS_ providing "virtualbox-
+ modules" package.
+
+Package: zeroc-ice-manual
+Description-md5: e8d1b384965040f931108a6bcf3b0065
+Description-zh_CN: Ice documentation in pdf
+ Ice, the Internet Communications Engine, is a middleware for the practical
+ programmer developed by ZeroC Inc. A high-performance Internet
+ communications platform, Ice includes a wealth of layered services and
+ plug-ins.
+ .
+ Ice is built on concepts which will be familiar to CORBA programmers, and
+ supports a wide variety of programming languages and runtime platforms.
+ .
+ 此包会将书籍 'Distributed Programming with Ice' 作为 pdf 文件 放置于 /usr/share/doc
+ /zeroc-ice-manual目录下。
+

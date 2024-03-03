@@ -1,0 +1,651 @@
+Package: bird2
+Description-md5: 874644189b6bd30d36505beb812c9640
+Description-en: Internet Routing Daemon
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ BIRD supports IPv4 and IPv6 versions of OSPF, RIP, BGP and Babel routing
+ protocols. It also supports supplementary protocols like BFD, RPKI-Router
+ and IPv6 router advertisements.
+
+Package: bird2-doc
+Description-md5: 1ced61660e9937b21315d53a620aa063
+Description-en: Internet Routing Daemon - documentation
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ This package provides the user and developer documentation.
+
+Package: cockpit
+Description-md5: 24b0aa0c07779dcba10e15ca9244d9e9
+Description-en: Web Console for Linux servers
+ The Cockpit Web Console enables users to administer GNU/Linux servers using a
+ web browser.
+ .
+ It offers network configuration, log inspection, diagnostic reports, SELinux
+ troubleshooting, interactive command-line sessions, and more.
+
+Package: cockpit-bridge
+Description-md5: 34419f40043aa83e9a0fb5968fe56ce7
+Description-en: Cockpit bridge server-side component
+ The Cockpit bridge component installed server side and runs commands on
+ the system on behalf of the web based user interface.
+
+Package: cockpit-dashboard
+Description-md5: 1b1adf0b10d4d95da33a41c0d668cfd1
+Description-en: Cockpit remote servers and dashboard
+ Cockpit support for connecting to remote servers (through ssh)
+ bastion hosts, and a basic dashboard.
+
+Package: cockpit-doc
+Description-md5: 917dc8f7798407683627da6ebb139a47
+Description-en: Cockpit deployment and developer guide
+ The Cockpit Deployment and Developer Guide shows sysadmins how to deploy
+ Cockpit on their machines as well as helps developers who want to embed
+ or extend Cockpit.
+
+Package: cockpit-docker
+Description-md5: c02e70ed63df0326f1a1b12deeb24144
+Description-en: Cockpit user interface for Docker containers
+ The Cockpit components for interacting with Docker and user interface.
+
+Package: cockpit-machines
+Description-md5: a902f6feddb06225624681441d26bc7d
+Description-en: Cockpit user interface for virtual machines
+ The Cockpit components for managing virtual machines.
+ .
+ If the "virtinst" package is installed, you can also create new virtual
+ machines.
+
+Package: cockpit-networkmanager
+Description-md5: 3ec1a60ecda81a24c8267c56cf7a9a3f
+Description-en: Cockpit user interface for networking
+ The Cockpit components for interacting with networking configuration.
+
+Package: cockpit-packagekit
+Description-md5: 01ecbad973ab31bb91eb03019d4352aa
+Description-en: Cockpit user interface for packages
+ The Cockpit component for installing packages, via PackageKit.
+
+Package: cockpit-pcp
+Description-md5: 2bcebebdc8b56e2cd8c2ba8755912a8f
+Description-en: Cockpit PCP integration
+ Cockpit support for reading PCP metrics and loading PCP archives.
+
+Package: cockpit-storaged
+Description-md5: f6107ca2b49a2b554a0abcd9b73419c5
+Description-en: Cockpit user interface for storage
+ The Cockpit components for interacting with storage.
+
+Package: cockpit-system
+Description-md5: 305239ce7fcb5c6043156a1e54c69f73
+Description-en: Cockpit admin interface for a system
+ Cockpit admin interface package for configuring and
+ troubleshooting a system.
+
+Package: cockpit-tests
+Description-md5: 0b4ed46aa862cd96d493b081c605101e
+Description-en: Tests for Cockpit
+ This package contains tests and files used while testing Cockpit.
+ These files are not required for running Cockpit.
+
+Package: cockpit-ws
+Description-md5: f492a869e15f8c92004032f384bce124
+Description-en: Cockpit Web Service
+ The Cockpit Web Service listens on the network, and authenticates
+ users.
+ .
+ Install sssd-dbus for supporting client certificate/smart card authentication
+ via sssd/FreeIPA.
+
+Package: dh-systemd
+Description-md5: 67a68071a0cbbaa9df2bcd81ec5a29b1
+Description-en: debhelper add-on to handle systemd unit files - transitional package
+ This package is for transitional purposes and can be removed safely.
+
+Package: dwz
+Description-md5: b5447a660ee9ed08d9c1cc3453445479
+Description-en: DWARF compression tool
+ DWARF optimizer and duplication removal utility.
+
+Package: elixir
+Description-md5: 572fe6b3095250d25aa22e376bc0e13e
+Description-en: functional meta-programming aware language
+ Elixir is a functional meta-programming aware language intended primarily for
+ developing distributed, fault-tolerant and scalable systems. Elixir source
+ code is compiled to bytecode for the Erlang Virtual Machine (EVM), and can use
+ Erlang libraries transparently.
+
+Package: erlang
+Description-md5: 444ffdeb0f4a95a7e36f20d18ac794cb
+Description-en: Concurrent, real-time, distributed functional language
+ Open Source Erlang is a functional programming language designed at
+ the Ericsson Computer Science Laboratory.
+ .
+ Some of Erlang main features are:
+  * Clear declarative syntax and is largely free from side-effects;
+  * Built-in support for real-time, concurrent and distributed programming;
+  * Designed for development of robust and continuously operated programs;
+  * Dynamic code replacement at runtime.
+ .
+ The Erlang distribution also includes OTP (Open Telecom Platform) which
+ provides a rich set of libraries and applications.
+ .
+ This package is a dummy package which will install Erlang/OTP runtime,
+ applications, sources, code examples and the Erlang editing mode for Emacs.
+
+Package: erlang-base-hipe
+Description-md5: f284d6d86968208e4f53d14fca4279b8
+Description-en: Erlang/OTP HiPE enabled virtual machine and base applications
+ This package contains the Erlang/OTP runtime implementation, which is
+ configured and built with HiPE support (allows compiling to native code),
+ and minimal set of Erlang applications:
+  compiler - compiles Erlang code to byte-code;
+  erts - the Erlang runtime system application;
+  kernel - code necessary to run the Erlang runtime system itself;
+  ose - code for Enea OSE operating system;
+  sasl - the system architecture support libraries application;
+  stdlib - modules for manipulating lists, strings, files etc.
+
+Package: erlang-common-test
+Description-md5: 7b279934204d2fda3ee05f2ba5e002bb
+Description-en: Erlang/OTP application for automated testing
+ Common Test is a portable application for automated testing. It is
+ suitable for black-box testing of target systems of any type (i.e.
+ not necessarily implemented in Erlang), as well as for white-box
+ testing of Erlang/OTP programs. Black-box testing is performed via
+ standard interfaces (such as SNMP, HTTP, Corba, Telnet, etc) and,
+ if required, via user specific interfaces (often called test ports).
+ White-box testing of Erlang/OTP programs is easily accomplished by
+ calling the target API functions directly from the test case functions.
+ Common Test also integrates usage of the OTP cover tool for code
+ coverage analysis of Erlang/OTP programs.
+
+Package: erlang-debugger
+Description-md5: f2a130c9024aae5b814aecc511de1716
+Description-en: Erlang/OTP application for debugging and testing
+ Debugger is a graphical tool which can be used for debugging and
+ testing of Erlang programs. For example, breakpoints can be set,
+ code can be single stepped and variable values can be inspected
+ and modified.
+
+Package: erlang-dialyzer
+Description-md5: 64f3bbfb833c0a9582717bebe4d36557
+Description-en: Erlang/OTP discrepancy analyzer application
+ Dialyzer is a static analysis tool that identifies software
+ discrepancies such as type errors, unreachable code, unnecessary
+ tests etc. in single Erlang modules or entire (sets of) applications.
+
+Package: erlang-et
+Description-md5: 642600ae4ee7f6069393fa0af8f50037
+Description-en: Erlang/OTP event tracer application
+ The Event Tracer (ET) uses the built-in trace mechanism in Erlang
+ and provides tools for collecting and examining trace data using GUI.
+
+Package: erlang-jinterface
+Description-md5: 6e3651f89f83062d26177557bb00ae3d
+Description-en: Java communication tool to Erlang
+ Jinterface Java package contains java classes, which help you
+ integrate programs written in Java with Erlang.
+
+Package: erlang-manpages
+Description-md5: cdc7cc48bad4a582e48a14f54e037734
+Description-en: Erlang/OTP manual pages
+ Documentation for the Erlang programming language in `man' format. This
+ documentation can be read using the command `erl -man mod', where `mod'
+ is the name of the module you want documentation on.
+ .
+ This package contains all Erlang/OTP manual pages from sections other
+ than 1. They document Erlang/OTP modules, config files and applications.
+
+Package: erlang-mode
+Description-md5: 458834bc6eb6df394adfd308669076f9
+Description-en: Erlang major editing mode for Emacs
+ This package includes the mode for editing Erlang programs in GNU Emacs.
+ It is provided with the default Erlang/OTP distribution. It supports
+ sophisticated indentation, syntax highlighting, electric commands,
+ module name verification, comments, skeletons, tags etc.
+
+Package: erlang-observer
+Description-md5: 562a137fe6357e7dc7f07faca76776a1
+Description-en: Erlang/OTP application for investigating distributed systems
+ The OBSERVER application contains tools for tracing and investigation of
+ distributed systems. They include etop - a tool for presenting information
+ about Erlang processes, and crashdump_viewer - a HTML based tool for
+ browsing Erlang crashdumps.
+
+Package: erlang-reltool
+Description-md5: c21e40c68ee2fb8795e6e8d59da14957
+Description-en: Erlang/OTP release management tool
+ Reltool is a release management tool. It analyses a given Erlang/OTP
+ installation and determines dependencies between applications. The
+ graphical frontend depicts the dependencies and enables interactive
+ customization of a target system. The backend provides a batch
+ interface for generation of customized target systems.
+
+Package: erlang-src
+Description-md5: 6a6a52b3019a4fbd9d35a8cde25c0477
+Description-en: Erlang/OTP applications sources
+ Erlang sources for all the applications in the Erlang/OTP system.
+ They are useful for educational purpose and as a base for creating
+ embedded systems.
+
+Package: erlang-wx
+Description-md5: 33737e962cd597aa89c0246f6ed16263
+Description-en: Erlang/OTP bindings to wxWidgets
+ The wxErlang application is an API for writing graphical user
+ interfaces with wxWidgets.
+
+Package: erlang-x11
+Description-md5: 243a50ebbcb77b74596e0d11eccda5c3
+Description-en: Erlang/OTP applications that require X Window System
+ This package is a dummy package which will install all Erlang/OTP
+ applications which use graphical interface and therefore require
+ X Window System to run.
+
+Package: ibus-avro
+Description-md5: a4e45fc7e2170175e61ab6eef554298f
+Description-en: IBus engine for Avro Phonetic
+ ibus-avro is a port of the popular Avro Phonetic Bangla typing method
+ to Linux. This software works as an Engine (plugin) of IBus and lets
+ users type in English and on-the-fly transliterate them phonetically
+ to Bangla.
+
+Package: ibus-typing-booster
+Description-md5: 8df8727a23407ff87c1e854faf927e9d
+Description-en: Completion input method to speedup typing
+ Ibus-typing-booster is a predictive input method and predicts
+ complete words based on context and partial input. One can then
+ simply select the desired word from a list of suggestions and
+ improve one's typing speed and spelling.
+
+Package: libreoffice
+Description-md5: 9614e13c8592ae9a0c81c629137ef53e
+Description-en: office productivity suite (metapackage)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This metapackage installs all components of libreoffice:
+  * libreoffice-writer: Word processor
+  * libreoffice-calc: Spreadsheet
+  * libreoffice-impress: Presentation
+  * libreoffice-draw: Drawing
+  * libreoffice-base: Database
+  * libreoffice-math: Equation editor
+ It also recommends additional packages (e.g. fonts) in order to match an
+ upstream LibreOffice install as closely as possible.
+ .
+ You can extend the functionality of LibreOffice by installing these
+ packages:
+  * hunspell-*/myspell-*: Hunspell/Myspell dictionaries
+    for use with LibreOffice
+  * libreoffice-l10n-*: UI interface translation
+  * libreoffice-help-*: User help
+  * mythes-*: Thesauri for the use with LibreOffice
+  * hyphen-*: Hyphenation patterns for LibreOffice
+  * libreoffice-gtk(2|3): Gtk UI Plugin, GNOME File Picker support
+  * libreoffice-gnome: GIO backend
+  * unixodbc: ODBC database support
+  * cups-bsd: Allows LibreOffice to detect your CUPS printer queues
+    automatically
+  * libsane: Use your sane-supported scanner with LibreOffice
+  * libxrender1: Speed up display by using Xrender library
+  * libgl1: OpenGL support
+  * openclipart-libreoffice: Open Clip Art Gallery with LibreOffice index
+    files
+  * firefox-esr | thunderbird | firefox:
+    Mozilla profile with Certificates needed for XML Security...
+  * openjdk-11-jre | openjdk-8-jre | java8-runtime:
+    Java Runtime Environment for use with LibreOffice
+  * pstoedit / imagemagick / ghostscript: helper tools for EPS
+  * gstreamer0.10-plugins-*: GStreamer plugins for use with LibreOffices
+    media backend
+  * libpaper-utils: papersize detection support via paperconf
+  * bluez: Bluetooth support for Impress (slideshow remote control)
+
+Package: libreoffice-base
+Description-md5: 5529fff5c628ca6b70284749063daea4
+Description-en: office productivity suite -- database
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the database component for LibreOffice.
+
+Package: libreoffice-base-drivers
+Description-md5: 95a600bf1d7e583b757fe5b8ea210d10
+Description-en: Database connectivity drivers for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the database connectivity drivers used by LibreOffices
+ database functionality:
+  - ODBC
+  - JDBC
+  - dBase
+  - Calc
+  - Flat files
+ .
+ You can extend this by installing:
+ .
+  * unixodbc: ODBC database support
+  * libmyodbc | odbc-postgresql | libsqliteodbc | tdsodbc | odbc-mdbtools: ODBC
+    drivers for:
+    - MySQL
+    - PostgreSQL
+    - SQLite
+    - MS SQL / Sybase SQL
+    - *.mdb (JET / MS Access)
+  * libmariadb-java | libpg-java | libjtds-java: JDBC Drivers
+    for:
+    - MySQL/MariaDB
+    - PostgreSQL
+    - MS SQL Server and Sybase
+  * libreoffice-sdbc-hsqldb: embedded HSQLDB SDBC Driver
+  * libreoffice-sdbc-firebird: Firebird SDBC Driver
+  * libreoffice-sdbc-postgresql: PostgreSQL SDBC Driver
+  * libreoffice-sdbc-mysql: MySQL/MariaDB SDBC Driver
+
+Package: libreoffice-evolution
+Description-md5: 7d9a6b62e74d5a806f263ecd0d4bed18
+Description-en: office productivity suite -- Evolution addressbook support
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package allows LibreOffice to access Evolution address books.
+ You need to install evolution separately.
+
+Package: libreoffice-gtk
+Description-md5: 0b76cbf84e5ccbf23ddec807f4dcefbb
+Description-en: transitional package for LibreOffice gtk2 backend
+ This package used to contain the LibreOffice gtk2 backend. The package has
+ been renamed to libreoffice-gtk2 to distinguish it from the gtk3 backend.
+ .
+ You can safely remove this package.
+
+Package: libreoffice-gtk2
+Description-md5: 16f95bd9c26683a4b4582a981ca1a3a2
+Description-en: transitional package for LibreOffice gtk2 backend
+ This package used to contain the LibreOffice gtk2 backend.
+ .
+ You can safely remove this package.
+
+Package: libreoffice-kde
+Description-md5: 6cefe70d36c253e7351b5cddd7f0664e
+Description-en: transitional package for LibreOffice KDE integration
+ This package used to contain the LibreOffice KDE 4 backend. The package has
+ been renamed to libreoffice-kdeX and this package now depends on the new
+ libreoffice-kde5 packages.
+ .
+ You can safely remove this package.
+
+Package: libreoffice-kde4
+Description-md5: e4e138701097a40ac3baad803dbce01d
+Description-en: transitional package for LibreOffice KDE integration
+ This package used to contain the LibreOffice KDE 4 backend.
+ .
+ You can safely remove this package.
+
+Package: libreoffice-librelogo
+Description-md5: cdaef056eb365a457e28772fa2fd9de6
+Description-en: Logo-like programming language for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains Librelogo, which is a pyuno-based Logo-like programming
+ language with interactive vectorgraphics for education and DTP
+  - basic Logo syntax for back compatibility with educational Logo systems
+  - interactive vectorgraphics in LibreOffice Writer
+  - native commands (easily translatable)
+  - Python data structures (list, tuple, set, dictionary) and other Python
+    features
+
+Package: libreoffice-mysql-connector
+Description-md5: f67e8b039d42be412b79ebf1381a0f85
+Description-en: transitional package for MariaDB/MySQL Connector extension for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package used to contain the LibreOffice MySQL/MariaDB Connector extension.
+ This has now been added to the "main" packages (libreoffice-sdbc-mysql)
+ and this package thus can be safely removed once installed.
+
+Package: libreoffice-report-builder
+Description-md5: 8239ceaa4ebaf25c2b15325d48eb907c
+Description-en: LibreOffice component for building database reports
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the report builder:
+  "Create with the Sun Report Builder stylish, smart-looking database reports.
+  The flexible report editor can define group and page headers as well as
+  group and page footers and even calculation fields are available to
+  accomplish complex database reports."
+
+Package: libreoffice-report-builder-bin
+Description-md5: 4de9416ad29a7951be39b95f83055e84
+Description-en: LibreOffice component for building database reports -- libraries
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains some architecture-dependent support libraries
+ (librpt*.so) for the report builder component.
+
+Package: libreoffice-script-provider-bsh
+Description-md5: 720bef09745ce9eb4902772fb5c437d8
+Description-en: BeanShell script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support BeanShell.
+
+Package: libreoffice-script-provider-js
+Description-md5: 41b18315e9be2aaa24a28415b907118e
+Description-en: JavaScript script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support JavaScript.
+
+Package: libreoffice-script-provider-python
+Description-md5: 019117f2dc708fc6c1179714b81e2076
+Description-en: Python script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support Python.
+
+Package: libreoffice-sdbc-firebird
+Description-md5: 4ad372e2554b0f42b39c7e1325d5e6d0
+Description-en: Firebird SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Firebird SDBC Driver allows one to use the Firebird database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-sdbc-hsqldb
+Description-md5: 54ed9715a25b1dae2ad2d3a9b6838a65
+Description-en: HSQLDB SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The HSQLDB SDBC Driver allows one to use the HSQLDB embedded database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-sdbc-postgresql
+Description-md5: 06f71158aa78dbe7201679601bd1279b
+Description-en: PostgreSQL SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The PostgreSQL SDBC Driver allows one to use the PostgreSQL database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-style-elementary
+Description-md5: d68f25478a11b022507c9a7afef86095
+Description-en: office productivity suite -- Elementary symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "elementary" symbol style, default style
+ for GTK+/Gnome.
+
+Package: libreoffice-style-hicontrast
+Description-md5: c975e10f61063cef8dfc736499943c67
+Description-en: transitional package for Hicontrast symbol style
+ You can safely remove this package.
+
+Package: libreoffice-style-human
+Description-md5: ed94ab0fc9991b77a2b9fda0a3089abb
+Description-en: transitional package for Human symbol style
+ You can safely remove this package.
+
+Package: libreoffice-style-oxygen
+Description-md5: 0eea86d70908d194875d1d231cf95716
+Description-en: transitional package for Oxygen symbol style
+ You can safely remove this package.
+
+Package: libreoffice-style-sifr
+Description-md5: 0fd5516a8dab8f6841c284edea8786d7
+Description-en: office productivity suite -- Sifr symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "sifr" symbol style (an adaption of the Gnome
+ symbolic theme), needs to be manually  enabled in the LibreOffice option
+ menu.
+
+Package: libreoffice-subsequentcheckbase
+Description-md5: cda482c5487d616e1ae7a228fce1d955
+Description-en: LibreOffice java test libraries
+ Java libraries LibreOffice subsequentchecks integration test suite
+
+Package: libreoffice-systray
+Description-md5: 7af566a55c39207b389151276dad569a
+Description-en: transitional package for removed LibreOffice "Quickstarter"
+ You can safely remove this package.
+
+Package: libreoffice-wiki-publisher
+Description-md5: a66aaa282ae4941588a4d314d1ebbf79
+Description-en: LibreOffice extension for working with MediaWiki articles
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains an extension to create/edit/publish MediaWiki
+ articles with LibreOffice
+
+Package: python-hvac
+Description-md5: d73f21e1c413b6aeb6fe1c1849673d2d
+Description-en: Python 2 client library for Hashicorp Vault
+ HVAC allows accessing secrets stored in a Vault directly from
+ Python code.
+ .
+ An access token must be created first, using a separate tool
+ like vault or vault-client.
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-hvac
+Description-md5: 87f3d1dc985dc89bc5ba925dedb0e579
+Description-en: Python 3 client library for Hashicorp Vault
+ HVAC allows accessing secrets stored in a Vault directly from
+ Python code.
+ .
+ An access token must be created first, using a separate tool
+ like vault or vault-client.
+ .
+ This is the Python 3 version of the package.
+
+Package: python3-ubuntutools
+Description-md5: 7e13f84ccece24b357aee792b7904beb
+Description-en: useful APIs for Ubuntu developer tools — Python 3 library
+ This package ships a collection of APIs, helpers and wrappers used to
+ develop useful utilities for Ubuntu developers.
+ .
+ This package installs the library for Python 3.
+
+Package: simplestreams
+Description-md5: de3939aceef20133cbe2ba7bbb1b7f43
+Description-en: Library and tools for using Simple Streams data
+ This package provides a client for interacting with simple
+ streams data as is produced to describe Ubuntu's cloud images.
+
+Package: ubuntu-dev-tools
+Description-md5: 0e2f0ec6c44167727c60b2fad97f61de
+Description-en: useful tools for Ubuntu developers
+ This is a collection of useful tools that Ubuntu developers use to make their
+ packaging work a lot easier.
+ .
+ Such tools include:
+ .
+  - backportpackage - helper to test package backports
+  - bitesize - add the 'bitesize' tag to a bug and comment that you are
+    willing to help fix it.
+  - check-mir - check support status of build/binary dependencies
+  - check-symbols - will compare and give you a diff of the exported symbols of
+    all .so files in a binary package.
+  - dch-repeat - used to repeat a change log into an older release.
+  - grab-merge - grabs a merge from merges.ubuntu.com easily.
+  - grep-merges - search for pending merges from Debian.
+  - import-bug-from-debian - copy a bug from the Debian BTS to Launchpad
+  - merge-changelog - manually merges two Debian changelogs with the same base
+    version.
+  - mk-sbuild - script to create LVM snapshot chroots via schroot and
+    sbuild.
+  - pbuilder-dist, cowbuilder-dist - wrapper script for managing several build
+    chroots (for different Ubuntu and Debian releases) on the same system.
+  - pull-debian-debdiff - attempts to find and download a specific version of
+    a Debian package and its immediate parent to generate a debdiff.
+  - pull-debian-source - downloads the latest source package available in
+    Debian of a package.
+  - pull-lp-source - downloads source package from Launchpad.
+  - pull-lp-debs - downloads debs package(s) from Launchpad.
+  - pull-lp-ddebs - downloads dbgsym/ddebs package(s) from Launchpad.
+  - pull-lp-udebs - downloads udebs package(s) from Launchpad.
+  - pull-debian-* - same as pull-lp-* but for Debian packages.
+  - pull-uca-* - same as pull-lp-* but for Ubuntu Cloud Archive packages.
+  - pull-pkg - common script that provides above pull-* functionality.
+  - requestbackport - file a backporting request.
+  - requestsync - files a sync request with Debian changelog and rationale.
+  - reverse-depends - find the reverse dependencies (or build dependencies) of
+    a package.
+  - seeded-in-ubuntu - query if a package is safe to upload during a freeze.
+  - setup-packaging-environment - assistant to get an Ubuntu installation
+    ready for packaging work.
+  - sponsor-patch - Downloads a patch from a Launchpad bug, patches the source
+    package, and uploads it (to Ubuntu or a PPA)
+  - submittodebian - automatically send your changes to Debian as a bug report.
+  - syncpackage - helper to prepare .changes file to upload synced packages
+  - ubuntu-build - give commands to the Launchpad build daemons from the
+    command line.
+  - ubuntu-iso - output information of an Ubuntu ISO image.
+  - ubuntu-upload-permission - query / list the upload permissions for a
+    package.
+  - update-maintainer - script to update maintainer field in ubuntu packages.
+
+Package: vaultlocker
+Description-md5: e37e36f80e101bcee84aea29c108bcba
+Description-en: Secure storage of dm-crypt keys in Hashicorp Vault
+ vaultlocker provides a way to store and retrieve dm-crypt encryption
+ keys in Vault, automatically retrieving keys and opening LUKS dm-crypt
+ devices on boot.
+

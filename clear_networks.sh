@@ -1,0 +1,1 @@
+nmcli -t -f UUID connection show | awk 'NR>1' | xargs -I {} nmcli connection delete uuid {}

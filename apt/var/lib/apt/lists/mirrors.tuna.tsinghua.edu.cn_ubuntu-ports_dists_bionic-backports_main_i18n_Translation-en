@@ -1,0 +1,3084 @@
+Package: debhelper
+Description-md5: c3d35229c1ce392f77324206e097b92e
+Description-en: helper programs for debian/rules
+ A collection of programs that can be used in a debian/rules file to
+ automate common tasks related to building Debian packages. Programs
+ are included to install various files into your package, compress
+ files, fix file permissions, integrate your package with the Debian
+ menu system, debconf, doc-base, etc. Most Debian packages use debhelper
+ as part of their build process.
+
+Package: dh-autoreconf
+Description-md5: 64431da0ae4318a5fbf441743bd5ffc5
+Description-en: debhelper add-on to call autoreconf and clean up after the build
+ dh-autoreconf provides a debhelper sequence addon named 'autoreconf' and two
+ commands, dh_autoreconf and dh_autoreconf_clean.
+ .
+ The dh_autoreconf command creates a list of the files and their checksums,
+ calls autoreconf and then creates a second list for the new files.
+ .
+ The dh_autoreconf_clean command compares these two lists and removes all
+ files which have been added or changed (files may be excluded if needed).
+ .
+ For CDBS users, a rule is provided to call the dh-autoreconf programs at
+ the right time.
+
+Package: erlang-asn1
+Description-md5: ee4d0b49672ea14e8a224f00c393a8c6
+Description-en: Erlang/OTP modules for ASN.1 support
+ The Asn1 application contains modules with compile-time and run-time
+ support for ASN.1 in Erlang/OTP.
+
+Package: erlang-base
+Description-md5: 34f1d00a77372c45835007b286d6b266
+Description-en: Erlang/OTP virtual machine and base applications
+ This package contains the Erlang/OTP runtime implementation, which is
+ configured and built without HiPE support (compiles to byte-code only),
+ and minimal set of Erlang applications:
+  compiler - compiles Erlang code to byte-code;
+  erts - the Erlang runtime system application;
+  kernel - code necessary to run the Erlang runtime system itself;
+  ose - code for Enea OSE operating system;
+  sasl - the system architecture support libraries application;
+  stdlib - modules for manipulating lists, strings, files etc.
+
+Package: erlang-crypto
+Description-md5: 6d6a5e48deb89695b61d6380e84e7e95
+Description-en: Erlang/OTP cryptographic modules
+ The Crypto Application provides functions for computation of message
+ digests, encryption and decryption functions. It uses OpenSSL for
+ actual calculations.
+
+Package: erlang-dev
+Description-md5: 023eca40c938a81e31cb3d07fa28976e
+Description-en: Erlang/OTP development libraries and headers
+ The files for application development in Erlang. They include headers for
+ all applications included into Erlang/OTP distribution and C interface
+ libraries.
+
+Package: erlang-diameter
+Description-md5: 42a0b30fc825ef17d696ef8100828e2c
+Description-en: Erlang/OTP implementation of RFC 6733 protocol
+ Interface with which a user creates a service that sends and receives
+ messages using the Diameter protocol as defined in RFC 6733.
+
+Package: erlang-doc
+Description-md5: d151a4898d82d984d031d1b1e1366eea
+Description-en: Erlang/OTP HTML/PDF documentation
+ Documentation for the Erlang programming language and OTP
+ library in HTML and PDF formats.
+
+Package: erlang-edoc
+Description-md5: a3f918489b4ca4cd8e396c420e04b999
+Description-en: Erlang/OTP module for generating documentation
+ EDoc is the Erlang program documentation generator. Inspired by the
+ Javadoc tool for the Java programming language, EDoc is adapted to
+ the conventions of the Erlang world.
+
+Package: erlang-eldap
+Description-md5: 84192ee472dc7261422d95bd91233523
+Description-en: Erlang/OTP LDAP library
+ Eldap is a module which provides a client API to the Lightweight
+ Directory Access Protocol (LDAP).
+
+Package: erlang-erl-docgen
+Description-md5: 12eb983b0fd1fd22ee8081c4efc70adf
+Description-en: Erlang/OTP documentation stylesheets
+ The erl_docgen package includes XSLT stylesheets and document type
+ definitions used for Erlang/OTP documentation. They allow one to
+ transform documentation to manpage, HTML, and PDF formats.
+
+Package: erlang-eunit
+Description-md5: 559493af07c14e28bf56267ccbd871a0
+Description-en: Erlang/OTP module for unit testing
+ The EUnit application contains modules with support for unit testing.
+
+Package: erlang-examples
+Description-md5: 7fd4d1d18889e4d971a860ea2e41b36b
+Description-en: Erlang/OTP application examples
+ The examples, included in the Erlang/OTP system distribution.
+
+Package: erlang-ftp
+Description-md5: 97f938484e6e841e88d0c11037d66a14
+Description-en: Erlang/OTP FTP client
+ The ftp application implements a client for file transfer
+ according to a subset of the File Transfer Protocol (FTP).
+
+Package: erlang-inets
+Description-md5: 8d70a0f49c4439fde59135fbc5bed418
+Description-en: Erlang/OTP Internet clients and servers
+ Inets is a container for Internet clients and servers. Currently
+ a HTTP client and server are provided in Inets.
+
+Package: erlang-megaco
+Description-md5: 690fb9316fd0c68e524cdd808aa967b2
+Description-en: Erlang/OTP implementation of Megaco/H.248 protocol
+ The Megaco application is a framework for building applications on
+ top of the Megaco/H.248 protocol.
+
+Package: erlang-mnesia
+Description-md5: 48d2214e21e1f80fbec2f00309f8406f
+Description-en: Erlang/OTP distributed relational/object hybrid database
+ Mnesia is a distributed Database Management System (DBMS), appropriate
+ for telecommunications applications and other Erlang applications
+ which require continuous operation and exhibit soft real-time properties.
+
+Package: erlang-nox
+Description-md5: 7a788b312a01454a03fd4262bf827fcd
+Description-en: Erlang/OTP applications that don't require X Window System
+ This package is a dummy package which will install all Erlang/OTP
+ applications which do not require X Window System to run.
+
+Package: erlang-odbc
+Description-md5: 8fb16205445a0b6f3190216580f2428d
+Description-en: Erlang/OTP interface to SQL databases
+ The Erlang ODBC application provides an interface for accessing
+ relational SQL databases from Erlang.
+
+Package: erlang-os-mon
+Description-md5: f8627add1b4145778041a638d379dc3d
+Description-en: Erlang/OTP operating system monitor
+ The operating system monitor, OS_Mon, provides services for
+ monitoring CPU load, disk usage, memory usage and OS messages.
+
+Package: erlang-parsetools
+Description-md5: 3e51e2f8676cdc2b45f2ac3d74b79580
+Description-en: Erlang/OTP parsing tools
+ The Parsetools application contains utilities for parsing. Currently,
+ it includes yecc module. Yecc is an LALR-1 parser generator for Erlang,
+ similar to yacc. Yecc takes a BNF grammar definition as input, and
+ produces Erlang code for a parser as output.
+
+Package: erlang-public-key
+Description-md5: e10bb8263805ad3875bec38b249b88db
+Description-en: Erlang/OTP public key infrastructure
+ Provides functions to handle public key infrastructure from RFC 3280
+ (X.509 certificates) and some parts of the PKCS-standard.
+
+Package: erlang-runtime-tools
+Description-md5: a0448be753203ae3013367e215bb963c
+Description-en: Erlang/OTP runtime tracing/debugging tools
+ Runtime_Tools provides low-footprint tracing/debugging tools suitable
+ for inclusion in a production system.
+
+Package: erlang-snmp
+Description-md5: dfb924f9e0e51a8acfd28878335946b5
+Description-en: Erlang/OTP SNMP applications
+ A multilingual Simple Network Management Protocol application features
+ an Extensible Agent, simple manager, a MIB compiler and facilities for
+ implementing SNMP MIBs etc.
+ .
+ The OTP_Mibs application provides an SNMP management information base
+ for Erlang nodes.
+
+Package: erlang-ssh
+Description-md5: 2ab50c8973bb765ccc1c37f7e496762f
+Description-en: Erlang/OTP implementation of SSH protocol
+ The SSH application is an erlang implementation of the secure
+ shell protocol.
+
+Package: erlang-ssl
+Description-md5: 15c091acf332c7d47a15da19885fdc6b
+Description-en: Erlang/OTP implementation of SSL
+ The SSL application provides secure communication over sockets.
+
+Package: erlang-syntax-tools
+Description-md5: 734d87e62fdb69e61b39974407f3d15f
+Description-en: Erlang/OTP modules for handling abstract Erlang syntax trees
+ Syntax_Tools contains modules for handling abstract Erlang syntax
+ trees in a way that is compatible with the "parse trees" of the
+ STDLIB module erl_parse, together with utilities for reading source
+ files in unusual ways and pretty-printing syntax trees. Also it
+ includes a module merger and renamer called Igor, as well as an
+ automatic code-cleaner.
+
+Package: erlang-tftp
+Description-md5: 8aac13f7fcaec29fd897b963f927502e
+Description-en: Erlang/OTP TFTP client and server
+ The tftp application implements client and server for file
+ transfer according to the Trivial File Transfer Protocol (TFTP).
+
+Package: erlang-tools
+Description-md5: 4285755cbac612fc7f4013b85cae332f
+Description-en: Erlang/OTP various tools
+ The Tools application contains a number of stand-alone tools, which are
+ useful when developing Erlang programs.
+ .
+  cover - A coverage analysis tool for Erlang.
+  cprof - A profiling tool that shows how many times each function
+    is called. Uses a kind of local call trace breakpoints containing
+    counters to achieve very low runtime performance degradation.
+  eprof - A time profiling tool; measures how time is used in Erlang
+    programs. Predecessor of fprof (see below).
+  fprof - Another Erlang profiler; measures how time is used in Erlang
+    programs. Uses trace to file to minimize runtime performance
+    impact, and displays time for calling and called functions.
+  instrument - Utility functions for obtaining and analyzing resource
+    usage in an instrumented Erlang runtime system.
+  make - A make utility for Erlang similar to UNIX make.
+  tags - A tool for generating Emacs TAGS files from Erlang source
+    files.
+  xref - A cross reference tool. Can be used to check dependencies
+    between functions, modules, applications and releases.
+
+Package: erlang-xmerl
+Description-md5: 222136c221feb614758c204affd11214
+Description-en: Erlang/OTP XML tools
+ The xmerl application contains modules for processing XML.
+
+Package: fonts-opensymbol
+Description-md5: c976ef54f80faf44d726a46723d3fbd0
+Description-en: OpenSymbol TrueType font
+ This package contains the OpenSymbol TrueType font included in
+ LibreOffice. This font contains symbols (like fonts as Wingdings(tm)),
+ bullets (needed for bullets in LibreOffice) and non-latin character
+
+Package: gir1.2-lokdocview-0.1
+Description-md5: 7dc30c9eaf0ca4f765d8e934afd2126b
+Description-en: GTK3 widget wrapping LibreOffice functionality - introspection
+ LOKDocView is the GTK3 widget that wraps the libreoffice functionality and
+ exposes a simple API for applications to use this widget.
+ .
+ This package contains the Introspection data.
+
+Package: init
+Description-md5: 12a082503782e774ffe62fa80de49eb6
+Description-en: metapackage ensuring an init system is installed
+ This package is a metapackage which allows you to select from the available
+ init systems while ensuring that one of these is available on the system at
+ all times.
+
+Package: init-system-helpers
+Description-md5: facafbf6c4b9fd95c34e95938629ecef
+Description-en: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e. g. sysvinit or
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ It also includes the "service", "invoke-rc.d", and "update-rc.d" scripts which
+ provide an abstraction for enabling, disabling, starting, and stopping
+ services for all supported Debian init systems as specified by the policy.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+
+Package: iproute2
+Description-md5: d10cc46ca4a9e5489b7d2c879fcfba17
+Description-en: networking and traffic control tools
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ These tools communicate with the Linux kernel via the (rt)netlink
+ interface, providing advanced features not available through the
+ legacy net-tools commands 'ifconfig' and 'route'.
+
+Package: iproute2-doc
+Description-md5: 04b627412e2f9e6b31ebbbedd1b39794
+Description-en: networking and traffic control tools - documentation
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ This package contains the documentation for iproute.
+
+Package: libdebhelper-perl
+Description-md5: 28ff8c768605ed424c531fb1eb355edf
+Description-en: debhelper perl modules
+ A collection of programs that can be used in a debian/rules file to
+ automate common tasks related to building Debian packages.
+ .
+ This package provides the perl modules used by the scripts in debhelper.
+
+Package: libjuh-java
+Description-md5: 9e017c19c2cbf8cab7b83a1ee17e6890
+Description-en: transitional package for LibreOffice UNO runtime environment
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This has now been merged into liblibreoffice-java and this package thus
+ can be safely removed once installed.
+
+Package: libjurt-java
+Description-md5: 9e017c19c2cbf8cab7b83a1ee17e6890
+Description-en: transitional package for LibreOffice UNO runtime environment
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This has now been merged into liblibreoffice-java and this package thus
+ can be safely removed once installed.
+
+Package: liblibreoffice-java
+Description-md5: d71a0b67eeb476140ee5b28e32f1171a
+Description-en: LibreOffice UNO runtime environment -- Java library
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ This package contains the public Java libraries.
+
+Package: liblibreofficekitgtk
+Description-md5: 52a3fee7a3b817ab39c00dba0ffe0a7f
+Description-en: GTK3 widget wrapping LibreOffice functionality
+ This package contains a (basic) GTK+ document viewer widget (used
+ by e.g. LOKDocView)
+
+Package: libofficebean-java
+Description-md5: e07555977ea770bba6aa36e951ee2753
+Description-en: generic Java Bean wrapper for LibreOffice components
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Java library for the LibreOffice Office Bean
+ for embedding LibreOffice in custom Java applications.
+
+Package: libreoffice-avmedia-backend-gstreamer
+Description-md5: ec62ab16ee0666e01ee5915457261f88
+Description-en: transitional package for GStreamer backend for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package used to contain the GStreamer backend for LibreOffice.
+ This has now been merged into the "core" package and this package thus
+ can be safely removed once installed.
+
+Package: libreoffice-base-core
+Description-md5: 00dfbbe7bf584af5cd6d0ee0f5695390
+Description-en: office productivity suite -- shared library
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains common libraries of LibreOffice Base used by
+ Base, Writer and Calc.
+ .
+ If you need full Base functionality (or actual database drivers), please
+ install libreoffice-base (and/or libreoffice-base-drivers and/o
+ libreoffice-sdbc-*).
+
+Package: libreoffice-base-nogui
+Description-md5: e83dd6cdb7c67ccb13c0407fd6a32ebc
+Description-en: office productivity suite -- database (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the database component for LibreOffice.
+
+Package: libreoffice-calc
+Description-md5: e809bbd7f91acfd0d9ad0f8fd5ed86a3
+Description-en: office productivity suite -- spreadsheet
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the spreadsheet component for LibreOffice.
+
+Package: libreoffice-calc-nogui
+Description-md5: ed9483b973f6b2dd25d568b6ef77d8c4
+Description-en: office productivity suite -- spreadsheet (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the spreadsheet component for LibreOffice
+ for use with libreoffice-core-nogui.
+
+Package: libreoffice-common
+Description-md5: 304f06193ef91a740410572ff1db7174
+Description-en: office productivity suite -- arch-independent files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-independent files of
+ LibreOffice.
+
+Package: libreoffice-core
+Description-md5: 5464d9229de42a41fda16d9993e11570
+Description-en: office productivity suite -- arch-dependent files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-dependent core files of
+ LibreOffice.  See the libreoffice package for more information.
+
+Package: libreoffice-core-nogui
+Description-md5: d16e9871c20b5b5c8f38d6d74c8dfe8e
+Description-en: office productivity suite -- arch-dependent files (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-dependent core files of
+ LibreOffice without GUI support for server-based or commandline usage of
+ LibreOffice.
+
+Package: libreoffice-dev
+Description-md5: fa13d1087845b42e8db65349b0428d09
+Description-en: office productivity suite -- SDK -- architecture-dependent parts
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the (architecture-dependent) files needed to build
+ plugins/add-ons for LibreOffice (build tools, libraries, arch-dependent
+ includes, ...).
+
+Package: libreoffice-dev-common
+Description-md5: 8e2f47a3629807507c30bffdf52c61ba
+Description-en: office productivity suite -- SDK -- architecture-independent parts
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the (architecture-independent) files needed to build
+ plugins/add-ons for LibreOffice (includes, IDL files, ...)
+
+Package: libreoffice-dev-doc
+Description-md5: b4ecfbc8a8e236404d92fb39cd9ea14f
+Description-en: office productivity suite -- SDK documentation
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the documentation of the LibreOffice SDK:
+ .
+  * C++/Java API reference
+  * IDL reference
+  * C++/Java/Basic examples
+
+Package: libreoffice-dev-gui
+Description-md5: c7381cdfc5446c44dd4085615626c61e
+Description-en: office productivity suite -- "GUI" development stuff
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the gengal utility which was moved from
+ libreoffice-dev.
+
+Package: libreoffice-draw
+Description-md5: 48e37fe8495cb12961b923bb0b0f970f
+Description-en: office productivity suite -- drawing
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the drawing component for LibreOffice.
+
+Package: libreoffice-draw-nogui
+Description-md5: c4d7d9707b31ef9344d70e006f7a27af
+Description-en: office productivity suite -- drawing (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the drawing component for LibreOffice.
+
+Package: libreoffice-gnome
+Description-md5: c468d8fd91ddd9ba3bc4401d295be6e1
+Description-en: office productivity suite -- GNOME integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the GIO support.
+ .
+ You can extend the functionality of this by installing these packages:
+ .
+  * libreoffice-evolution: Evolution addressbook support
+  * evolution
+
+Package: libreoffice-gtk3
+Description-md5: 146f765cda9a463edbf2032242a5150f
+Description-en: office productivity suite -- GTK+ 3 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Gtk plugin for drawing LibreOffices widgets
+ with Gtk+ 3 and Gtk/GNOMEish print dialog when running under GNOME.
+
+Package: libreoffice-help-ca
+Description-md5: d6b57c84305eb2009f0f7cca49b022f1
+Description-en: office productivity suite -- Catalan help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Catalan.
+
+Package: libreoffice-help-common
+Description-md5: bb2508f2324a7b651c019aba6b2c24e9
+Description-en: office productivity suite -- common files for LibreOffice help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the common files (e.g. language-independent, media) files
+ for the LibreOffice Help.
+
+Package: libreoffice-help-cs
+Description-md5: ac7fea7c0a197c7b356a8223d94347ea
+Description-en: office productivity suite -- Czech help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Czech.
+
+Package: libreoffice-help-da
+Description-md5: 2eeb5c9d61409db9416d1bf688280d6e
+Description-en: office productivity suite -- Danish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Danish.
+
+Package: libreoffice-help-de
+Description-md5: 446e337ad4cf957e780c2996c41e0163
+Description-en: office productivity suite -- German help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ German.
+
+Package: libreoffice-help-dz
+Description-md5: 831cde2511d5df0e50fca4f9545adb3b
+Description-en: office productivity suite -- Dzongkha help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Dzongkha.
+
+Package: libreoffice-help-el
+Description-md5: 27db60f82a9a1414b51ea5e553a7b9e8
+Description-en: office productivity suite -- Greek help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Greek.
+
+Package: libreoffice-help-en-gb
+Description-md5: 6843fecfa30da7d8c3e384c4f92747ac
+Description-en: office productivity suite -- English_british help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ English_british.
+
+Package: libreoffice-help-en-us
+Description-md5: 887d1c3089d4c0e44d0b26ed6ffd9193
+Description-en: office productivity suite -- English_american help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ English_american.
+
+Package: libreoffice-help-es
+Description-md5: 3b17681533c31b51304225ad41bc4cc9
+Description-en: office productivity suite -- Spanish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Spanish.
+
+Package: libreoffice-help-et
+Description-md5: ee9a1b4e728ba5dd900173bfee1a731c
+Description-en: office productivity suite -- Estonian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Estonian.
+
+Package: libreoffice-help-eu
+Description-md5: 173b0972f7f0a78d8c52cb5f5045e57e
+Description-en: office productivity suite -- Basque help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Basque.
+
+Package: libreoffice-help-fi
+Description-md5: 07a9aa483488050f6541179d8987d975
+Description-en: office productivity suite -- Finnish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Finnish.
+
+Package: libreoffice-help-fr
+Description-md5: 3f39cd0f487b1234b3b028700174aea6
+Description-en: office productivity suite -- French help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ French.
+
+Package: libreoffice-help-gl
+Description-md5: 373bae22071a7f0286ed9ec163a95c9f
+Description-en: office productivity suite -- Galician help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Galician.
+
+Package: libreoffice-help-hi
+Description-md5: 2086330d67240d859330eccd8a050d0d
+Description-en: office productivity suite -- Hindi help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Hindi.
+
+Package: libreoffice-help-hu
+Description-md5: 61ae09c1e4ead0c3a139c61b39f763a8
+Description-en: office productivity suite -- Hungarian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Hungarian.
+
+Package: libreoffice-help-id
+Description-md5: efd54faf7a13796ca988f291361d13f7
+Description-en: office productivity suite -- Indonesian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Indonesian.
+
+Package: libreoffice-help-it
+Description-md5: 68017996bf772a95a5138d70db294b80
+Description-en: office productivity suite -- Italian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Italian.
+
+Package: libreoffice-help-ja
+Description-md5: 202a13f334a5b4d912a0c725a68309d3
+Description-en: office productivity suite -- Japanese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Japanese.
+
+Package: libreoffice-help-km
+Description-md5: 85075447fb80af12955c4e01c4a316c5
+Description-en: office productivity suite -- Khmer help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Khmer.
+
+Package: libreoffice-help-ko
+Description-md5: d879d29f7f222fa7b6ad3b86112dcbec
+Description-en: office productivity suite -- Korean help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Korean.
+
+Package: libreoffice-help-nl
+Description-md5: 39207c43a1ac830972c4637d2d15402a
+Description-en: office productivity suite -- Dutch help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Dutch.
+
+Package: libreoffice-help-om
+Description-md5: 71d9bb0e518d702c88916fc4bcbd3fcb
+Description-en: office productivity suite -- Oromo help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Oromo.
+
+Package: libreoffice-help-pl
+Description-md5: 1ecec6865a123ab7b50509708fbd986b
+Description-en: office productivity suite -- Polish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Polish.
+
+Package: libreoffice-help-pt
+Description-md5: a995efbac2b786bee5de0e56d3a97215
+Description-en: office productivity suite -- Portuguese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Portuguese.
+
+Package: libreoffice-help-pt-br
+Description-md5: ef429612095b5aa3dc738547af704ccb
+Description-en: office productivity suite -- Portuguese_brazilian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Portuguese_brazilian.
+
+Package: libreoffice-help-ru
+Description-md5: 26ff97e5963f7a1cdb5ca84a587aad70
+Description-en: office productivity suite -- Russian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Russian.
+
+Package: libreoffice-help-sk
+Description-md5: d26e95b5d6c285b41315b083c88099d0
+Description-en: office productivity suite -- Slovak help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Slovak.
+
+Package: libreoffice-help-sl
+Description-md5: 0b685103983bbccf5f421b1c697576d2
+Description-en: office productivity suite -- Slovenian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Slovenian.
+
+Package: libreoffice-help-sv
+Description-md5: 0f3bdd564c5f61573a0a4a42f4b54fbc
+Description-en: office productivity suite -- Swedish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Swedish.
+
+Package: libreoffice-help-tr
+Description-md5: 0e69dac1381ab919682ec9c47de5194e
+Description-en: office productivity suite -- Turkish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Turkish.
+
+Package: libreoffice-help-vi
+Description-md5: e38510b2855a269b0484915b84687e41
+Description-en: office productivity suite -- Vietnamese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Vietnamese.
+
+Package: libreoffice-help-zh-cn
+Description-md5: 2aa55f3147e53b54fe485b32ed13386f
+Description-en: office productivity suite -- Chinese_simplified help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Chinese_simplified.
+
+Package: libreoffice-help-zh-tw
+Description-md5: ee9697d616e7c4173187caaaecafb1b2
+Description-en: office productivity suite -- Chinese_traditional help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Chinese_traditional.
+
+Package: libreoffice-impress
+Description-md5: 472668fa8a618a3bed701d2301185f86
+Description-en: office productivity suite -- presentation
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the presentation component for LibreOffice.
+
+Package: libreoffice-impress-nogui
+Description-md5: 10ce2c27d434135cd9308937c1bdb31c
+Description-en: office productivity suite -- presentation (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the presentation component for LibreOffice.
+
+Package: libreoffice-java-common
+Description-md5: 9b905cfcc13278c04580172f90e74120
+Description-en: office productivity suite -- arch-independent Java support files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-independent files of
+ the Java support for LibreOffice (Java classes, scripts, config snippets).
+
+Package: libreoffice-kde5
+Description-md5: 9ba37e0af16899bba520effef300bdf2
+Description-en: transitional package for LibreOffice "KDE 5" integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package used to contain the "KDE 5" integration. It was split
+ into -kf5 (KF5 UI plugin) and -plasma (some Plasma integration). This
+ packsge can be safely removed once installed.
+
+Package: libreoffice-kf5
+Description-md5: 60a27e47a640a57cbd044cc3528831f5
+Description-en: office productivity suite -- KDE Frameworks 5 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the KF5 plugin for LibreOffice and a KF5-based File
+ Picker when running under Plasma.
+
+Package: libreoffice-l10n-af
+Description-md5: 25408426f5cceacb5ad931a04f17c27e
+Description-en: office productivity suite -- Afrikaans language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Afrikaans.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-am
+Description-md5: c82c66da2760f49995d4e8690d0f9536
+Description-en: office productivity suite -- Amharic language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Amharic.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ar
+Description-md5: 587caaeee146ae2e8c3996cb98f27e14
+Description-en: office productivity suite -- Arabic language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Arabic.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-as
+Description-md5: 4ac2e69fa5a27abf0c1dea94b43a4a7a
+Description-en: office productivity suite -- Assamese language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Assamese.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ast
+Description-md5: e881b8766739626fc2bfe3be78a504b6
+Description-en: office productivity suite -- Asturian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Asturian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-be
+Description-md5: 4e120b250b345e0e6dc4ca4cf4767d2b
+Description-en: office productivity suite -- Belarusian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Belarusian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-bg
+Description-md5: 1e2ff5cea5d0d31b2fadc412f6046e12
+Description-en: office productivity suite -- Bulgarian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Bulgarian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-bn
+Description-md5: 00d1921e153b39622cb04e7f66795716
+Description-en: office productivity suite -- Bengali language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Bengali.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-br
+Description-md5: d16cf29a1d2c4c4ed7016afa029144be
+Description-en: office productivity suite -- Breton language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Breton.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-bs
+Description-md5: 7fc91db4c49442d4457804a807e892f1
+Description-en: office productivity suite -- Bosnian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Bosnian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ca
+Description-md5: a91b06d5c0057582f16109658e9ac2f8
+Description-en: office productivity suite -- Catalan language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Catalan.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-cs
+Description-md5: afead2a0313d84ddc897a8641a06a05e
+Description-en: office productivity suite -- Czech language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Czech.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-cy
+Description-md5: 05accff0a8db25ee2b5bbfa42b627da5
+Description-en: office productivity suite -- Welsh language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Welsh.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-da
+Description-md5: 3baa4ced7ad5463e2aeedc011515df6f
+Description-en: office productivity suite -- Danish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Danish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-de
+Description-md5: 9100dc24d96f8d761ed9e9a72aaae56d
+Description-en: office productivity suite -- German language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ German.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-dz
+Description-md5: ea22c1cbc51379d92908e5e9e9fd316d
+Description-en: office productivity suite -- Dzongkha language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Dzongkha.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-el
+Description-md5: 4f78a8507785668c597339f89484e181
+Description-en: office productivity suite -- Greek language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Greek.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-en-gb
+Description-md5: 2175d49557a4317b25abdfef0508de34
+Description-en: office productivity suite -- English_british language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ English_british.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-en-za
+Description-md5: c94234e62f754742485de331d5cce167
+Description-en: office productivity suite -- English_southafrican language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ English_southafrican.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-eo
+Description-md5: ceec53900ab8424d55b41ca9805f4477
+Description-en: office productivity suite -- Esperanto language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Esperanto.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-es
+Description-md5: 9ca224f2e6cdf51887ac42db8c56be1b
+Description-en: office productivity suite -- Spanish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Spanish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-et
+Description-md5: 48b61d8af6c926ad0fc569a88eff07f2
+Description-en: office productivity suite -- Estonian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Estonian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-eu
+Description-md5: a9ce34217df35bf42f382c34b328939c
+Description-en: office productivity suite -- Basque language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Basque.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-fa
+Description-md5: 6fb22f6ccd00a52dcb073d05bdb131d9
+Description-en: office productivity suite -- Farsi language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Farsi.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-fi
+Description-md5: 3706653bf050d85e2b88029ab6b8043d
+Description-en: office productivity suite -- Finnish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Finnish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-fr
+Description-md5: be373ab6133f4822f55949baa3af6fb6
+Description-en: office productivity suite -- French language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ French.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ga
+Description-md5: 45ee5e619b80d12047c3db358a95ece6
+Description-en: office productivity suite -- Gaelic language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Gaelic.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-gd
+Description-md5: 18113968ce7e8c22cc31b05613ac922a
+Description-en: office productivity suite -- Scottish_gaelic language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Scottish_gaelic.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-gl
+Description-md5: 91aaf32f09c1b953e8cf6a0878954eea
+Description-en: office productivity suite -- Galician language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Galician.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-gu
+Description-md5: d33d0bf909d9ce8566c829e9e8c7958d
+Description-en: office productivity suite -- Gujarati language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Gujarati.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-gug
+Description-md5: 8a60db7a8c323661ed589467da797a53
+Description-en: office productivity suite -- Guarani language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Guarani.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-he
+Description-md5: 162257c4fc07447259f3f6ba8311eab8
+Description-en: office productivity suite -- Hebrew language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Hebrew.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-hi
+Description-md5: c0f9f00435657eaf48161db67ec8e03d
+Description-en: office productivity suite -- Hindi language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Hindi.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-hr
+Description-md5: c1f7ed74f344f50c39b1b97d22d34b76
+Description-en: office productivity suite -- Croatian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Croatian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-hu
+Description-md5: 03faefa7ee83b9dbc4ee7a082d63744e
+Description-en: office productivity suite -- Hungarian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Hungarian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-id
+Description-md5: 831b063ee510059ca4447efa18a337a8
+Description-en: office productivity suite -- Indonesian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Indonesian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-in
+Description-md5: 36e2a96a1e51778367a7324914492a84
+Description-en: office productivity suite -- Indic language packages
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package is a metapackage installing l10n packages for all available
+ indic languages.
+
+Package: libreoffice-l10n-is
+Description-md5: 867a82757a25dc87440a74fb74e46369
+Description-en: office productivity suite -- Icelandic language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Icelandic.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-it
+Description-md5: e9939e05ca7fe3ecb840f7f3d6192e35
+Description-en: office productivity suite -- Italian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Italian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ja
+Description-md5: 711d02c365f10214733d3d63a55bf474
+Description-en: office productivity suite -- Japanese language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Japanese.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ka
+Description-md5: 1efb8e2732132342f73ee09022329760
+Description-en: office productivity suite -- Georgian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Georgian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-kk
+Description-md5: 0f55a645c29d349c14ae394b15a44300
+Description-en: office productivity suite -- Kazakh language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Kazakh.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-km
+Description-md5: 8bbe73d4befdfd439c3cbc8ee6b1fcb9
+Description-en: office productivity suite -- Khmer language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Khmer.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-kmr
+Description-md5: b118604d13c95984ec63f0e9fea14884
+Description-en: office productivity suite -- Kurmanji language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Kurmanji.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-kn
+Description-md5: 5c250ecb97123c4ac162dfd656bbe62e
+Description-en: office productivity suite -- Kannada language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Kannada.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ko
+Description-md5: 959045aad72889d15ef474977f2b76c4
+Description-en: office productivity suite -- Korean language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Korean.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-lt
+Description-md5: 034b11c582987c822f6f0f155d0a2dca
+Description-en: office productivity suite -- Lithuanian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Lithuanian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-lv
+Description-md5: 5590d50c683679292cf935268a635351
+Description-en: office productivity suite -- Latvian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Latvian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-mk
+Description-md5: 14c69c972f6eb55814e005281db272c1
+Description-en: office productivity suite -- Macedonian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Macedonian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ml
+Description-md5: 60f657487ccd35990900a2b5e69a0ece
+Description-en: office productivity suite -- Malayalam language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Malayalam.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-mn
+Description-md5: 4025564fcb7aef1ac127f7d38a7d89a3
+Description-en: office productivity suite -- Mongolian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Mongolian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-mr
+Description-md5: 8222f55840ec7b6dfe5f1d5507393b3c
+Description-en: office productivity suite -- Marathi language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Marathi.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-nb
+Description-md5: 9ec98f81a0201acd8a280f74f7aea258
+Description-en: office productivity suite -- Norwegian_bokmal language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Norwegian_bokmal.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ne
+Description-md5: b943bce9f69b671bef2b0962294dd15e
+Description-en: office productivity suite -- Nepalese language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Nepalese.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-nl
+Description-md5: 070320c4fffa196cb47074884ecf5d04
+Description-en: office productivity suite -- Dutch language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Dutch.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-nn
+Description-md5: bbdb9d7bd3b045feb8b26450f0b1e84d
+Description-en: office productivity suite -- Norwegian_nynorsk language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Norwegian_nynorsk.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-nr
+Description-md5: 43bc32c188cfe5924ea7f2995a36995d
+Description-en: office productivity suite -- Ndebele language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Ndebele.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-nso
+Description-md5: 12301064896f2feae77bfb9b19df2b41
+Description-en: office productivity suite -- Northern_sotho language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Northern_sotho.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-oc
+Description-md5: 33ddfe08a196f8f66e1a8e27f2d010cc
+Description-en: office productivity suite -- Occitan language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Occitan.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-om
+Description-md5: b0d2c1a766f405e3832badc1c8a5b242
+Description-en: office productivity suite -- Oromo language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Oromo.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-or
+Description-md5: aca394fbe45768c0d7262fd88c98ebd1
+Description-en: office productivity suite -- Odia language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Odia.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-pa-in
+Description-md5: 257cf2122f7b0d44fd1c044bf69204bb
+Description-en: office productivity suite -- Punjabi language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Punjabi.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-pl
+Description-md5: af3855564491f6adf7a5d23e57e3d07f
+Description-en: office productivity suite -- Polish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Polish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-pt
+Description-md5: 3ebb2c295967229068d690bf4004b6e4
+Description-en: office productivity suite -- Portuguese language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Portuguese.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-pt-br
+Description-md5: bca2f0a66f444a733b61ca3bb45846ca
+Description-en: office productivity suite -- Portuguese_brazilian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Portuguese_brazilian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ro
+Description-md5: e4018d28105361bb391246001caccf0c
+Description-en: office productivity suite -- Romanian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Romanian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ru
+Description-md5: 58787e12e170fc436c645c007bfdc3a3
+Description-en: office productivity suite -- Russian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Russian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-rw
+Description-md5: 567e17f0373585af19cb698b7c5680e9
+Description-en: office productivity suite -- Kinarwanda language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Kinarwanda.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-si
+Description-md5: 1f61af11cbbfd06c45ff93fd66708f91
+Description-en: office productivity suite -- Sinhala language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Sinhala.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-sk
+Description-md5: 1769b72d83c3ab6d8bc16b3fda5f0a67
+Description-en: office productivity suite -- Slovak language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Slovak.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-sl
+Description-md5: cb73e143fff5a545b5d0d0878593a2f5
+Description-en: office productivity suite -- Slovenian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Slovenian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-sr
+Description-md5: a5246257fe1a7bc6da50c1903b447187
+Description-en: office productivity suite -- Serbian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Serbian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ss
+Description-md5: b3cd9971feec09abdc68c846c96340a6
+Description-en: office productivity suite -- Swazi language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Swazi.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-st
+Description-md5: 3eddf8b8a781fcc8d00658fd683751c6
+Description-en: office productivity suite -- Southern_sotho language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Southern_sotho.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-sv
+Description-md5: 94e08d9ebf4885b6a199a8604f8e4623
+Description-en: office productivity suite -- Swedish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Swedish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-szl
+Description-md5: 042319a52566380faa02b485ca055ca0
+Description-en: office productivity suite -- Upper_silesian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Upper_silesian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ta
+Description-md5: f1a39c06a2dd67a9a2480ae41bbfcff0
+Description-en: office productivity suite -- Tamil language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Tamil.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-te
+Description-md5: 61e424cfb84420f8dc211c66f1b3a533
+Description-en: office productivity suite -- Telugu language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Telugu.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-tg
+Description-md5: 20867b7b1d2eafbaca5ff6af5b2d57c9
+Description-en: office productivity suite -- Tajik language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Tajik.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-th
+Description-md5: 94a998c14aeff6049d9b90810598f1dd
+Description-en: office productivity suite -- Thai language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Thai.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-tn
+Description-md5: 7da81d27f41218d11fbd8aabceec792c
+Description-en: office productivity suite -- Tswana language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Tswana.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-tr
+Description-md5: df7d8cde01531055398d2aa9010f77bc
+Description-en: office productivity suite -- Turkish language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Turkish.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ts
+Description-md5: 29ca3694d6ba2d256e546fdcdc5b65bb
+Description-en: office productivity suite -- Tsonga language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Tsonga.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ug
+Description-md5: ca1d8cb61ea8620dc7ff4ea41c7dfe12
+Description-en: office productivity suite -- Uighur language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Uighur.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-uk
+Description-md5: 6f386a310674737ccb0fc8c3aaefc90e
+Description-en: office productivity suite -- Ukrainian language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Ukrainian.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-uz
+Description-md5: a7da1f6ae1fcdfa64f696aed12dc759d
+Description-en: office productivity suite -- Uzbek language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Uzbek.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-ve
+Description-md5: 7bb286307dfd6105c62d2c54772e83fd
+Description-en: office productivity suite -- Venda language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Venda.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-vi
+Description-md5: baa160c324599bd2156dca97789a430a
+Description-en: office productivity suite -- Vietnamese language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Vietnamese.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-xh
+Description-md5: 6124cc72bfc02b25a2a78aaa09e77b01
+Description-en: office productivity suite -- Xhosa language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Xhosa.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-za
+Description-md5: 88b25d0aaf8864e6f6b3862a477db0fe
+Description-en: office productivity suite -- South African language packages
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package is a metapackage installing l10n packages for all 11 South
+ African languages.
+
+Package: libreoffice-l10n-zh-cn
+Description-md5: b8e748f9a21ee8996147f93a46daa148
+Description-en: office productivity suite -- Chinese_simplified language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Chinese_simplified.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-zh-tw
+Description-md5: 166e08e5f36a4b8b8968bda48d5eb24e
+Description-en: office productivity suite -- Chinese_traditional language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Chinese_traditional.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-l10n-zu
+Description-md5: 1826bfebd2ace6bb52d52081479ab115
+Description-en: office productivity suite -- Zulu language package
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the localization of LibreOffice in
+ Zulu.
+ It contains the user interface, the templates and the autotext features.
+ (please note that not all this is available for all possible languages).
+ You can switch user interface language using the locales system.
+ .
+ Spelling dictionaries, hyphenation patterns, thesauri and help are not
+ included in this package. There are some available in separate packages
+ (myspell-*, hyphen-*, mythes-*, libreoffice-help-*)
+ .
+ If you just want to be able to spellcheck etc. in other languages, you can
+ install extra dictionaries/hyphenation patterns/thesauri independently of
+ the language packs.
+
+Package: libreoffice-math
+Description-md5: 66f3b39e514cc02ac689ec67f6ed274a
+Description-en: office productivity suite -- equation editor
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the equation editor component for LibreOffice.
+
+Package: libreoffice-math-nogui
+Description-md5: e104f51d572d2ee302d3c3550e97e6ff
+Description-en: office productivity suite -- equation editor (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the equation editor component for LibreOffice.
+
+Package: libreoffice-nlpsolver
+Description-md5: fae46d5df372eb372a1c97e3831f88bc
+Description-en: "Solver for Nonlinear Programming" extension for LibreOffice
+ By default LibreOffice Calc ships with a solver engine for linear
+ programming only. This allows the optimization of models to a certain degree.
+ However, if the formulas or constraints become more complex,
+ nonlinear programming is required. That missing gap is now filled by the
+ Solver for Nonlinear Programming extension.
+ .
+ Currently it incorporates two Evolutionary Algorithms which are able to
+ handle floating point and integer variables as well as nonlinear constraints.
+
+Package: libreoffice-nogui
+Description-md5: b2664061ba9641158b0a41d2c958aa3e
+Description-en: office productivity suite (metapackage, no GUI)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This metapackage installs all components of libreoffice:
+  * libreoffice-writer: Word processor
+  * libreoffice-calc: Spreadsheet
+  * libreoffice-impress: Presentation
+  * libreoffice-draw: Drawing
+  * libreoffice-base: Database
+  * libreoffice-math: Equation editor
+ .
+ WITHOUT GUI SUPPORT.
+ .
+ This package is intended mostly for scripting needs.
+
+Package: libreoffice-officebean
+Description-md5: 5a0da32be18d6e992e247ea879287e8b
+Description-en: transitional package for libofficebean-java
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package formerly contained binaries for the the LibreOffice Office Bean
+ for embedding LibreOffice in custom Java applications.
+ .
+ This has now been merged into libofficebean-java so this package can safely
+ be removed.
+
+Package: libreoffice-ogltrans
+Description-md5: e0adf62d9e3c2e44012570545627fe8d
+Description-en: transitional package for libreoffice-ogltrans
+ This package used to contain the OpenGL slide transitions for LibreOffice
+ Impress.
+ That has been merged into libreoffice-impress directly and thus this package
+ can be safely removed.
+
+Package: libreoffice-pdfimport
+Description-md5: 7fece5c04e7014b850ca76b355ae3bd9
+Description-en: transitional package for PDF Import component for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package formerly contained a component enabling LibreOffice to import PDF
+ Documents. This now has been merged back into the "main" packages and this
+ package thus can be safely removed once installed.
+
+Package: libreoffice-plasma
+Description-md5: 962e5fa862a2425941adbcdb81054cc7
+Description-en: office productivity suite -- some Plasma integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains some minor Plasma integration (like AppData
+ and "Create New..." integration) and a KDE/KF5 configuration backend.
+
+Package: libreoffice-qt5
+Description-md5: 459572943562e2a51d6e9c1c30d84c71
+Description-en: office productivity suite -- Qt 5 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Qt 5 plugin for drawing LibreOffices widgets
+ with Qt 5 and a Qt File Picker and print dialog.
+ .
+ You need to enable it manually by export SAL_USE_VCLPLUGIN=qt5 if you are
+ not using Plasma.
+
+Package: libreoffice-report-builder-bin-nogui
+Description-md5: 6d5263ac65fb4d1c4c7caf8eb713944d
+Description-en: LibreOffice component for building database reports -- libraries (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains some architecture-dependent support libraries
+ (librpt*.so) for the report builder component.
+
+Package: libreoffice-sdbc-mysql
+Description-md5: 1022a8fb85f50d65847256d96ae25e4f
+Description-en: MariaDB/MySQL SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The MariaDB/MySQL driver allows one to use the MariaDB or MySQL
+ database from LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-smoketest-data
+Description-md5: 7540f40cccbf63cb8381dca8979a0828
+Description-en: data files for LibreOffices "smoketest"
+ Data files for the LibreOffice "smoketest".
+
+Package: libreoffice-style-breeze
+Description-md5: b3a725e09462ccaec72c3b8bb964827b
+Description-en: office productivity suite -- Breeze symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "breeze" symbol style, default style for KDE 5.
+
+Package: libreoffice-style-colibre
+Description-md5: 32f69eb782a3e2c24c14038e98222fbe
+Description-en: office productivity suite -- colibre symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "colibre" symbol style - a icon theme
+ which follow Microsoft(R) Offices color scheme.
+
+Package: libreoffice-style-galaxy
+Description-md5: cbafee8b95c2851c166a1f1a2f92ac6c
+Description-en: transitional package for Galaxy symbol style
+ You can safely remove this package.
+
+Package: libreoffice-style-karasa-jaga
+Description-md5: 62dc98488a5247cbad91f4e0ec562bcf
+Description-en: office productivity suite -- Karasa Jaga symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "karasa_jaga" symbol style.
+
+Package: libreoffice-style-sukapura
+Description-md5: b9dbd94d0660dbc8a05ba918cb3fb897
+Description-en: office productivity suite -- Sukapura symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "sukapura" symbol style.
+
+Package: libreoffice-style-tango
+Description-md5: aaf8968f6a7dfef93cd3c0082bbe8dbd
+Description-en: transitional package for Tango symbol style
+ You can safely remove this package.
+
+Package: libreoffice-style-yaru
+Description-md5: 63dde2b46227a088ac3219b42f12b922
+Description-en: office productivity suite -- Yaru symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "yaru" symbol style.
+
+Package: libreoffice-writer
+Description-md5: 7ddf1a7be67dc22b315f212f564325e8
+Description-en: office productivity suite -- word processor
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the wordprocessor component for LibreOffice.
+
+Package: libreoffice-writer-nogui
+Description-md5: 963dc225bb14f9e5974345a7995f16a7
+Description-en: office productivity suite -- word processor (no GUI variant)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the wordprocessor component for LibreOffice.
+
+Package: libreofficekit-data
+Description-md5: fb01c7353a795aa18a541109824b6865
+Description-en: common data for LOKDocView
+ LOKDocView is the GTK3 widget that wraps the libreoffice functionality and
+ exposes a simple API for applications to use this widget.
+ .
+ This package contains architecture-independent data (e.g. the selection
+ handlers).
+
+Package: libreofficekit-dev
+Description-md5: 93284f0d29b8ae961670b7a6faf3d2ba
+Description-en: LibreOfficeKit -- headers
+ LibreOfficeKit can be used for accessing LibreOffice functionality through
+ C/C++, without any need to use UNO.
+ .
+ For now it only offers document conversion (in addition to an experimental
+ tiled rendering API).
+ .
+ This package contains the headers needed for using LibreOfficeKit.
+
+Package: libridl-java
+Description-md5: 9e017c19c2cbf8cab7b83a1ee17e6890
+Description-en: transitional package for LibreOffice UNO runtime environment
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This has now been merged into liblibreoffice-java and this package thus
+ can be safely removed once installed.
+
+Package: libuno-cppu3
+Description-md5: 0775b20a656f30e0dc0529445a3b2e06
+Description-en: LibreOffice UNO runtime environment -- CPPU public library
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains CPPU, the type definitions/implementations for the core
+ of UNO.
+
+Package: libuno-cppuhelpergcc3-3
+Description-md5: d7128bdb2e6050f1c9dde4fdafb9f411
+Description-en: LibreOffice UNO runtime environment -- CPPU helper library
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains the cppuhelper library (helpers for using cppu in C++,
+ e.g. templates for implementing UNO components, bootstrapping stuff)
+
+Package: libuno-purpenvhelpergcc3-3
+Description-md5: 1ccb141cee929bfd1997ad58ed2f4bd0
+Description-en: LibreOffice UNO runtime environment -- "purpose environment" helper
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains a library which contains a helper for implementing
+ so-called "purpose environments".
+
+Package: libuno-sal3
+Description-md5: a722cbe3a15024d19e85b1a6414d583a
+Description-en: LibreOffice UNO runtime environment -- SAL public library
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains the System Abstraction Layer (SAL) library.
+
+Package: libuno-salhelpergcc3-3
+Description-md5: a180d9b4db7a3bcc2f68a7c3250456c8
+Description-en: LibreOffice UNO runtime environment -- SAL helpers for C++ library
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains C++ helpers to make use of sal easier.
+
+Package: libunoil-java
+Description-md5: 9e017c19c2cbf8cab7b83a1ee17e6890
+Description-en: transitional package for LibreOffice UNO runtime environment
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This has now been merged into liblibreoffice-java and this package thus
+ can be safely removed once installed.
+
+Package: libunoloader-java
+Description-md5: 48adba4a429bf81f6a64bbbc29cb0006
+Description-en: LibreOffice UNO runtime environment -- (Java) UNO loader
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ This package contains a UNO loader library for Java.
+
+Package: python3-access2base
+Description-md5: 62049593c5d96b74959809148594af38
+Description-en: interface between Python and the LibreOffice Access2Base library
+ Access2Base is a LibreOffice/OpenOffice Basic library of macros for
+ (business or personal) application developers and advanced users.
+ .
+ Their syntax and their meaning are directly inspired by MSAccess.
+ The macros are callable from
+  - a LibreOffice / OpenOffice Base application,
+  - any LibreOffice / OpenOffice document wanting to access data
+   stored in databases.
+ .
+ This package contains an interface between Python (user) scripts
+ and Access2Base.
+
+Package: python3-simplestreams
+Description-md5: de3939aceef20133cbe2ba7bbb1b7f43
+Description-en: Library and tools for using Simple Streams data
+ This package provides a client for interacting with simple
+ streams data as is produced to describe Ubuntu's cloud images.
+
+Package: python3-simplestreams-openstack
+Description-md5: 196474a014dbb68151c55d2f990106c8
+Description-en: Library and tools for using Simple Streams data
+ This package depends on libraries necessary to use the openstack dependent
+ functionality in simplestreams.  That includes interacting with glance,
+ swift and keystone.
+
+Package: python3-uno
+Description-md5: f4a55d75b607baa049506ff436442fb6
+Description-en: Python-UNO bridge
+ The Python-UNO bridge allows use of the standard LibreOffice API
+ with the Python scripting language. It additionally allows
+ others to develop UNO components in Python, thus Python UNO components
+ may be run within the LibreOffice process and can be called from C++
+ or the built in StarBasic scripting language.
+
+Package: rabbitmq-server
+Description-md5: 78e91bfb996ee4ae5d16c93298f5f6e8
+Description-en: AMQP server written in Erlang
+ RabbitMQ is an implementation of AMQP, the emerging standard for high
+ performance enterprise messaging. The RabbitMQ server is a robust and
+ scalable implementation of an AMQP broker.
+
+Package: smartmontools
+Description-md5: ea81561661ccfc1b07aa52e4cc37874a
+Description-en: control and monitor storage systems using S.M.A.R.T.
+ The smartmontools package contains two utility programs (smartctl and smartd)
+ to control and monitor storage systems using the Self-Monitoring, Analysis and
+ Reporting Technology System (S.M.A.R.T.) built into most modern ATA and SCSI
+ hard disks. It is derived from the smartsuite package, and includes support
+ for ATA/ATAPI-5 disks. It should run on any modern Linux system.
+
+Package: uno-libs-private
+Description-md5: e2b126a07040410322c2e32e97809c88
+Description-en: LibreOffice UNO runtime environment -- private libraries used by public ones
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains some private UNO/URE libraries which are used by public
+ ones (e.g. cppu).
+
+Package: ure
+Description-md5: 91a81b0bbfc8236cc5518400be4807d1
+Description-en: LibreOffice UNO runtime environment
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+
+Package: ure-java
+Description-md5: 3780fd4c22acb15e52acba392035d968
+Description-en: LibreOffice UNO runtime environment -- Java support
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains the Java support in the URE.
+

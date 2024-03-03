@@ -1,0 +1,144 @@
+Package: bcmwl-kernel-source
+Description-md5: 9da890d8409fb430fa6f9a0c8a37934a
+Description-zh_CN: Broadcom 802.11 Linux STA 无线驱动源代码
+ This package contains Broadcom 802.11 Linux STA wireless driver for use
+ with Broadcom's BCM4311-, BCM4312-, BCM4313-, BCM4321-, BCM4322-,
+ BCM43224-, and BCM43225-, BCM43227- and BCM43228-based hardware.
+
+Package: nvidia-304
+Description-md5: 548ff4ad3a02b582c3321f5b646eea73
+Description-zh_CN: NVIDIA legacy binary driver - version 304.137
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ 支持 GeForce 6 系列及以上显卡。
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-304.137-driver.html
+
+Package: nvidia-304-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-zh_CN: NVDIA 二进制 Xorg 驱动程序开发文件
+ 此软件包包含NVDIA 二进制 Xorg 驱动程序的开发文件。
+ .
+ 更多关于这个源码包的信息访问NVIDIA的主页http://www.nvidia.com/.
+
+Package: nvidia-340
+Description-md5: 8012b4c71eb1b0c6115ae1c19b2406ca
+Description-zh_CN: NVIDIA binary driver - version 340.104
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-340.104-driver.html
+
+Package: nvidia-340-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-zh_CN: NVDIA 二进制 Xorg 驱动程序开发文件
+ 此软件包包含NVDIA 二进制 Xorg 驱动程序的开发文件。
+ .
+ 更多关于这个源码包的信息访问NVIDIA的主页http://www.nvidia.com/.
+
+Package: nvidia-384
+Description-md5: ab82c30ce22d6da8e63859d15d5b0554
+Description-zh_CN: NVIDIA binary driver - version 384.90
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-384.90-driver.html
+
+Package: nvidia-384-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-zh_CN: NVDIA 二进制 Xorg 驱动程序开发文件
+ 此软件包包含NVDIA 二进制 Xorg 驱动程序的开发文件。
+ .
+ 更多关于这个源码包的信息访问NVIDIA的主页http://www.nvidia.com/.
+
+Package: nvidia-340
+Description-md5: ba98499c6febc28515a3c34b78f95c98
+Description-zh_CN: NVIDIA binary driver - version 340.104
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-340.104-driver.html
+
+Package: nvidia-384
+Description-md5: 2bfa2ea62589b12f25c34b4f1d42c2fc
+Description-zh_CN: NVIDIA binary driver - version 384.90
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-384.90-driver.html
+
+Package: nvidia-304
+Description-md5: b1b7810e94bd61ee243445d57f60979b
+Description-zh_CN: NVIDIA legacy binary driver - version 304.137
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ 支持 GeForce 6 系列及以上显卡。
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-304.137-driver.html
+
+Package: nvidia-340
+Description-md5: 0a70a09fc8abb782bdb827eab0be69ef
+Description-zh_CN: NVIDIA binary driver - version 340.104
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-340.104-driver.html
+
+Package: nvidia-384
+Description-md5: 7887cbd88313aa0e409b0a50922dcbaf
+Description-zh_CN: NVIDIA binary driver - version 384.90
+ 本二进制驱动通过 X Server 直接渲染的方式为使用 OpenGL 的程序提供经过优化的硬件加速。并支持 AGP, PCIe, SLI, tv-
+ out 电视输出接口和纯平显示器。
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of the
+ Video Decode and presentation API. The latter enables acceleration for
+ GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-384.90-driver.html
+

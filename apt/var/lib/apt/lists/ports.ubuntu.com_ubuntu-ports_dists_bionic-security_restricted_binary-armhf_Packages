@@ -1,0 +1,1016 @@
+Package: libcuda1-384
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 22
+Depends: nvidia-headless-390
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libcuda1-384_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5296
+MD5sum: 61b478bebd28437a485ec2fc96bb9339
+SHA1: 3270bb7b75984a0557c5e078706502559c8f7d93
+SHA256: 4bbb6a5d56dc801899a4009f690fb1a1347b9d968b48963b420cd6b42e5a3dda
+SHA512: 5085ef9ee4a3c1356573d7f22e593ddc17107bc4bbc614d7e11207b0a1de7dd46fb44c65c178545f3233855eea640309de7c4caadd9848cb87534da8f49b2702
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-headless-390
+Description-md5: c6dbe40660b5059827bb841b3e8d47a1
+Supported: 5y
+
+Package: libnvidia-cfg1-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: same
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 174
+Provides: libnvidia-cfg1-any
+Depends: libc6 (>= 2.7)
+Conflicts: libnvidia-cfg1-any
+Replaces: libnvidia-cfg1-any
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-cfg1-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 65964
+MD5sum: 77cc58697ffa442b05415231d82f3c0f
+SHA1: 15ef3c585039627b9a9cd17f60567275b87c16fb
+SHA256: b47d442affd16312e365173d45edf57ccb9792c1acef5bbc2c151541a1eaab7b
+SHA512: 65574380b6fd0cddbd91bbd944acde4994e4589d1ba4469df3d01554f65813d93cab14978ccaabf05b28f7390d34d786f5ef678b4a252930b977518202b4f9c7
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary OpenGL/GLX configuration library
+Description-md5: 7dce7edcd194e980223937b38f49e8b9
+Supported: 5y
+
+Package: libnvidia-common-390
+Architecture: all
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-390 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-390 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-common-390_390.157-0ubuntu0.18.04.1_all.deb
+Size: 9276
+MD5sum: 340a6abf6854088b0b8ab0a5c31b8d1b
+SHA1: b6f9ce35e47e74ed325d4643be22b749af94f6dd
+SHA256: 46686f490e7bc1a25f8201f46ec0a9c65843391bc8082bcb1f17ca7296622f9f
+SHA512: 2cacc991d61ffedf9a084ead9537f1e9adcc49f82dd83ebf85a31d4e4b8e4a0ac48d6a0eeecafc6e392ebc00f3f90cb1942b201fb56f7f0b0a70e6d39d93ff3c
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-418-server
+Architecture: all
+Version: 418.226.00-0ubuntu0.18.04.2
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-418-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 34
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-418-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-418-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-418-server/libnvidia-common-418-server_418.226.00-0ubuntu0.18.04.2_all.deb
+Size: 9048
+MD5sum: 9d4d8f3a19719caddea1c26876528855
+SHA1: ea04eafb293d835b32c0a45a04d242748e9ea4cd
+SHA256: fb618bfded1d10fca717b11aa77afa62a5f63dbfd440f9ef6eafada498a5f6a1
+SHA512: 811326c9b86cf91252f1b5d2b72d5d88ec4e06d7b1b0d82159dee78485b3c2ad13a232016db376c9e9a3ac232b0b1f4c74cdc0b99309c561c0ee30a961814e36
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-430
+Architecture: all
+Version: 440.100-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-440
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-440
+Filename: pool/restricted/n/nvidia-graphics-drivers-440/libnvidia-common-430_440.100-0ubuntu0.18.04.1_all.deb
+Size: 6556
+MD5sum: 9846689d0a49e99f8c76b391cfb89b8d
+SHA1: b2b19ff00df4f54074802fb7d479bc1bb3972aab
+SHA256: 4abfd57da5bd43a3e18e439f85272b6c0abaee2e24bcd3f5bdd95012b39f7fea
+SHA512: 47d61885d1837e9a4af4e884d13196095c9476edc6f3efc5821b49bad84844c49077e2d496f0179b8a34d90f5a4fdafc7fde60a08b3a516d64cad1897d9a99fd
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-440
+Description-md5: 50d23315518d9c84683cf238209aae6f
+Supported: 5y
+
+Package: libnvidia-common-440
+Architecture: all
+Version: 440.100-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-440
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Breaks: libnvidia-gl-440 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-440 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-440/libnvidia-common-440_440.100-0ubuntu0.18.04.1_all.deb
+Size: 9608
+MD5sum: 84ce897ede94f4f642b6fac0489b0d7d
+SHA1: 08288d752b680725b5798aa8f6a73b61b9de5a9a
+SHA256: 34c8a3180d3c3b986d925a4b246e00caa68c6a0bb9a0f29d507562a1670dc738
+SHA512: aa43f5062457d300a352c549e2453211cdebd9bf39015fd2ca86f0663af6a02bd9784b5b5270a567c8827c0911e874bf3409a4f5cfe16a1bc89dec520366c380
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-440
+Architecture: all
+Version: 450.119.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-450
+Filename: pool/restricted/n/nvidia-graphics-drivers-450/libnvidia-common-440_450.119.03-0ubuntu0.18.04.1_all.deb
+Size: 6812
+MD5sum: c07b2d0401482d6a60009cbeeb5de004
+SHA1: 7926d9b36809f13886c932e9ed78b44d1e4321fd
+SHA256: 7569ba522cb26f7a0c33c4cb0b94e932c98f476c52fed7430c067b75e93d3479
+SHA512: 4677498ad57c0cf0d90545f6765baa3fb8528e8f0715729f6552a72989a2c7208b47f505d924684337d2e53d5f5fb01c654665ff7fd2dd1de6e63ca0cc7d26fc
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-450
+Description-md5: 2dbd8005c35ac0b3072ac1ebdded71a0
+Supported: 5y
+
+Package: libnvidia-common-440-server
+Architecture: all
+Version: 450.236.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-450-server
+Filename: pool/restricted/n/nvidia-graphics-drivers-450-server/libnvidia-common-440-server_450.236.01-0ubuntu0.18.04.1_all.deb
+Size: 6048
+MD5sum: 4b925b117aef704cf7b98e957f83ca18
+SHA1: 33731bd21d0ab0142ac79b1e00c80ef1f9d92c3f
+SHA256: 0dc41cb9aedf2eff7c597daad3fb48d5d5c1837ccb2b8c4d16273681156c6bfc
+SHA512: 33b0591a8230ec65941e4c517f0f7f32ab34df1f76507f9440950c135ca1b1e1977a25d8e878357f3ddcfd3259567c974680e1cb92ac6cda4520fedf47c0f37a
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-450-server
+Description-md5: 9fa4d974119d7ecb5a92d0caa476d4ac
+Supported: 5y
+
+Package: libnvidia-common-450
+Architecture: all
+Version: 450.119.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-450 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-450 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-450/libnvidia-common-450_450.119.03-0ubuntu0.18.04.1_all.deb
+Size: 10020
+MD5sum: 7cfc3148da68ec21399ac8ee9acf9b8c
+SHA1: f034201824d192c87961c8be8468f0b4c4c544bf
+SHA256: 80d2229017525f28387328f38af7dac789aa84b2e96ec76e9ba39a3082317680
+SHA512: d5f458b5176c37a9c2135cee544dacdb73fa184fe236926d0fb9c22f1716571893a1e22ddd87db1117f811649a1fb6233ead2132c30ec7f06ca4146e197e1b6b
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-450
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-460
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-450_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 7676
+MD5sum: 1a48fb16beb91bcca8afba34a1ac5ab7
+SHA1: 0ce79a213797315ab40fa6ab345cc2b19a867c26
+SHA256: 57af00951dc83f3a76e5ce43e431c0255e1d2d6ce3db6a0190a2103f35eecc6c
+SHA512: a03a0327b7270c43db20a0d4c1f909661953732b9c65a1d6aa9f1cf933744ab2e1d92ba16c78577a7021e84fb79f3c6e66b04e416b858e2abb521225504c4d31
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-460
+Description-md5: 93ac49db55509a82fc28ed1920b20644
+Supported: 5y
+
+Package: libnvidia-common-450-server
+Architecture: all
+Version: 450.236.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-450-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-450-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-450-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-450-server/libnvidia-common-450-server_450.236.01-0ubuntu0.18.04.1_all.deb
+Size: 9260
+MD5sum: f2e7602517b47a451014095133740bd2
+SHA1: 48d8c133c68d2d5a0cc6968f9ef739f499b32d50
+SHA256: 7a91c7664bebfb9eb1e65cb4f4d03d7ef9339285b857d213fe63b0fdf8b9bc05
+SHA512: aa8703d5f4d63047da53b61fa319bfd28487680563a2824b19b5d7330f50f4f0de5165ac91f2d5ee304af4308921033ddcf27be3dd3b29940ee85740aaee4cab
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-455
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-460
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-455_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 7676
+MD5sum: b1499cf3f32e13d1ffd5449ce731b3cc
+SHA1: 6418b04c4bdd511a3355b734b6eafd49319cf83d
+SHA256: df25585b6878f3dcc79536b63e0a9c428121ad3bab7487160fa34b03226486d0
+SHA512: 56f55ac1beeb3e0e541326f3389f9b60a3cbc41affabc949f6ed8ccb2709d0113241ff6314dec837087a5b6d513bad2fd0f8e72e4d271c90112737a214744569
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-460
+Description-md5: 93ac49db55509a82fc28ed1920b20644
+Supported: 5y
+
+Package: libnvidia-common-460
+Architecture: all
+Version: 460.91.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-460
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 37
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-460 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-460 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-460/libnvidia-common-460_460.91.03-0ubuntu0.18.04.1_all.deb
+Size: 10976
+MD5sum: 27137084fd2e639f737cf069c2fd7a24
+SHA1: 04e9432afe448675add7179025f571404a01a803
+SHA256: 24cc298e2c710dbbe8f85774571c87dd32a7bdd3348aba8485b5df235dd70223
+SHA512: fa3840959ef5ff437b87b494168aadda68a8bf4465bf98f4c5222b362649b6c2a56c725ceb920d2fb5d03a8ce94eb6a1e9956e2a71d0722dbb47c3e8779f6c30
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-460
+Architecture: all
+Version: 470.182.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-470
+Filename: pool/restricted/n/nvidia-graphics-drivers-470/libnvidia-common-460_470.182.03-0ubuntu0.18.04.1_all.deb
+Size: 7112
+MD5sum: 08ec548e972fa91235412296f67d4dfc
+SHA1: dd678646944d402c14a6b5c942248f2122bf68f4
+SHA256: d4665f51d5cdb365e140df290efc2e522b14cfbe9843468fb1a568907dca5f84
+SHA512: fb7a9179b8d07d564a2569395fe63af17eb7ad0933aab797ab3d359bf9b25bf6b1cf86ccce808df796a8f9c68948372afb61aebcd18b8e902c9aa6cb23ee9fb9
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-470
+Description-md5: 3e21327dc2a171685f9ba9a24fabb120
+Supported: 5y
+
+Package: libnvidia-common-465
+Architecture: all
+Version: 470.182.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-470
+Filename: pool/restricted/n/nvidia-graphics-drivers-470/libnvidia-common-465_470.182.03-0ubuntu0.18.04.1_all.deb
+Size: 7108
+MD5sum: cd501eea3787503a76ced955fbd2f542
+SHA1: 36cf056f4b15b708fa808c9eabc1c7ed748b95d9
+SHA256: 10ee888595dcba38bd37f5d3230099d4d413c04021e0f54e006e3fa03c72cf4d
+SHA512: 4ae61bf401b4c9e7939b2f943fbe17aeefb7260a7a725f664816eafad2305067f25669a037ec462bf57be2f1ca752ffde88f2aa7af31a0900bbd0d06dfd0ce0a
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-470
+Description-md5: 3e21327dc2a171685f9ba9a24fabb120
+Supported: 5y
+
+Package: libnvidia-common-470
+Architecture: all
+Version: 470.182.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 37
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-470 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-470 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-470/libnvidia-common-470_470.182.03-0ubuntu0.18.04.1_all.deb
+Size: 10496
+MD5sum: fcccb380ec390c04d870465ac2dc8de8
+SHA1: 0d6e7bf37a3c7c3a6201e8938e2148b8dde3619e
+SHA256: f5708ee601bfcfc26521d131f01cddf06821b12d2d6c073c4dc02f765034f2fd
+SHA512: 7f87ef75493105cf3937d58ccf2c37139441bcdb181a1365b20f7a3970ed0abc4d6a91ca67cb973f2c4d16cb4517e86ff648e21107be0e03c7df602e84e9af35
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-470-server
+Architecture: all
+Version: 470.182.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-470-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 35
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-470-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-470-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-470-server/libnvidia-common-470-server_470.182.03-0ubuntu0.18.04.1_all.deb
+Size: 9668
+MD5sum: 1e3c5d0993c78457dccfb01890481983
+SHA1: 6b3fabe97e1aea968a4796daf07f96e24b926026
+SHA256: d23c326b4059c735fcfc913bde79d074d9b85f4abe2707202ad276e24c53e3d1
+SHA512: 393897b160c67d499b5fdd26081f29eedeac1eec0cb436c5e421007b1fa2b48cc31533fe7dd8eeaac22734bf5341d709eed456c7ab8bfb0befe391ca33f6024b
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-495
+Architecture: all
+Version: 510.108.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-510
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 19
+Depends: libnvidia-common-510
+Filename: pool/restricted/n/nvidia-graphics-drivers-510/libnvidia-common-495_510.108.03-0ubuntu0.18.04.1_all.deb
+Size: 6636
+MD5sum: baa8c1fefb0ef505da918dd7f50d4d36
+SHA1: 15065a692f8feb0a52f9f6729e858363d47f65ac
+SHA256: 66344f170000f28e3d7b8136075dde17c1248d38349b7f8f4e6c3abdfa163cfa
+SHA512: efb5c47845fc02739114d737fcee93b446e4485eda0e963533f56ba4f3369888f3fea48fab1680d19e72f01a905ceb529ba5445e399a0f94b8b3b60ecb210fdc
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-510
+Description-md5: 4c96db99b8ad9d1511a6ae6a16bc115e
+Supported: 5y
+
+Package: libnvidia-common-510
+Architecture: all
+Version: 510.108.03-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-510
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-510 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-510 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-510/libnvidia-common-510_510.108.03-0ubuntu0.18.04.1_all.deb
+Size: 10032
+MD5sum: f75d730343b5b6810619b51e42a11bd3
+SHA1: 90eb4470e0b6d67ae35f63f9b257b89e5309b093
+SHA256: 8b296d385a278d03f982b056da900f70941f2ad593500fb414d14a23bcea4fe9
+SHA512: b274b6d183579abad15d2668627a38a81a6adb5ed676e0a7af00be195a28758d05da838ae0d004fcf6d7fc9d70ee775fcd38e190d3e2ab569a52bf52257b3756
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-510-server
+Architecture: all
+Version: 515.105.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-515-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18
+Depends: libnvidia-common-515-server
+Filename: pool/restricted/n/nvidia-graphics-drivers-515-server/libnvidia-common-510-server_515.105.01-0ubuntu0.18.04.1_all.deb
+Size: 6088
+MD5sum: 4ffb89f93e95d59fc6bae3e65f8c8051
+SHA1: 2ec2a210650f5607ebc279f4f9bf1d76d82c0241
+SHA256: 86ce8eb072f998e0f27301bd414d217fb3ecd30e76804a8d74f76ea2e61fe489
+SHA512: 023cf722f551c2f8e428d7fa32d232cbb83e3b3972690a1e6edc47eb0c0e7eccf03733155071809dadae0cb616fa579932a269a9ce2f89d213d9d9b5ca2caec0
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-515-server
+Description-md5: 5c2d8b730c4dd8ed9577df0a52d9d1c9
+Supported: 5y
+
+Package: libnvidia-common-515
+Architecture: all
+Version: 515.105.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-515
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 38
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-515 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-515 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-515/libnvidia-common-515_515.105.01-0ubuntu0.18.04.1_all.deb
+Size: 10552
+MD5sum: 7c4c26fb39b235617196b7b40cde489c
+SHA1: bf1562ade1f45399cb43e8139bbb8f9ccb604f31
+SHA256: 41db6643654539e453569df73f243608c6760d83af555e2f5f59606aa1bef289
+SHA512: f9808a036224168d77e9ab0e372b6be8a52598296aea421ca68edcc582fc11706ddfaf0f50cae37b25878ee9961a89585de7858633c5f8fad5ceda14f4da28cd
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-515-server
+Architecture: all
+Version: 515.105.01-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-515-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 36
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-515-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-515-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-515-server/libnvidia-common-515-server_515.105.01-0ubuntu0.18.04.1_all.deb
+Size: 9524
+MD5sum: 41bbc9d6b33fa3d72c8d11b948277cb6
+SHA1: d88401fa71efec1e88fd2fdbf37fd9ef520d95b2
+SHA256: 5a7f4da9314d7a6dc06e33fc7ef2b3401d20dce701fb52645641564b134879f8
+SHA512: 62f1e1e8371ea9b68f28e79ef5337372229d82801e77c095dd8580bb3ff22bd8f6f524d8659971158412db665d4d9adeb26ed5f8c800b0fd9003ac50d0427416
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-520
+Architecture: all
+Version: 525.105.17-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-525
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 20
+Depends: libnvidia-common-525
+Filename: pool/restricted/n/nvidia-graphics-drivers-525/libnvidia-common-520_525.105.17-0ubuntu0.18.04.1_all.deb
+Size: 6892
+MD5sum: e6f75e2a75845c14750c648eb20500b8
+SHA1: 252b4ef8442559a87c2b86e8630ea0ceb2058ecf
+SHA256: 1f55a1b206d5dbc8759456632254d75972eef40c61ce6934005541f9277c2051
+SHA512: 905098afa2311c31e19b9a2b52677eb1226923f51337d2e7eea640000d0e0f8d26bd6fe3f44628134cbeb771eb5f1341e3b503fb1d95704de70269fa28b4581d
+Homepage: http://www.nvidia.com
+Description: Transitional package for libnvidia-common-525
+Description-md5: 9671f1c33685ef230fac20c051d65052
+Supported: 5y
+
+Package: libnvidia-common-525
+Architecture: all
+Version: 525.105.17-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-525
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 39
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-525 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-525 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-525/libnvidia-common-525_525.105.17-0ubuntu0.18.04.1_all.deb
+Size: 10440
+MD5sum: 2e0b4b98d94fc98c2a96c33704d01c03
+SHA1: 5c7952735e0397b9e6233845cef5df2245176dc6
+SHA256: bcd7103c5c35d765dbf2cd0c27f7261ae370e710ae0f5920e3bf3c638d6e4569
+SHA512: f7c66fd508af81be6b9e9bbb9998d0560790cff38dab7e9cc80ef8b25b137534c270c22c2d30421b8cde0621455ec08a3154448f6b904fd3547fff130bfcbfbe
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-525-server
+Architecture: all
+Version: 525.105.17-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-525-server
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 37
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-525-server (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-525-server (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-525-server/libnvidia-common-525-server_525.105.17-0ubuntu0.18.04.1_all.deb
+Size: 9256
+MD5sum: 44dd47e4fc37967c8b5916c6390fd2d1
+SHA1: a4ae547350fdd1aab0a31525c62ed0425ad9ede5
+SHA256: b9453cfa91ee8d8be9459b8321f74760504c8e1bba447057995a3a65f07ab981
+SHA512: 44c94e0de08cb23b4bdd9c909078299aa516d142bbde0d9cff769575731a22cafb0daa9be4e8ba990d6062a1f767df697bd774b9c6942137e9475ae47602596b
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-common-530
+Architecture: all
+Version: 530.41.03-0ubuntu0.18.04.2
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-530
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 40
+Provides: libnvidia-common
+Conflicts: libnvidia-common
+Breaks: libnvidia-gl-530 (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common, libnvidia-gl-530 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-530/libnvidia-common-530_530.41.03-0ubuntu0.18.04.2_all.deb
+Size: 10000
+MD5sum: 35d775b07f60cd18c2f1947fab68f6a2
+SHA1: 7399810a9728f4d233a4be96559d047afcd2c79d
+SHA256: 88200c877e2746171a03bb4f7276eea7ccf7c7f05469db3addaef53d8019812a
+SHA512: 495771980846bed7ac139ae9e0706cec3dc01087dd6ed56c83515fd9ad35808fd570aaec311d94285e9ce376ced3adead804e9b17142b7531dfb99a6bb855e66
+Homepage: http://www.nvidia.com
+Description: Shared files used by the NVIDIA libraries
+Description-md5: 259c61ba4e777f5a2f1e7ee2fd1957bc
+Supported: 5y
+
+Package: libnvidia-compute-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: same
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 14985
+Provides: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1, libcuda-9.1-1, libcuda1 (= 390.157-0ubuntu0.18.04.1), libnvidia-compute, libnvidia-ml1 (= 390.157-0ubuntu0.18.04.1), nvidia-opencl-icd, opencl-icd
+Depends: libc6 (>= 2.7)
+Conflicts: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1, libcuda-9.1-1, libnvidia-compute, nvidia-opencl-icd
+Replaces: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1, libcuda-9.1-1, libnvidia-compute, libnvidia-compute-390 (<< 390.25-0ubuntu2~), nvidia-opencl-icd
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-compute-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5078536
+MD5sum: 94c878622b03414fd7ba7821f8200b8f
+SHA1: f2774a5c6ea8a929a11f95febce7fe231d6e2d33
+SHA256: da7b44419a5adbdd8c41698efb20e4b492ce14483623e6b4d02f6072abe0fdc4
+SHA512: 554204810f0ffe30e5a7be13883b1d84fa2d76c5e4e407d35294eb2bf2ea437e014263bb7df33eeb4c17b4d2b9bb89ddc8101534c5ec404a7499ac571e272bba
+Homepage: http://www.nvidia.com
+Description: NVIDIA libcompute package
+Description-md5: c7c5b2d5b16b7e02eed65de795271363
+Supported: 5y
+
+Package: libnvidia-fbc1-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: same
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 95
+Provides: libnvidia-fbc1
+Depends: libc6 (>= 2.7), libgl1, libx11-6, libxext6
+Conflicts: libnvidia-fbc1
+Replaces: libnvidia-fbc1
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-fbc1-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 36960
+MD5sum: 37fdceb0f7f0a27876dbd7f7360156bf
+SHA1: 31a1e0a78fba3b862fe595a2bb95e77d1f8a192e
+SHA256: 689519f1f5d95b53ce0a87405113be3e9b9942877f2e28c5d37d1f43db25b375
+SHA512: e330fcf82f700d76e886ecb123729b061723c27dfc15f9f845f05647b7de8153ff6b1c7a5f00e3fb4f87970ca2d9e69272ad5d1a31e8abd39d365d3bb37c341f
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Framebuffer Capture runtime library
+Description-md5: 19123a53d351a2e540ca869d1e74f9d2
+Supported: 5y
+
+Package: libnvidia-gl-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: same
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 40129
+Provides: libegl-vendor, libglx-vendor, libnvidia-gl
+Depends: libnvidia-common-390, libc6 (>= 2.7), libwayland-client0 (>= 1.3.92), libwayland-server0 (>= 1.2.0), libx11-6, libxext6
+Conflicts: libnvidia-gl
+Replaces: libnvidia-gl, nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-gl-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 11844276
+MD5sum: c826590f34053c21ec47d547c9c0f1af
+SHA1: f66ffcea8f1000bc5666b801a6a0a48ccefb6f10
+SHA256: 92db9aeb06ba2647ee6ac8e5d5c84d2183e96c0ea51b6ddb9167668f54e90de5
+SHA512: 12fdb9784cfb6ae4d216dce561aa3fb57bc8fc7dac955d5d268bbf7c8c1d1a508c74eecd79f125fcb1b532f927c7a7158f5378a98e19d4484e4727ab651cffd1
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL/GLX/EGL/GLES GLVND libraries and Vulkan ICD
+Description-md5: d899ab089124230e29489e7dcc9f137a
+Supported: 5y
+
+Package: libnvidia-ifr1-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: same
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 178
+Provides: libnvidia-ifr1
+Depends: libnvidia-gl-390, libx11-6, libc6 (>= 2.4), libgl1
+Conflicts: libnvidia-ifr1
+Replaces: libnvidia-ifr1
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/libnvidia-ifr1-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 64640
+MD5sum: 66939e71d99ed6fc8072b7d826dbc9bc
+SHA1: 066d13e3adfb7b939473005df20010a57b4023b7
+SHA256: f4b7ec3decaf3a727796261a86f598fb9ce217f0055ac20c0bd1e874fea06863
+SHA512: 3b396d9aeca4c2b831f5755623bd6f42ccfd90b91344e932cd4a0165f60b5241c3e1ff68249bc3ed783c6217205e6bde6f4237e2e0a92b89dae616372a686b0d
+Homepage: http://www.nvidia.com
+Description: NVIDIA OpenGL-based Inband Frame Readback runtime library
+Description-md5: ed00f275619e715136fe0176e6f7fd69
+Supported: 5y
+
+Package: nvidia-384
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 22
+Depends: nvidia-driver-390
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-384_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5288
+MD5sum: e13569d197b36664cc01516c13a1a3fa
+SHA1: e7e4773ec3929bca48cabc6c89461cf5790f080f
+SHA256: f501e084fb1ddd3ad161e2f43defed253d65844b15142aa98850035b07fb56b0
+SHA512: 277c0adcda289a4ffcbb00da7a259644a4df7602a4a926b80af69fb48377886ae9831d2d88acc7a4645f365ad38ce7f6b95b38d2671dea6d00abdda6aefae77a
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-driver-390
+Description-md5: 5e7381ee8cd139d587750b38f0b51589
+Supported: 5y
+
+Package: nvidia-384-dev
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 22
+Depends: nvidia-driver-390
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-384-dev_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5288
+MD5sum: bed9e3a6acc4cfc5fdcf4449f30f6a12
+SHA1: e36806ace8218eeb3aaf0675670bd1babfdeb5be
+SHA256: f618b0509c347b434f0bf5aadceb0a24e5f0cdbdd6dec2de94a4f6fcec8ea2c1
+SHA512: 81164b71caaca2811633a2dcc8116b348b95e497b5f0d7078cfdecf2dd7547af53ca7f11f5b3fdf1a870781c86f7a950507c70a05f4675787510b84835142c91
+Homepage: http://www.nvidia.com
+Description: Transitional package for nvidia-driver-390
+Description-md5: 5e7381ee8cd139d587750b38f0b51589
+Supported: 5y
+
+Package: nvidia-compute-utils-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 181
+Provides: nvidia-compute-utils, nvidia-persistenced
+Depends: libnvidia-compute-390, adduser, libc6 (>= 2.7)
+Conflicts: nvidia-compute-utils, nvidia-persistenced
+Replaces: nvidia-compute-utils, nvidia-persistenced
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-compute-utils-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 63784
+MD5sum: fbcbda1983332d4c9b805c3ff152a62e
+SHA1: 5fa0977952c2e282010bee3887a0097ede2f02f3
+SHA256: 23e7b751924deb8c1dad32531aaeb1e08205cef68f9b333ca4196e0ca15261bc
+SHA512: 8f6fa6ff4b8ea6375e00b1174e5939d537aaedd3c6b1efd3a5cdae4d9217043a840d2aad193e0cad52c5994df8a14697739f00cb1b805b734cc4181e05411532
+Homepage: http://www.nvidia.com
+Description: NVIDIA compute utilities
+Description-md5: bf6fab9efc1024a52f79dd543478f871
+Supported: 5y
+
+Package: nvidia-dkms-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 160
+Provides: nvidia-dkms-kernel
+Depends: dkms, nvidia-kernel-source-390, nvidia-kernel-common-390 (<= 390.157-1), nvidia-kernel-common-390 (>= 390.157)
+Conflicts: nvidia-dkms-kernel
+Breaks: nvidia-kernel-source-390 (<< 390.25-0ubuntu2~)
+Replaces: nvidia-384 (<< 390.25), nvidia-dkms-kernel, nvidia-kernel-source-390 (<< 390.25-0ubuntu2~)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-dkms-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 32224
+MD5sum: 9996a8032b2c4aa5f3c7ad05dcb2a0b0
+SHA1: 7bb57423b52edee22c229709bccfd4ef48645793
+SHA256: 38db1b841240129bce47a9a9903b17690a1b5defa9de7fbd895335ee4a5ef53e
+SHA512: 863002988550d2ef7a5385b02c45d7c4d2d34f036da9ceb363153124d2099ff67011137186d52ef371bf16862c223c9e270170e361f626d8f399e0e83dcea968
+Homepage: http://www.nvidia.com
+Description: NVIDIA DKMS package
+Description-md5: ec8c193060b5458922cc0bda62df7796
+Supported: 5y
+
+Package: nvidia-driver-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/misc
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 1079
+Depends: libnvidia-gl-390 (= 390.157-0ubuntu0.18.04.1), nvidia-dkms-390 (<= 390.157-1), nvidia-dkms-390 (>= 390.157), nvidia-kernel-common-390 (<= 390.157-1), nvidia-kernel-common-390 (>= 390.157), nvidia-kernel-source-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-compute-390 (= 390.157-0ubuntu0.18.04.1), nvidia-compute-utils-390 (= 390.157-0ubuntu0.18.04.1), nvidia-utils-390 (= 390.157-0ubuntu0.18.04.1), xserver-xorg-video-nvidia-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-cfg1-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-ifr1-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-fbc1-390 (= 390.157-0ubuntu0.18.04.1)
+Recommends: nvidia-settings, nvidia-prime (>= 0.8)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-driver-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 381268
+MD5sum: 91a6e9cd16b1f2b27330279056429829
+SHA1: 51c93dd25350956ef3f72f07d06f58ab6b8dfe3d
+SHA256: aaa4ce1bf1bd3775d1ce439ba7d3bfa0f4c980d01d4913afc9719187472264d1
+SHA512: db0e6ffd49ad60a0f413c46db8512e6b2d5eecedd44ba994f9ee241b182a6b31b4340c3cd557454554dab27e67a442bd0cb416910b5f13c4f88d3f359704fcc6
+Homepage: http://www.nvidia.com
+Description: NVIDIA driver metapackage
+Modaliases: nvidia(pci:v000010DEd000006C0sv*sd*bc03sc*i*, pci:v000010DEd000006C4sv*sd*bc03sc*i*, pci:v000010DEd000006CAsv*sd*bc03sc*i*, pci:v000010DEd000006CDsv*sd*bc03sc*i*, pci:v000010DEd000006D1sv*sd*bc03sc*i*, pci:v000010DEd000006D2sv*sd*bc03sc*i*, pci:v000010DEd000006D8sv*sd*bc03sc*i*, pci:v000010DEd000006D9sv*sd*bc03sc*i*, pci:v000010DEd000006DAsv*sd*bc03sc*i*, pci:v000010DEd000006DCsv*sd*bc03sc*i*, pci:v000010DEd000006DDsv*sd*bc03sc*i*, pci:v000010DEd000006DEsv*sd*bc03sc*i*, pci:v000010DEd000006DFsv*sd*bc03sc*i*, pci:v000010DEd00000DC0sv*sd*bc03sc*i*, pci:v000010DEd00000DC4sv*sd*bc03sc*i*, pci:v000010DEd00000DC5sv*sd*bc03sc*i*, pci:v000010DEd00000DC6sv*sd*bc03sc*i*, pci:v000010DEd00000DCDsv*sd*bc03sc*i*, pci:v000010DEd00000DCEsv*sd*bc03sc*i*, pci:v000010DEd00000DD1sv*sd*bc03sc*i*, pci:v000010DEd00000DD2sv*sd*bc03sc*i*, pci:v000010DEd00000DD3sv*sd*bc03sc*i*, pci:v000010DEd00000DD6sv*sd*bc03sc*i*, pci:v000010DEd00000DD8sv*sd*bc03sc*i*, pci:v000010DEd00000DDAsv*sd*bc03sc*i*, pci:v000010DEd00000DE0sv*sd*bc03sc*i*, pci:v000010DEd00000DE1sv*sd*bc03sc*i*, pci:v000010DEd00000DE2sv*sd*bc03sc*i*, pci:v000010DEd00000DE3sv*sd*bc03sc*i*, pci:v000010DEd00000DE4sv*sd*bc03sc*i*, pci:v000010DEd00000DE5sv*sd*bc03sc*i*, pci:v000010DEd00000DE7sv*sd*bc03sc*i*, pci:v000010DEd00000DE8sv*sd*bc03sc*i*, pci:v000010DEd00000DE9sv*sd*bc03sc*i*, pci:v000010DEd00000DEAsv*sd*bc03sc*i*, pci:v000010DEd00000DEBsv*sd*bc03sc*i*, pci:v000010DEd00000DECsv*sd*bc03sc*i*, pci:v000010DEd00000DEDsv*sd*bc03sc*i*, pci:v000010DEd00000DEEsv*sd*bc03sc*i*, pci:v000010DEd00000DEFsv*sd*bc03sc*i*, pci:v000010DEd00000DF0sv*sd*bc03sc*i*, pci:v000010DEd00000DF1sv*sd*bc03sc*i*, pci:v000010DEd00000DF2sv*sd*bc03sc*i*, pci:v000010DEd00000DF3sv*sd*bc03sc*i*, pci:v000010DEd00000DF4sv*sd*bc03sc*i*, pci:v000010DEd00000DF5sv*sd*bc03sc*i*, pci:v000010DEd00000DF6sv*sd*bc03sc*i*, pci:v000010DEd00000DF7sv*sd*bc03sc*i*, pci:v000010DEd00000DF8sv*sd*bc03sc*i*, pci:v000010DEd00000DF9sv*sd*bc03sc*i*, pci:v000010DEd00000DFAsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd00000E22sv*sd*bc03sc*i*, pci:v000010DEd00000E23sv*sd*bc03sc*i*, pci:v000010DEd00000E24sv*sd*bc03sc*i*, pci:v000010DEd00000E30sv*sd*bc03sc*i*, pci:v000010DEd00000E31sv*sd*bc03sc*i*, pci:v000010DEd00000E3Asv*sd*bc03sc*i*, pci:v000010DEd00000E3Bsv*sd*bc03sc*i*, pci:v000010DEd00000F00sv*sd*bc03sc*i*, pci:v000010DEd00000F01sv*sd*bc03sc*i*, pci:v000010DEd00000F02sv*sd*bc03sc*i*, pci:v000010DEd00000F03sv*sd*bc03sc*i*, pci:v000010DEd00000FC0sv*sd*bc03sc*i*, pci:v000010DEd00000FC1sv*sd*bc03sc*i*, pci:v000010DEd00000FC2sv*sd*bc03sc*i*, pci:v000010DEd00000FC6sv*sd*bc03sc*i*, pci:v000010DEd00000FC8sv*sd*bc03sc*i*, pci:v000010DEd00000FC9sv*sd*bc03sc*i*, pci:v000010DEd00000FCDsv*sd*bc03sc*i*, pci:v000010DEd00000FCEsv*sd*bc03sc*i*, pci:v000010DEd00000FD1sv*sd*bc03sc*i*, pci:v000010DEd00000FD2sv*sd*bc03sc*i*, pci:v000010DEd00000FD3sv*sd*bc03sc*i*, pci:v000010DEd00000FD4sv*sd*bc03sc*i*, pci:v000010DEd00000FD5sv*sd*bc03sc*i*, pci:v000010DEd00000FD8sv*sd*bc03sc*i*, pci:v000010DEd00000FD9sv*sd*bc03sc*i*, pci:v000010DEd00000FDFsv*sd*bc03sc*i*, pci:v000010DEd00000FE0sv*sd*bc03sc*i*, pci:v000010DEd00000FE1sv*sd*bc03sc*i*, pci:v000010DEd00000FE2sv*sd*bc03sc*i*, pci:v000010DEd00000FE3sv*sd*bc03sc*i*, pci:v000010DEd00000FE4sv*sd*bc03sc*i*, pci:v000010DEd00000FE9sv*sd*bc03sc*i*, pci:v000010DEd00000FEAsv*sd*bc03sc*i*, pci:v000010DEd00000FECsv*sd*bc03sc*i*, pci:v000010DEd00000FEDsv*sd*bc03sc*i*, pci:v000010DEd00000FEEsv*sd*bc03sc*i*, pci:v000010DEd00000FF3sv*sd*bc03sc*i*, pci:v000010DEd00000FF6sv*sd*bc03sc*i*, pci:v000010DEd00000FF8sv*sd*bc03sc*i*, pci:v000010DEd00000FF9sv*sd*bc03sc*i*, pci:v000010DEd00000FFAsv*sd*bc03sc*i*, pci:v000010DEd00000FFBsv*sd*bc03sc*i*, pci:v000010DEd00000FFCsv*sd*bc03sc*i*, pci:v000010DEd00000FFDsv*sd*bc03sc*i*, pci:v000010DEd00000FFEsv*sd*bc03sc*i*, pci:v000010DEd00000FFFsv*sd*bc03sc*i*, pci:v000010DEd00001001sv*sd*bc03sc*i*, pci:v000010DEd00001004sv*sd*bc03sc*i*, pci:v000010DEd00001005sv*sd*bc03sc*i*, pci:v000010DEd00001007sv*sd*bc03sc*i*, pci:v000010DEd00001008sv*sd*bc03sc*i*, pci:v000010DEd0000100Asv*sd*bc03sc*i*, pci:v000010DEd0000100Csv*sd*bc03sc*i*, pci:v000010DEd00001021sv*sd*bc03sc*i*, pci:v000010DEd00001022sv*sd*bc03sc*i*, pci:v000010DEd00001023sv*sd*bc03sc*i*, pci:v000010DEd00001024sv*sd*bc03sc*i*, pci:v000010DEd00001026sv*sd*bc03sc*i*, pci:v000010DEd00001027sv*sd*bc03sc*i*, pci:v000010DEd00001028sv*sd*bc03sc*i*, pci:v000010DEd00001029sv*sd*bc03sc*i*, pci:v000010DEd0000102Asv*sd*bc03sc*i*, pci:v000010DEd0000102Dsv*sd*bc03sc*i*, pci:v000010DEd0000103Asv*sd*bc03sc*i*, pci:v000010DEd0000103Csv*sd*bc03sc*i*, pci:v000010DEd00001040sv*sd*bc03sc*i*, pci:v000010DEd00001042sv*sd*bc03sc*i*, pci:v000010DEd00001048sv*sd*bc03sc*i*, pci:v000010DEd00001049sv*sd*bc03sc*i*, pci:v000010DEd0000104Asv*sd*bc03sc*i*, pci:v000010DEd0000104Bsv*sd*bc03sc*i*, pci:v000010DEd0000104Csv*sd*bc03sc*i*, pci:v000010DEd00001050sv*sd*bc03sc*i*, pci:v000010DEd00001051sv*sd*bc03sc*i*, pci:v000010DEd00001052sv*sd*bc03sc*i*, pci:v000010DEd00001054sv*sd*bc03sc*i*, pci:v000010DEd00001055sv*sd*bc03sc*i*, pci:v000010DEd00001056sv*sd*bc03sc*i*, pci:v000010DEd00001057sv*sd*bc03sc*i*, pci:v000010DEd00001058sv*sd*bc03sc*i*, pci:v000010DEd00001059sv*sd*bc03sc*i*, pci:v000010DEd0000105Asv*sd*bc03sc*i*, pci:v000010DEd0000105Bsv*sd*bc03sc*i*, pci:v000010DEd0000107Csv*sd*bc03sc*i*, pci:v000010DEd0000107Dsv*sd*bc03sc*i*, pci:v000010DEd00001080sv*sd*bc03sc*i*, pci:v000010DEd00001081sv*sd*bc03sc*i*, pci:v000010DEd00001082sv*sd*bc03sc*i*, pci:v000010DEd00001084sv*sd*bc03sc*i*, pci:v000010DEd00001086sv*sd*bc03sc*i*, pci:v000010DEd00001087sv*sd*bc03sc*i*, pci:v000010DEd00001088sv*sd*bc03sc*i*, pci:v000010DEd00001089sv*sd*bc03sc*i*, pci:v000010DEd0000108Bsv*sd*bc03sc*i*, pci:v000010DEd00001091sv*sd*bc03sc*i*, pci:v000010DEd00001094sv*sd*bc03sc*i*, pci:v000010DEd00001096sv*sd*bc03sc*i*, pci:v000010DEd0000109Asv*sd*bc03sc*i*, pci:v000010DEd0000109Bsv*sd*bc03sc*i*, pci:v000010DEd00001180sv*sd*bc03sc*i*, pci:v000010DEd00001183sv*sd*bc03sc*i*, pci:v000010DEd00001184sv*sd*bc03sc*i*, pci:v000010DEd00001185sv*sd*bc03sc*i*, pci:v000010DEd00001187sv*sd*bc03sc*i*, pci:v000010DEd00001188sv*sd*bc03sc*i*, pci:v000010DEd00001189sv*sd*bc03sc*i*, pci:v000010DEd0000118Asv*sd*bc03sc*i*, pci:v000010DEd0000118Esv*sd*bc03sc*i*, pci:v000010DEd0000118Fsv*sd*bc03sc*i*, pci:v000010DEd00001193sv*sd*bc03sc*i*, pci:v000010DEd00001194sv*sd*bc03sc*i*, pci:v000010DEd00001195sv*sd*bc03sc*i*, pci:v000010DEd00001198sv*sd*bc03sc*i*, pci:v000010DEd00001199sv*sd*bc03sc*i*, pci:v000010DEd0000119Asv*sd*bc03sc*i*, pci:v000010DEd0000119Dsv*sd*bc03sc*i*, pci:v000010DEd0000119Esv*sd*bc03sc*i*, pci:v000010DEd0000119Fsv*sd*bc03sc*i*, pci:v000010DEd000011A0sv*sd*bc03sc*i*, pci:v000010DEd000011A1sv*sd*bc03sc*i*, pci:v000010DEd000011A2sv*sd*bc03sc*i*, pci:v000010DEd000011A3sv*sd*bc03sc*i*, pci:v000010DEd000011A7sv*sd*bc03sc*i*, pci:v000010DEd000011B4sv*sd*bc03sc*i*, pci:v000010DEd000011B6sv*sd*bc03sc*i*, pci:v000010DEd000011B7sv*sd*bc03sc*i*, pci:v000010DEd000011B8sv*sd*bc03sc*i*, pci:v000010DEd000011BAsv*sd*bc03sc*i*, pci:v000010DEd000011BCsv*sd*bc03sc*i*, pci:v000010DEd000011BDsv*sd*bc03sc*i*, pci:v000010DEd000011BEsv*sd*bc03sc*i*, pci:v000010DEd000011C0sv*sd*bc03sc*i*, pci:v000010DEd000011C2sv*sd*bc03sc*i*, pci:v000010DEd000011C3sv*sd*bc03sc*i*, pci:v000010DEd000011C4sv*sd*bc03sc*i*, pci:v000010DEd000011C5sv*sd*bc03sc*i*, pci:v000010DEd000011C6sv*sd*bc03sc*i*, pci:v000010DEd000011C8sv*sd*bc03sc*i*, pci:v000010DEd000011CBsv*sd*bc03sc*i*, pci:v000010DEd000011E0sv*sd*bc03sc*i*, pci:v000010DEd000011E1sv*sd*bc03sc*i*, pci:v000010DEd000011E2sv*sd*bc03sc*i*, pci:v000010DEd000011E3sv*sd*bc03sc*i*, pci:v000010DEd000011FAsv*sd*bc03sc*i*, pci:v000010DEd000011FCsv*sd*bc03sc*i*, pci:v000010DEd00001200sv*sd*bc03sc*i*, pci:v000010DEd00001201sv*sd*bc03sc*i*, pci:v000010DEd00001203sv*sd*bc03sc*i*, pci:v000010DEd00001205sv*sd*bc03sc*i*, pci:v000010DEd00001206sv*sd*bc03sc*i*, pci:v000010DEd00001207sv*sd*bc03sc*i*, pci:v000010DEd00001208sv*sd*bc03sc*i*, pci:v000010DEd00001210sv*sd*bc03sc*i*, pci:v000010DEd00001211sv*sd*bc03sc*i*, pci:v000010DEd00001212sv*sd*bc03sc*i*, pci:v000010DEd00001213sv*sd*bc03sc*i*, pci:v000010DEd00001241sv*sd*bc03sc*i*, pci:v000010DEd00001243sv*sd*bc03sc*i*, pci:v000010DEd00001244sv*sd*bc03sc*i*, pci:v000010DEd00001245sv*sd*bc03sc*i*, pci:v000010DEd00001246sv*sd*bc03sc*i*, pci:v000010DEd00001247sv*sd*bc03sc*i*, pci:v000010DEd00001248sv*sd*bc03sc*i*, pci:v000010DEd00001249sv*sd*bc03sc*i*, pci:v000010DEd0000124Bsv*sd*bc03sc*i*, pci:v000010DEd0000124Dsv*sd*bc03sc*i*, pci:v000010DEd00001251sv*sd*bc03sc*i*, pci:v000010DEd00001280sv*sd*bc03sc*i*, pci:v000010DEd00001281sv*sd*bc03sc*i*, pci:v000010DEd00001282sv*sd*bc03sc*i*, pci:v000010DEd00001284sv*sd*bc03sc*i*, pci:v000010DEd00001286sv*sd*bc03sc*i*, pci:v000010DEd00001287sv*sd*bc03sc*i*, pci:v000010DEd00001288sv*sd*bc03sc*i*, pci:v000010DEd00001289sv*sd*bc03sc*i*, pci:v000010DEd0000128Bsv*sd*bc03sc*i*, pci:v000010DEd00001290sv*sd*bc03sc*i*, pci:v000010DEd00001291sv*sd*bc03sc*i*, pci:v000010DEd00001292sv*sd*bc03sc*i*, pci:v000010DEd00001293sv*sd*bc03sc*i*, pci:v000010DEd00001295sv*sd*bc03sc*i*, pci:v000010DEd00001296sv*sd*bc03sc*i*, pci:v000010DEd00001298sv*sd*bc03sc*i*, pci:v000010DEd00001299sv*sd*bc03sc*i*, pci:v000010DEd0000129Asv*sd*bc03sc*i*, pci:v000010DEd000012B9sv*sd*bc03sc*i*, pci:v000010DEd000012BAsv*sd*bc03sc*i*, pci:v000010DEd00001340sv*sd*bc03sc*i*, pci:v000010DEd00001341sv*sd*bc03sc*i*, pci:v000010DEd00001344sv*sd*bc03sc*i*, pci:v000010DEd00001346sv*sd*bc03sc*i*, pci:v000010DEd00001347sv*sd*bc03sc*i*, pci:v000010DEd00001348sv*sd*bc03sc*i*, pci:v000010DEd00001349sv*sd*bc03sc*i*, pci:v000010DEd0000134Bsv*sd*bc03sc*i*, pci:v000010DEd0000134Dsv*sd*bc03sc*i*, pci:v000010DEd0000134Esv*sd*bc03sc*i*, pci:v000010DEd0000134Fsv*sd*bc03sc*i*, pci:v000010DEd0000137Bsv*sd*bc03sc*i*, pci:v000010DEd00001380sv*sd*bc03sc*i*, pci:v000010DEd00001381sv*sd*bc03sc*i*, pci:v000010DEd00001382sv*sd*bc03sc*i*, pci:v000010DEd00001390sv*sd*bc03sc*i*, pci:v000010DEd00001391sv*sd*bc03sc*i*, pci:v000010DEd00001392sv*sd*bc03sc*i*, pci:v000010DEd00001393sv*sd*bc03sc*i*, pci:v000010DEd00001398sv*sd*bc03sc*i*, pci:v000010DEd00001399sv*sd*bc03sc*i*, pci:v000010DEd0000139Asv*sd*bc03sc*i*, pci:v000010DEd0000139Bsv*sd*bc03sc*i*, pci:v000010DEd0000139Csv*sd*bc03sc*i*, pci:v000010DEd0000139Dsv*sd*bc03sc*i*, pci:v000010DEd000013B0sv*sd*bc03sc*i*, pci:v000010DEd000013B1sv*sd*bc03sc*i*, pci:v000010DEd000013B2sv*sd*bc03sc*i*, pci:v000010DEd000013B3sv*sd*bc03sc*i*, pci:v000010DEd000013B4sv*sd*bc03sc*i*, pci:v000010DEd000013B6sv*sd*bc03sc*i*, pci:v000010DEd000013B9sv*sd*bc03sc*i*, pci:v000010DEd000013BAsv*sd*bc03sc*i*, pci:v000010DEd000013BBsv*sd*bc03sc*i*, pci:v000010DEd000013BCsv*sd*bc03sc*i*, pci:v000010DEd000013C0sv*sd*bc03sc*i*, pci:v000010DEd000013C2sv*sd*bc03sc*i*, pci:v000010DEd000013D7sv*sd*bc03sc*i*, pci:v000010DEd000013D8sv*sd*bc03sc*i*, pci:v000010DEd000013D9sv*sd*bc03sc*i*, pci:v000010DEd000013DAsv*sd*bc03sc*i*, pci:v000010DEd000013F0sv*sd*bc03sc*i*, pci:v000010DEd000013F1sv*sd*bc03sc*i*, pci:v000010DEd000013F2sv*sd*bc03sc*i*, pci:v000010DEd000013F3sv*sd*bc03sc*i*, pci:v000010DEd000013F8sv*sd*bc03sc*i*, pci:v000010DEd000013F9sv*sd*bc03sc*i*, pci:v000010DEd000013FAsv*sd*bc03sc*i*, pci:v000010DEd000013FBsv*sd*bc03sc*i*, pci:v000010DEd00001401sv*sd*bc03sc*i*, pci:v000010DEd00001402sv*sd*bc03sc*i*, pci:v000010DEd00001406sv*sd*bc03sc*i*, pci:v000010DEd00001407sv*sd*bc03sc*i*, pci:v000010DEd00001427sv*sd*bc03sc*i*, pci:v000010DEd00001430sv*sd*bc03sc*i*, pci:v000010DEd00001431sv*sd*bc03sc*i*, pci:v000010DEd00001436sv*sd*bc03sc*i*, pci:v000010DEd000015F0sv*sd*bc03sc*i*, pci:v000010DEd000015F7sv*sd*bc03sc*i*, pci:v000010DEd000015F8sv*sd*bc03sc*i*, pci:v000010DEd000015F9sv*sd*bc03sc*i*, pci:v000010DEd00001617sv*sd*bc03sc*i*, pci:v000010DEd00001618sv*sd*bc03sc*i*, pci:v000010DEd00001619sv*sd*bc03sc*i*, pci:v000010DEd0000161Asv*sd*bc03sc*i*, pci:v000010DEd00001667sv*sd*bc03sc*i*, pci:v000010DEd0000174Dsv*sd*bc03sc*i*, pci:v000010DEd0000174Esv*sd*bc03sc*i*, pci:v000010DEd0000179Csv*sd*bc03sc*i*, pci:v000010DEd000017C2sv*sd*bc03sc*i*, pci:v000010DEd000017C8sv*sd*bc03sc*i*, pci:v000010DEd000017F0sv*sd*bc03sc*i*, pci:v000010DEd000017F1sv*sd*bc03sc*i*, pci:v000010DEd000017FDsv*sd*bc03sc*i*, pci:v000010DEd00001B00sv*sd*bc03sc*i*, pci:v000010DEd00001B02sv*sd*bc03sc*i*, pci:v000010DEd00001B06sv*sd*bc03sc*i*, pci:v000010DEd00001B30sv*sd*bc03sc*i*, pci:v000010DEd00001B38sv*sd*bc03sc*i*, pci:v000010DEd00001B80sv*sd*bc03sc*i*, pci:v000010DEd00001B81sv*sd*bc03sc*i*, pci:v000010DEd00001B82sv*sd*bc03sc*i*, pci:v000010DEd00001B83sv*sd*bc03sc*i*, pci:v000010DEd00001B84sv*sd*bc03sc*i*, pci:v000010DEd00001B87sv*sd*bc03sc*i*, pci:v000010DEd00001BA0sv*sd*bc03sc*i*, pci:v000010DEd00001BA1sv*sd*bc03sc*i*, pci:v000010DEd00001BB0sv*sd*bc03sc*i*, pci:v000010DEd00001BB1sv*sd*bc03sc*i*, pci:v000010DEd00001BB3sv*sd*bc03sc*i*, pci:v000010DEd00001BB4sv*sd*bc03sc*i*, pci:v000010DEd00001BB5sv*sd*bc03sc*i*, pci:v000010DEd00001BB6sv*sd*bc03sc*i*, pci:v000010DEd00001BB7sv*sd*bc03sc*i*, pci:v000010DEd00001BB8sv*sd*bc03sc*i*, pci:v000010DEd00001BB9sv*sd*bc03sc*i*, pci:v000010DEd00001BBBsv*sd*bc03sc*i*, pci:v000010DEd00001BC7sv*sd*bc03sc*i*, pci:v000010DEd00001BE0sv*sd*bc03sc*i*, pci:v000010DEd00001BE1sv*sd*bc03sc*i*, pci:v000010DEd00001C02sv*sd*bc03sc*i*, pci:v000010DEd00001C03sv*sd*bc03sc*i*, pci:v000010DEd00001C04sv*sd*bc03sc*i*, pci:v000010DEd00001C06sv*sd*bc03sc*i*, pci:v000010DEd00001C07sv*sd*bc03sc*i*, pci:v000010DEd00001C09sv*sd*bc03sc*i*, pci:v000010DEd00001C20sv*sd*bc03sc*i*, pci:v000010DEd00001C21sv*sd*bc03sc*i*, pci:v000010DEd00001C22sv*sd*bc03sc*i*, pci:v000010DEd00001C30sv*sd*bc03sc*i*, pci:v000010DEd00001C60sv*sd*bc03sc*i*, pci:v000010DEd00001C61sv*sd*bc03sc*i*, pci:v000010DEd00001C62sv*sd*bc03sc*i*, pci:v000010DEd00001C81sv*sd*bc03sc*i*, pci:v000010DEd00001C82sv*sd*bc03sc*i*, pci:v000010DEd00001C83sv*sd*bc03sc*i*, pci:v000010DEd00001C8Csv*sd*bc03sc*i*, pci:v000010DEd00001C8Dsv*sd*bc03sc*i*, pci:v000010DEd00001C8Fsv*sd*bc03sc*i*, pci:v000010DEd00001CB1sv*sd*bc03sc*i*, pci:v000010DEd00001CB2sv*sd*bc03sc*i*, pci:v000010DEd00001CB3sv*sd*bc03sc*i*, pci:v000010DEd00001CB6sv*sd*bc03sc*i*, pci:v000010DEd00001CBAsv*sd*bc03sc*i*, pci:v000010DEd00001CBBsv*sd*bc03sc*i*, pci:v000010DEd00001CBCsv*sd*bc03sc*i*, pci:v000010DEd00001D01sv*sd*bc03sc*i*, pci:v000010DEd00001D10sv*sd*bc03sc*i*, pci:v000010DEd00001D12sv*sd*bc03sc*i*, pci:v000010DEd00001D33sv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*)
+Support: Legacy
+Description-md5: 814a7c3076594296e6ee2a9c3d826740
+Supported: 5y
+
+Package: nvidia-headless-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 22
+Provides: nvidia-headless
+Depends: nvidia-headless-no-dkms-390, nvidia-dkms-390
+Conflicts: nvidia-headless
+Replaces: nvidia-headless
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-headless-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5420
+MD5sum: 45377639b6ab1843839d2fd8007af2da
+SHA1: 5ae440459ef172853bcad76e6ee5bfec3d73894a
+SHA256: 56224743b515a8074df0e23386a8ff3ba27b4e3003214cc6ac65eb5e2470b27f
+SHA512: 8253548f42493db58be3c767031f3f7bcb6d0a334ac7bd78cb48f21effa370e00538b792b06409a932a031e16466c83ed659c45d67a0abad65d8aad403f354fa
+Homepage: http://www.nvidia.com
+Description: NVIDIA headless metapackage
+Description-md5: 86d5105d59972487393b3dbe5c901379
+Supported: 5y
+
+Package: nvidia-headless-no-dkms-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 22
+Provides: nvidia-384
+Depends: nvidia-kernel-common-390 (<= 390.157-1), nvidia-kernel-common-390 (>= 390.157), nvidia-kernel-source-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-compute-390 (= 390.157-0ubuntu0.18.04.1), nvidia-compute-utils-390 (= 390.157-0ubuntu0.18.04.1), libnvidia-cfg1-390 (= 390.157-0ubuntu0.18.04.1)
+Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
+Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-headless-no-dkms-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 5548
+MD5sum: 7689be222bee8fe66d7e62569be7635b
+SHA1: 675cfcd14a2cbf83bad5c23d7c55e4f24b8a0ef9
+SHA256: f861324d03872cfbad2540920dc32e6f7cd47a8726a16309449b7600e4e424e4
+SHA512: de5d524cb78476a9da5a890398351c96a89b5792af5538bb44de0ee5eb77f74f3c6367d706d9ed095bf6e7cc80408a38a7c49c35cc2f5cc48d6b6a02cd780952
+Homepage: http://www.nvidia.com
+Description: NVIDIA headless metapackage - no DKMS
+Description-md5: 8a64bdacdf6cbf15c61b167bc3577159
+Supported: 5y
+
+Package: nvidia-kernel-common-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 42
+Provides: nvidia-kernel-common
+Conflicts: nvidia-kernel-common
+Replaces: nvidia-dkms-390 (<< 390.48-0ubuntu3~), nvidia-kernel-common
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-kernel-common-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 9476
+MD5sum: 5055edcea7e251bb3641db055a5563dd
+SHA1: c9f1e83cb66a4430973a45614456edb2efe72708
+SHA256: b8f2ecf7cbcee97c612629ac0e91b8c3c5449deebcc4afb3f8d228a040dd886c
+SHA512: 31edcbe1b1f9e1ab49862c19ae255f203e512379cc18c6457e3bd911268e265a0ceb8d4e8ab420da65d843062480eee633607c5bb4d02f28d02b43c050f61d5e
+Homepage: http://www.nvidia.com
+Description: Shared files used with the kernel module
+Description-md5: caa64a2a10d329a0475baf9ebcdb40d5
+Supported: 5y
+
+Package: nvidia-kernel-source-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Multi-Arch: foreign
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 18496
+Provides: nvidia-kernel-source
+Conflicts: nvidia-kernel-source
+Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1), nvidia-kernel-source
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-kernel-source-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 8754696
+MD5sum: a682cf3859a828f74e50e4d94bf0454b
+SHA1: be52bb19f8b374bc550e04ef912113ffa4987426
+SHA256: a5ec1b7a7494f823db185a04a7b8dfc9fa2a96b328c1b0b7d997e4738aa95f34
+SHA512: 782c9ba2b2eeb0e4cc331a8b099c19333bad3342c19098c7d868de53fb11c8fe71697a9775612ae9d968c241a703e68b45f4f9a976c7e3a94000dd2c1714e8cd
+Homepage: http://www.nvidia.com
+Description: NVIDIA kernel source package
+Description-md5: dc60d6861ca351f7cadc7d8fcc74e854
+Supported: 5y
+
+Package: nvidia-utils-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/libs
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 741
+Provides: nvidia-smi, nvidia-utils
+Depends: libc6 (>= 2.7), libnvidia-compute-390
+Suggests: nvidia-driver-390
+Conflicts: nvidia-smi, nvidia-utils
+Replaces: nvidia-smi, nvidia-utils
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/nvidia-utils-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 302196
+MD5sum: 3e9b09ca4347012a4429fa3bda8184fc
+SHA1: 0420988e51482537a5efa529d2cbd890a7151d51
+SHA256: a0c4f827b4ef418eedd7af305770bbd67ea79941d3910f6e3d5f1312da3ee1ac
+SHA512: cb8d11ebc8c5d164809bd1c611a07f29ca650afecda17ffad8ebff5f7e908b4115e8f6d2b30eb20d494b16f91c41d3ddcce89f324c22db1c401d7722790f68a5
+Homepage: http://www.nvidia.com
+Description: NVIDIA driver support binaries
+Description-md5: d81f3aa17f8585f803913263abcf99e2
+Supported: 5y
+
+Package: xserver-xorg-video-nvidia-390
+Architecture: armhf
+Version: 390.157-0ubuntu0.18.04.1
+Priority: optional
+Section: restricted/x11
+Source: nvidia-graphics-drivers-390
+Origin: Ubuntu
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 4557
+Provides: nvidia-driver-binary, xorg-driver-binary, xorg-driver-video
+Depends: libnvidia-cfg1-390 (= 390.157-0ubuntu0.18.04.1), xorg-video-abi-24 | xorg-video-abi-23 | xorg-video-abi-20 | xorg-video-abi-19 | xorg-video-abi-18 | xorg-video-abi-15 | xorg-video-abi-14 | xorg-video-abi-13 | xorg-video-abi-12 | xorg-video-abi-11 | xorg-video-abi-10 | xorg-video-abi-8 | xorg-video-abi-6.0, xserver-xorg-core (>= 2:1.19.6-1ubuntu2~) | xserver-xorg-core-hwe-18.04, libc6 (>= 2.7)
+Conflicts: nvidia-driver-binary, xorg-driver-binary
+Replaces: nvidia-driver-binary, xorg-driver-binary
+Filename: pool/restricted/n/nvidia-graphics-drivers-390/xserver-xorg-video-nvidia-390_390.157-0ubuntu0.18.04.1_armhf.deb
+Size: 1317416
+MD5sum: 5eaa38fe2417011fa85965209ef47a51
+SHA1: 01b271f267cee35c11da67a72de3ef9d0fc3eaa6
+SHA256: 8f4f09287989b8f3b48d2f047c9e39d6a1505e592076853f86f74880ee84aae3
+SHA512: f7ae25d3ed63749c7dba10b255a08082c96da87e1760f36fe44ee9f2bba84003cc5cf7076a81e5851bafbef6453e9d6a4b70faac553caea05d9ee9ba17c899b6
+Homepage: http://www.nvidia.com
+Description: NVIDIA binary Xorg driver
+Description-md5: 0e48d46882de977abded40ac6bbb282b
+Supported: 5y
+
