@@ -1,6 +1,7 @@
 > [!IMPORTANT]
-> The following link contains a flashable 64GB version of the operating system that can be used to avoid running the setup scripts. If you flash this image, you don't have to do anything else.
-> https://mega.nz/file/eslX3RpY#4oMFP1S57NJYXjUg59L6Zd5HRse-DISLrm1PmFQlxHQ  
+> The following links contain a flashable versions of the operating system that can be used to avoid running the setup scripts. If you flash one of these images, you don't have to do anything else.
+> 64GB: https://archive.org/details/35-xxp-en-64-gb-os-240130-xfce-noroms.-7z 
+> 16GB: https://archive.org/details/35-xxp-en-16-gb-240130-xfce-noroms.-7z 
 
 > [!WARNING]  
 > This WILL NOT work on a modified stock OS image. The modified image partitions have been SHRUNK and are not large enough to hold the files!
