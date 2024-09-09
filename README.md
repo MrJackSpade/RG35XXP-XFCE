@@ -1,33 +1,17 @@
 > [!IMPORTANT]
-> The following links contain a flashable versions of the operating system that can be used to avoid running the setup scripts. If you flash one of these images, you don't have to do anything else.
+> 2024-09-10 UPDATE
 >
-> 64GB: https://archive.org/details/35-xxp-en-64-gb-os-240130-xfce-noroms.-7z 
+> The following link contains a flashable versions of the operating system. This is currently the only way to use it, as the setup scripts do not function properly on new firmwares. There is a 64GB OS image, and a 16GB to come later, followed by corrected setup scripts
 >
-> 16GB: https://archive.org/details/35-xxp-en-16-gb-240130-xfce-noroms.-7z 
+> 64GB: https://archive.org/download/xfce-installed.7z/RG35XX%2B-P-V1.1.6-EN64GB-240822-XFCE.7z
 
 > [!WARNING]  
-> This WILL NOT work on a modified stock OS image. The modified image partitions have been SHRUNK and are not large enough to hold the files!
-
-# XFCE Desktop Environment for RG35XX Plus and RG35XX H Handheld Consoles
-
-This project provides a method to install the XFCE desktop environment on RG35XX Plus and RG35XX H handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
-
-## Installation
+> You may need to update the system time for web browsing to work properly. If you get cert errors, make sure the system time is correct.
 
 
-Follow these steps to install:
+# XFCE Desktop Environment for RG35XXP, RG35XXH, and RG35XXSP Handhelds
 
-1. **Copy to SD Card**: Copy the contents of this repository to the `/Roms/APPS` directory on the internal SD card of your handheld console.
-   
-2. **Insert SD Card**: Place the SD card into the internal slot of the handheld.
-
-3. **Connect to WiFi**: Ensure your device is connected to a WiFi network.
-
-4. **Start Installation**: Navigate to the `APPS` directory in the stock UI, and select `install_xfce`.
-
-5. **Wait**: The system will appear to freeze for a few minutes. Thats the happy path. If it doesn't appear to freeze, something went wrong. Eventually it will finish installing the components required to render text, at which point you'll be able to see what its doing.
-
-6. **Automatic Reboot**: After the installation completes, your console will automatically reboot.
+This project provides a method to install the XFCE desktop environment on RG35XXP, RG35XXH, and RG35XXSP handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
 
 ## Usage
 
@@ -37,14 +21,8 @@ To launch the XFCE desktop environment:
 
 ## Important Notes
 
-- **Base OS**: This has only been tested on 35XXP-240118OS-EN64GB
-- **Reboot on Completion**: The console will reboot once the installation is completed.
-- **SD Card Size**: A 64GB SD card is recommended for optimal performance, though smaller sizes may work.
-- **Current Limitations**: There are no battery or WiFi widgets available on the desktop currently.
-- **Installation Text**: During installation, some text may display as "?????" due to the region setting, which is switched to "US" only at the end of the installation. This may be addressed in future updates.
-- **Duration**: The installation process, particularly the swap file creation, can take a significant amount of time.
 - **Discretion Advised**: Installing this environment may affect other functionalities of the device. No adverse effects have been observed, but installation is at the user's discretion.
-- **Peripheral Support**: The environment supports mouse and keyboard, which are necessary for remapping QJoyPad.
+- **Peripheral Support**: The environment supports (not requires) mouse and keyboard, which are necessary for remapping QJoyPad.
 
 ## Contributing
 

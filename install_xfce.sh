@@ -26,6 +26,7 @@ if [ $? -ne 0 ]; then
     echo "Nonzero apt copy?" >> $log
 fi
 
+apt-get update
 apt-get install -y imagemagick fbi
 
 if [ $? -ne 0 ]; then
