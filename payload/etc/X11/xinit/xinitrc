@@ -1,4 +1,5 @@
 swapon /swapfile
 killall pulseaudio
-pulseaudio --system --daemonize
+pulseaudio --system --daemonize --disallow-exit --disallow-module-loading
+pactl set-default-sink 0
 exec startxfce4
