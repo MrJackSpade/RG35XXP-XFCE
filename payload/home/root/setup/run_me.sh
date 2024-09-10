@@ -81,4 +81,59 @@ fi
 
 swapon "$SWAP_FILE" 
 
+update-alternatives --install /usr/bin/x-www-browser x-www-browser /usr/bin/firefox/firefox 100
+update-alternatives --set x-www-browser /usr/bin/firefox/firefox
+
+sed -i 's/load-module module-native-protocol-unix/load-module module-native-protocol-unix auth-anonymous=1/'
+
+# Disable GNOME screensaver (if installed)
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
+gsettings set org.gnome.desktop.session idle-delay 0
+
+# Disable XFCE power management
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -s false
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -s 0
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-ac-off -s 0
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-ac-sleep -s 0
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-on-ac -s 14
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-ac -s 1
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s false
+
+# Disable XFCE screensaver
+xfconf-query -c xfce4-screensaver -p /saver/enabled -s false
+xfconf-query -c xfce4-screensaver -p /lock/enabled -s false
+
+# Disable light-locker
+light-locker-command -k
+systemctl --user mask light-locker.service
+
+# Disable DPMS in X11
+xset -dpms
+xset s off
+xset s noblank
+
+# Disable screen blanking in console
+echo -ne "\033[9;0]" >> /etc/issue
+echo -ne "\033[14;0]" >> /etc/issue
+
+# Disable sleep and hibernate
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+# Disable lid switch actions
+sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
+sed -i 's/#HandleLidSwitchExternalPower=suspend/HandleLidSwitchExternalPower=ignore/' /etc/systemd/logind.conf
+
+# Restart systemd-logind to apply changes
+systemctl restart systemd-logind
+
+# Disable Automatic Updates
+sed -i 's/APT::Periodic::Update-Package-Lists "1";/APT::Periodic::Update-Package-Lists "0";/' /etc/apt/apt.conf.d/20auto-upgrades
+sed -i 's/APT::Periodic::Unattended-Upgrade "1";/APT::Periodic::Unattended-Upgrade "0";/' /etc/apt/apt.conf.d/20auto-upgrades
+
+echo "Power management, screensaver, and locking features have been disabled."
+echo "Please reboot the system for all changes to take effect."
+
+aplay /home/root/Music/o98.wav
+
 reboot -f

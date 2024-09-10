@@ -1,3 +1,4 @@
 swapon /swapfile
-pulseaudio --start
+killall pulseaudio
+pulseaudio --system --daemonize
 exec startxfce4
