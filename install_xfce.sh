@@ -50,7 +50,7 @@ rm libxul.so.tar.gz
 cd /
 
 echo "Operation completed."
-chmod +x /root/setup/run_me.sh
+chmod +x /home/root/setup/run_me.sh
 
 if [ $? -ne 0 ]; then
     echo "Nonzero payload copy?"
@@ -59,6 +59,8 @@ fi
 rm /mnt/mmc/Roms/APPS/install_xfce.sh
 
 xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
+
+mkdir -p /home/root && cp -R /root/* /home/root/ && chown -R root:root /home/root && sed -i 's|root:x:0:0:root:/root:|root:x:0:0:root:/home/root:|' /etc/passwd && reboot
 
 apt-get clean
 

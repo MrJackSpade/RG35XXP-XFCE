@@ -21,7 +21,7 @@ if [ $? -ne 0 ]; then
 fi
 
 #freetype
-cd /root/setup/source
+cd /home/root/setup/source
 
 echo "Unzipping freetype..." 
 tar -xf freetype-2.13.3.tar.gz 
@@ -68,9 +68,8 @@ SWAP_FILE="/swapfile"
 
 # Check if the swap file does not exist
 if [ ! -f "$SWAP_FILE" ]; then
-    echo "Creating swap file... This part is SLOW! Grab a snack." 
     BLOCK_SIZE=1024
-    BLOCK_COUNT=4000
+    BLOCK_COUNT=500
 
     # Create the swap file
     dd if=/dev/zero of="$SWAP_FILE" bs="${BLOCK_SIZE}K" count=$BLOCK_COUNT 
@@ -81,3 +80,5 @@ else
 fi
 
 swapon "$SWAP_FILE" 
+
+reboot -f
