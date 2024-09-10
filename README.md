@@ -1,23 +1,44 @@
+# XFCE Desktop Environment for RG35XXP, RG35XXH, and RG35XXSP Handhelds
+
+This project provides a method to install the XFCE desktop environment on RG35XXP, RG35XXH, and RG35XXSP handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
+
 > [!IMPORTANT]
 > 2024-09-10 UPDATE
 >
-> The following link contains a flashable versions of the operating system. This is currently the only way to use it, as the setup scripts do not function properly on new firmwares. There is a 64GB OS image, and a 16GB to come later, followed by corrected setup scripts
->
-> 64GB: https://archive.org/download/xfce-installed.7z/RG35XX%2B-P-V1.1.6-EN64GB-240822-XFCE.7z
+> The scripts are now updated to support firmware 1.1.6. New OS images will be provided in the future.
 
 > [!WARNING]  
 > You may need to update the system time for web browsing to work properly. If you get cert errors, make sure the system time is correct.
 
+## Installation
 
-# XFCE Desktop Environment for RG35XXP, RG35XXH, and RG35XXSP Handhelds
+1. Add the repository to TF1 (the internal SD card) in the directory `/Roms/APPS`.
+2. Execute the app script `install_xfce.sh`. This process may take ~5-10 minutes, after which the console will reboot.
+3. Navigate to the app "XFCE" and run it. The UI will be in Chinese and sound won't work initially.
+4. Run the desktop item "Setup". This will:
+   - Correct the language
+   - Update the OS
+   - Fix the sound
+   - Install a web browser
+   - Perform other necessary configurations
+5. When clicking the setup script, a popup in Chinese will appear. Select the first terminal option and then select the right option (O) to accept.
+6. The setup process will take ~20 minutes. The console will reboot when complete.
 
-This project provides a method to install the XFCE desktop environment on RG35XXP, RG35XXH, and RG35XXSP handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
+> [!NOTE]
+> If the screen turns off during installation, it won't turn back on unless you use a physical mouse, as the D-pad doesn't trigger screen wake.
 
 ## Usage
 
 To launch the XFCE desktop environment:
 
 - Navigate back to the `APPS` directory and select `XFCE` to run it.
+
+## Additional Notes
+
+- A virtual keyboard and a joypad-to-mouse application are preinstalled.
+- You can remap keys using the joypad icon on the taskbar, but this requires a physical mouse.
+- Install an adblocker in Firefox ASAP, as the device has limited memory for rendering webpages.
+- YouTube videos may play better in fullscreen mode.
 
 ## Important Notes
 
