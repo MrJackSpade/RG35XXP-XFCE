@@ -1,7 +1,0 @@
-www.youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	19751	1738035098887,1,0
-firefox.settings.services.mozilla.com:HSTS	0	19751	1738033637875,1,0
-youtube.com^partitionKey=%28http%2Cyoutube.com%29:HSTS	0	19751	1738035167927,1,1
-contile.services.mozilla.com:HSTS	0	19751	1738033637983,1,0
-www.google.com^partitionKey=%28http%2Cgoogle.com%29:HSTS	0	19751	1738033818762,1,0
-location.services.mozilla.com:HSTS	0	19751	1738033797031,1,1
-www.google.com^firstPartyDomain=google-canonical.search.suggestions.mozilla:HSTS	0	19751	1738033802099,1,0

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Run Setup Script
+Exec=x-terminal-emulator -e bash -c '/root/setup/run_me.sh; echo; read -p "Press Enter to close..."'
+Icon=utilities-terminal
+Terminal=true
