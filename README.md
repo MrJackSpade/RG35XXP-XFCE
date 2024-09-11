@@ -27,6 +27,8 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 
 > [!NOTE]
 > If the screen turns off during installation, it won't turn back on unless you use a physical mouse, as the D-pad doesn't trigger screen wake.
+>
+> If you're not getting audio after booting to desktop, switch the input device. While I managed to get Pulse set up and running, I cant for the life of me manage to figure out how to get it to select the right sink when XFCE starts.
 
 ## Usage
 
