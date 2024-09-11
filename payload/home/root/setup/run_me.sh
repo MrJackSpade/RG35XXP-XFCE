@@ -53,15 +53,15 @@ echo "Please reboot the system for all changes to take effect."
 apt update
 DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confnew" upgrade
 
-apt install -y parole nano mousepad ntpdate onboard lsof language-pack-en xterm 
+# Install packages without triggering locale generation
+LC_ALL=C DEBIAN_FRONTEND=noninteractive apt install -y parole nano mousepad ntpdate onboard lsof language-pack-en xterm
 
 apt clean
 
-#locale
+# Configure and generate locale once
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen en_US.UTF-8 
-dpkg-reconfigure --frontend=noninteractive locales 
-update-locale LANG=en_US.UTF-8 LANGUAGE=en_US:en 
+update-locale LANG=en_US.UTF-8 LANGUAGE=en_US:en
 
 
 if [ $? -ne 0 ]; then

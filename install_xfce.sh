@@ -65,6 +65,9 @@ cp -R /root/* /home/root/
 chown -R root:root /home/root
 sed -i 's|root:x:0:0:root:/root:|root:x:0:0:root:/home/root:|' /etc/passwd
 
+rm /etc/xdg/autostart/xfce4-screensaver.desktop
+rm /etc/xdg/autostart/xscreensaver.desktop
+
 apt-get clean
 
 reboot -f
