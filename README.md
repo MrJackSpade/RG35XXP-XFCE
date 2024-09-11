@@ -5,14 +5,17 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 > [!IMPORTANT]
 > 2024-09-10 UPDATE
 >
-> The scripts are now updated to support firmware 1.1.6. New OS images will be provided in the future.
+> The scripts are now updated to support firmware 1.1.6. 
+>
+> You can use the following disk image to avoid the need to run the scripts
+> https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-xfce.-7z
 
 > [!WARNING]  
 > You may need to update the system time for web browsing to work properly. If you get cert errors, make sure the system time is correct.
 
 ## Installation
 
-1. Add the repository to TF1 (the internal SD card) in the directory `/Roms/APPS`.
+1. Add the repository to TF1 (the internal SD card) in the directory `/Roms/APPS`. Make sure its unzipped.
 2. Insert the SD card into the device, then connect the device to WiFi. Packages are not included as part of the repo so WiFi is required for installation.
 3. Execute the app script `install_xfce.sh`. This process may take ~5-10 minutes, after which the console will reboot.
 4. Navigate to the app `XFCE` and run it. The UI will be in Chinese and sound won't work initially.
