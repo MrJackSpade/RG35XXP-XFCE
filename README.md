@@ -8,7 +8,7 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 > The scripts are now updated to support firmware 1.1.6. 
 >
 > You can use the following disk image to avoid the need to run the scripts
-> https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-xfce.-7z
+> [https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-xfce.-7z](https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-revb.-img.-7z)
 
 > [!WARNING]  
 > You may need to update the system time for web browsing to work properly. If you get cert errors, make sure the system time is correct.
