@@ -3,10 +3,8 @@
 This project provides a method to install the XFCE desktop environment on RG35XXP, RG35XXH, and RG35XXSP handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
 
 > [!IMPORTANT]
-> 2024-09-10 UPDATE
->
-> The scripts are now updated to support firmware 1.1.6. 
->
+> The are only known to support STOCK firmware 1.1.6. 
+> "mod stock" is not stock. Its modified. I can only realistically test and resolve issues on unmodified firmware.
 > You can use the following disk image to avoid the need to run the scripts
 > [https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-xfce.-7z](https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-revb.-img.-7z)
 
