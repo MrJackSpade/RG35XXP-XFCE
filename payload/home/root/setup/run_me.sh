@@ -51,10 +51,11 @@ echo "Power management, screensaver, and locking features have been disabled."
 echo "Please reboot the system for all changes to take effect."
 
 apt update
-DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confnew" upgrade
+#Don't upgrade as it breaks Retroarch, unless we can exclude retroarch from the upgrade
+#DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confnew" upgrade
 
 # Install packages without triggering locale generation
-LC_ALL=C DEBIAN_FRONTEND=noninteractive apt install -y parole nano mousepad ntpdate onboard lsof language-pack-en xterm
+LC_ALL=C DEBIAN_FRONTEND=noninteractive apt install -y parole nano mousepad ntpdate onboard lsof language-pack-en xterm network-manager network-manager-gnome
 
 apt clean
 
@@ -137,5 +138,23 @@ sed -i 's/load-module module-native-protocol-unix/load-module module-native-prot
 aplay /home/root/Music/o98.wav
 
 rm /home/root/Desktop/RunMe.desktop
+
+# Create new user 'user' with home directory
+useradd -m user
+
+# Set password to 'user'
+echo "user:user" | chpasswd
+
+# Add user to sudo group to allow package installation
+usermod -aG sudo user
+
+# Create .bashrc if it doesn't exist
+touch /home/user/.bashrc
+chown user:user /home/user/.bashrc
+
+# Set correct permissions for home directory
+chown -R user:user /home/user
+
+sudo systemctl enable NetworkManager.service
 
 reboot -f
