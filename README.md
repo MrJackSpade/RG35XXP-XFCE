@@ -6,22 +6,6 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 > These scripts are only known to support STOCK firmware 1.1.8.
 > 
 > "mod stock" is not stock. Its modified. I can only realistically test and resolve issues on unmodified firmware.
-> 
-> You can use the following (older 1.1.6) disk image to avoid the need to run the scripts
-> 
-> [https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-xfce.-7z](https://archive.org/details/rg-35-xx-p-v-1.1.6-en-16-gb-240822-revb.-img.-7z)
-
-> [!CAUTION]
-> If using the stock image above, you will need to remove xfce-screensaver to prevent desktop lock-ups. 
-> Once you log in, just run the following:
->
-> ```
-> rm /etc/xdg/autostart/xfce4-screensaver.desktop
-> rm /etc/xdg/autostart/xscreensaver.desktop
-> apt remove -y xfce4-screensaver
->```
->
-> The setup scripts run this automatically however this issue was not identified until after the image above was created. The screen will still blank after a timeout, but will no longer lock up.
 
 ## Installation
 
@@ -40,8 +24,6 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 
 > [!NOTE]
 > If the screen turns off during installation, it won't turn back on unless you use a physical mouse, as the D-pad doesn't trigger screen wake.
->
-> If you're not getting audio after booting to desktop, switch the input device. While I managed to get Pulse set up and running, I cant for the life of me manage to figure out how to get it to select the right sink when XFCE starts.
 
 ## Usage
 
