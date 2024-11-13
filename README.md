@@ -1,4 +1,4 @@
-# XFCE Desktop Environment for RG35XXP, RG35XXH, and RG35XXSP Handhelds
+# XFCE Desktop Environment for RG35XXP, RG35XXH, and RG35XXSP Handhelds (And more?)
 
 This project provides a method to install the XFCE desktop environment on RG35XXP, RG35XXH, and RG35XXSP handheld gaming consoles. It's designed to enhance the functionality of these devices by adding a versatile desktop environment.
 
