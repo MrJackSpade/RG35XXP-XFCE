@@ -135,6 +135,9 @@ update-alternatives --set x-www-browser /usr/bin/firefox/firefox
 
 sed -i 's/load-module module-native-protocol-unix/load-module module-native-protocol-unix auth-anonymous=1/' /etc/pulse/system.pa 
 
+#correct retroarch configuration
+sed -i 's/^audio_driver =.*/audio_driver = "sdl2"/' ~/.config/retroarch/retroarch.cfg
+
 aplay /home/root/Music/o98.wav
 
 rm /home/root/Desktop/RunMe.desktop
