@@ -9,21 +9,12 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 
 ## Installation
 
-1. Add the repository to TF1 (the internal SD card) in the directory `/Roms/APPS`. Make sure its unzipped.
-2. Insert the SD card into the device, then connect the device to WiFi. Packages are not included as part of the repo so WiFi is required for installation.
-3. Execute the app script `install_xfce.sh`. This process may take ~5-10 minutes, after which the console will reboot.
-4. Navigate to the app `XFCE` and run it. The UI will be in Chinese and sound won't work initially.
-5. Run the desktop item `Run Setup Script`. This will:
-   - Correct the language
-   - Update the OS
-   - Fix the sound
-   - Install a web browser
-   - Perform other necessary configurations
-6. When clicking the setup script, a popup in Chinese will appear. Select the first terminal option and then select the right option (O) to accept.
-7. The setup process will take ~20 minutes. The console will reboot when complete.
-
-> [!NOTE]
-> If the screen turns off during installation, it won't turn back on unless you use a physical mouse, as the D-pad doesn't trigger screen wake.
+1. Download the repository
+2. Navigate to the Release/ARM-64 directory, then copy "payload" and "RG35XX-XFCE" to the /Roms/APPS directory on the TF1 card.
+3. Insert the SD card into the device, then connect the device to WiFi. Packages are not included as part of the repo so WiFi is required for installation.
+4. Execute the app `RG35XX-XFCE`. This process may take ~5-10 minutes, after which the console will reboot.
+5. Navigate to the app `XFCE` and run it. 
+6. If everything works, you can delete the `RG35XX-XFCE` app and `payload` directory from the APPS directory.
 
 ## Usage
 
