@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RG35XX-XFCE", "RG35XX-XFCE.csproj", "{38A52EB0-6EBF-4C55-A27E-C0429E47A5A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{5B48680B-B03E-4607-87CA-7F7B40146AC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RG35XX.Core", "..\RG35XX.NET\RG35XX.Core\RG35XX.Core.csproj", "{19D32746-7487-427D-87BA-8F212BC37849}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RG35XX.Desktop", "..\RG35XX.NET\RG35XX.Desktop\RG35XX.Desktop.csproj", "{228B0BC6-D0C1-44C5-B650-249079DCC5F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RG35XX.Handheld", "..\RG35XX.NET\RG35XX.Handheld\RG35XX.Handheld.csproj", "{22D37428-6EC6-4CA7-AED9-C8ECED4662A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RG35XX.Libraries", "..\RG35XX.NET\RG35XX.Libraries\RG35XX.Libraries.csproj", "{7CEE3981-F974-4E3A-B4B0-DF8107633226}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38A52EB0-6EBF-4C55-A27E-C0429E47A5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A52EB0-6EBF-4C55-A27E-C0429E47A5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A52EB0-6EBF-4C55-A27E-C0429E47A5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A52EB0-6EBF-4C55-A27E-C0429E47A5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D32746-7487-427D-87BA-8F212BC37849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D32746-7487-427D-87BA-8F212BC37849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D32746-7487-427D-87BA-8F212BC37849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D32746-7487-427D-87BA-8F212BC37849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228B0BC6-D0C1-44C5-B650-249079DCC5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228B0BC6-D0C1-44C5-B650-249079DCC5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228B0BC6-D0C1-44C5-B650-249079DCC5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228B0BC6-D0C1-44C5-B650-249079DCC5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D37428-6EC6-4CA7-AED9-C8ECED4662A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D37428-6EC6-4CA7-AED9-C8ECED4662A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D37428-6EC6-4CA7-AED9-C8ECED4662A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D37428-6EC6-4CA7-AED9-C8ECED4662A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEE3981-F974-4E3A-B4B0-DF8107633226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEE3981-F974-4E3A-B4B0-DF8107633226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEE3981-F974-4E3A-B4B0-DF8107633226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEE3981-F974-4E3A-B4B0-DF8107633226}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19D32746-7487-427D-87BA-8F212BC37849} = {5B48680B-B03E-4607-87CA-7F7B40146AC9}
+		{228B0BC6-D0C1-44C5-B650-249079DCC5F6} = {5B48680B-B03E-4607-87CA-7F7B40146AC9}
+		{22D37428-6EC6-4CA7-AED9-C8ECED4662A4} = {5B48680B-B03E-4607-87CA-7F7B40146AC9}
+		{7CEE3981-F974-4E3A-B4B0-DF8107633226} = {5B48680B-B03E-4607-87CA-7F7B40146AC9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {578FD68B-B02D-4D57-8E22-5E6474AFE73D}
+	EndGlobalSection
+EndGlobal

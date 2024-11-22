@@ -1,0 +1,9 @@
+[Added Associations]
+image/bmp=feh.desktop;
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
+text/plain=firefox.desktop;
+application/x-desktop=mousepad.desktop;
+
+[Default Applications]
+application/x-desktop=mousepad.desktop
