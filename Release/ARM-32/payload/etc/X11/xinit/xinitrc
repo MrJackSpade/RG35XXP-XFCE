@@ -1,0 +1,5 @@
+swapon /swapfile
+killall pulseaudio
+pulseaudio --system --daemonize --disallow-exit --disallow-module-loading
+pactl set-default-sink alsa_output.platform-soc_03000000_ahub1_mach.stereo-fallback
+exec startxfce4

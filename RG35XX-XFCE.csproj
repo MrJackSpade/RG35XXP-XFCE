@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Frames\*" />
     <None Remove="icon.png" />
   </ItemGroup>
 
@@ -37,6 +38,10 @@
     <Content Include="icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Frames\*" />
   </ItemGroup>
 
   <ItemGroup>

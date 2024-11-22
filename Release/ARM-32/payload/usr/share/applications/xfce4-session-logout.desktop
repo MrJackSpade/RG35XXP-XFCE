@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=pkill -f xfce
+Icon=system-log-out
+StartupNotify=false
+Terminal=false
+Categories=System;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Log Out

@@ -1,61 +1,145 @@
 ﻿using RG35XX.Core.Drawing;
 using RG35XX.Core.Extensions;
 using RG35XX.Core.Fonts;
+using RG35XX.Core.GamePads;
 using RG35XX.Libraries;
 using System.Collections;
 using System.Diagnostics;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
 namespace RG35XX_XFCE
 {
-    internal class Program
+    internal partial class Program
     {
+
+        private static bool _completed = false;
+
         private static readonly ConsoleRenderer _consoleRenderer = new(ConsoleFont.Px437_IBM_VGA_8x16);
+
+        private static readonly GamePadReader _gamePadReader = new();
+
+        private static bool _gui = false;
+
+        private static readonly object LogLock = new();
 
         private static string LogFile { get; set; } = Path.Combine(AppContext.BaseDirectory, $"XFCE-Setup-{DateTime.Now.Ticks}.log");
 
-        private static async Task SetInternetTimeAsync()
+        private static void GuiToggleThread()
         {
-            // Create handler that ignores SSL validation
-            using var handler = new HttpClientHandler
+            while (!_completed)
             {
-                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-            };
+                GamepadKey key = _gamePadReader.WaitForInput();
 
-            // Create and configure client
-            using var client = new HttpClient(handler);
-            client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0");
-
-            try
-            {
-                // Use HEAD request to minimize data transfer
-                using var request = new HttpRequestMessage(HttpMethod.Head, "http://google.com");
-                using var response = await client.SendAsync(request);
-
-                if (response.Headers.Date.HasValue)
+                switch (key)
                 {
-                    string dateCommand = response.Headers.Date.Value.UtcDateTime.ToString("MMddHHmmyyyy.ss");
-                    RunLogged("Setting the date", $"date {dateCommand}");
-                }
-                else
-                {
-                    throw new Exception("No date header received from server");
+                    case GamepadKey.A_DOWN:
+                    case GamepadKey.B_DOWN:
+                    case GamepadKey.X_DOWN:
+                    case GamepadKey.Y_DOWN:
+                    case GamepadKey.START_DOWN:
+                    case GamepadKey.SELECT_DOWN:
+                        _gui = !_gui;
+                        _consoleRenderer.AutoFlush = !_gui;
+                        break;
                 }
             }
-            catch (Exception ex)
+        }
+
+        private static void GuiThread()
+        {
+            Assembly thisAssembly = Assembly.GetExecutingAssembly();
+
+            string[] resourceNames = thisAssembly.GetManifestResourceNames();
+
+            resourceNames = resourceNames.OrderBy(x => x).ToArray();
+
+            OffsetBitmap[] offsetBitmaps = new OffsetBitmap[resourceNames.Length];
+
+            for (int i = 0; i < offsetBitmaps.Length; i++)
             {
-                throw new Exception($"Failed to set system time: {ex.Message}", ex);
+                string resourceName = resourceNames[i];
+
+                using Stream stream = thisAssembly.GetManifestResourceStream(resourceName);
+
+                Bitmap bitmap = new(stream);
+
+                string fName = Path.GetFileNameWithoutExtension(resourceName);
+                fName = fName.Split('.').Last();
+
+                string[] parts = fName.Split('_');
+
+                int x = int.Parse(parts[2]);
+                int y = int.Parse(parts[3]);
+
+                offsetBitmaps[i] = new OffsetBitmap
+                {
+                    X = x,
+                    Y = y,
+                    Bitmap = bitmap
+                };
+            }
+
+            const int ITERATIONS_PER_SECOND = 12;
+            long ticksPerIteration = Stopwatch.Frequency / ITERATIONS_PER_SECOND;
+
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            long nextIterationTick = ticksPerIteration;
+
+            int index = 0;
+
+            _consoleRenderer.AutoFlush = false;
+            Thread guiToggleThread = new(GuiToggleThread);
+            guiToggleThread.Start();
+
+            while (!_completed)
+            {
+                if (_gui)
+                {
+                    OffsetBitmap b = offsetBitmaps[index];
+                    Bitmap baseImage = _consoleRenderer.Render();
+                    baseImage.DrawTransparentBitmap(b.X, baseImage.Height - b.Bitmap.Height, b.Bitmap);
+                    _consoleRenderer.FrameBuffer.Draw(baseImage, 0, 0);
+                    index++;
+                    if (index >= offsetBitmaps.Length)
+                    {
+                        index = 0;
+                    }
+                }
+
+                // Calculate remaining time
+                long remainingTicks = nextIterationTick - stopwatch.ElapsedTicks;
+                if (remainingTicks > 0)
+                {
+                    int sleepMs = (int)(remainingTicks * 1000 / Stopwatch.Frequency);
+                    if (sleepMs > 0)
+                    {
+                        Thread.Sleep(sleepMs);
+                    }
+                }
+
+                nextIterationTick += ticksPerIteration;
+            }
+        }
+
+        private static void Log(string text, Color color)
+        {
+            lock (LogLock)
+            {
+                _consoleRenderer.WriteLine(text, color);
+                File.AppendAllText(LogFile, $"{text}\n");
             }
         }
 
         private static async Task Main(string[] args)
         {
             _consoleRenderer.Initialize(640, 480);
+            _gamePadReader.Initialize();
 
-            GamePadReader gamePadReader = new();
-            gamePadReader.Initialize();
-
+            Thread guiThread = new(GuiThread);
+            guiThread.Start();
+            _gui = true;
             try
             {
                 string payloadDirectoryPath = Path.Combine(AppContext.BaseDirectory, "payload");
@@ -104,7 +188,7 @@ namespace RG35XX_XFCE
                 RunLogged("Extracting firefox...", "tar -xf /usr/bin/firefox/libxul.so.tar.gz -C /usr/bin/firefox");
                 RunLogged("Removing archive...", "rm /usr/bin/firefox/libxul.so.tar.gz");
                 RunLogged("Configuring thunar...", "xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true");
-                
+
                 RunLogged("Setting up root...", "mkdir -p /home/root");
 
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
@@ -124,7 +208,6 @@ namespace RG35XX_XFCE
                 RunLogged("Removing screensaver 1/3...", "rm /etc/xdg/autostart/xfce4-screensaver.desktop");
                 RunLogged("Removing screensaver 2/3...", "rm /etc/xdg/autostart/xscreensaver.desktop");
                 RunLogged("Removing screensaver 3/3...", "apt remove -y xfce4-screensaver");
-
 
                 // freetype installation
                 _consoleRenderer.WriteLine("Installing freetype...", Color.White);
@@ -194,8 +277,11 @@ namespace RG35XX_XFCE
                 RunLogged("Playing sound...", "aplay /home/root/Music/o98.wav");
 
                 _consoleRenderer.WriteLine("Press any button to reboot...", Color.Green);
-                gamePadReader.ClearBuffer();
-                gamePadReader.WaitForInput();
+                _completed = true;
+                _consoleRenderer.AutoFlush = true;
+                _consoleRenderer.Flush();
+                _gamePadReader.ClearBuffer();
+                _gamePadReader.WaitForInput();
 
                 _consoleRenderer.WriteLine("Setup complete. Rebooting...", Color.Green);
                 RunLogged("Rebooting", "reboot -f");
@@ -206,19 +292,9 @@ namespace RG35XX_XFCE
                 _consoleRenderer.WriteLine(e.Message, Color.Red);
                 _consoleRenderer.WriteLine(e.StackTrace, Color.Red);
 
-                gamePadReader.ClearBuffer();
-                gamePadReader.WaitForInput();
+                _gamePadReader.ClearBuffer();
+                _gamePadReader.WaitForInput();
                 System.Environment.Exit(1);
-            }
-        }
-
-        private static readonly object LogLock = new();
-        private static void Log(string text, Color color)
-        {
-            lock (LogLock)
-            {
-                _consoleRenderer.WriteLine(text, color);
-                File.AppendAllText(LogFile, $"{text}\n");
             }
         }
 
@@ -226,7 +302,6 @@ namespace RG35XX_XFCE
         {
             Log(text, Color.Green);
             Log(command, Color.White);
-
 
             // Properly escape the command for bash -c
             string escapedCommand = command
@@ -288,12 +363,65 @@ namespace RG35XX_XFCE
             }
         }
 
+        private static async Task SetInternetTimeAsync()
+        {
+            int maxRetries = 3;
+            int currentRetry = 0;
+            int backoffMs = 1000; // Start with 1 second
+
+            while (currentRetry < maxRetries)
+            {
+                try
+                {
+                    // Create handler that ignores SSL validation
+                    using HttpClientHandler handler = new()
+                    {
+                        ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+                    };
+
+                    // Create and configure client
+                    using HttpClient client = new(handler);
+                    client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0");
+
+                    // Use HEAD request to minimize data transfer
+                    using HttpRequestMessage request = new(HttpMethod.Head, "http://google.com");
+                    using HttpResponseMessage response = await client.SendAsync(request);
+
+                    if (response.Headers.Date.HasValue)
+                    {
+                        string dateCommand = response.Headers.Date.Value.UtcDateTime.ToString("MMddHHmmyyyy.ss");
+                        RunLogged("Setting the date", $"date {dateCommand}");
+                        return; // Success - exit method
+                    }
+                    else
+                    {
+                        throw new Exception("No date header received from server");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    currentRetry++;
+                    if (currentRetry < maxRetries)
+                    {
+                        _consoleRenderer.WriteLine($"Failed to set system time (attempt {currentRetry}/{maxRetries}): {ex.Message}");
+                        _consoleRenderer.WriteLine($"Retrying in {backoffMs / 1000} seconds...");
+                        await Task.Delay(backoffMs);
+                        backoffMs *= 2; // Exponential backoff
+                    }
+                    else
+                    {
+                        _consoleRenderer.WriteLine($"Failed to set system time after {maxRetries} attempts");
+                        throw new Exception($"Failed to set system time: {ex.Message}", ex);
+                    }
+                }
+            }
+        }
         // Helper method to split the command string
         private static string[] SplitCommand(string command)
         {
             // Use a regex to split the command into executable and arguments, respecting quotes
-            var pattern = @"^(?:""([^""]+)""|'([^']+)'|(\S+))\s*(.*)$";
-            var match = Regex.Match(command, pattern);
+            string pattern = @"^(?:""([^""]+)""|'([^']+)'|(\S+))\s*(.*)$";
+            Match match = Regex.Match(command, pattern);
             if (match.Success)
             {
                 string executable = match.Groups[1].Value != "" ? match.Groups[1].Value :
