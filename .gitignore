@@ -6,7 +6,7 @@ install_ssh.sh
 35XXP-EN64GB-OS240130-XFCE-NOROMS.7z
 35XXP-EN16GB-240130-XFCE-NOROMS.7z
 .vs
-bin
-obj
+/bin
+/obj
 *.user
 *.pdb

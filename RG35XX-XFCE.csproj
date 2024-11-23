@@ -49,6 +49,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="payload\home\root\Desktop\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 

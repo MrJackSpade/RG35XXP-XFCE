@@ -1,0 +1,14 @@
+libnspr4.so
+libplc4.so
+libplds4.so
+libmozsandbox.so
+libgkcodecs.so
+liblgpllibs.so
+libnssutil3.so
+libnss3.so
+libsmime3.so
+libmozsqlite3.so
+libssl3.so
+libmozgtk.so
+libmozwayland.so
+libxul.so
