@@ -32,10 +32,14 @@
   <ItemGroup>
     <None Remove="Frames\*" />
     <None Remove="icon.png" />
+    <None Remove="XFCE.sh" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XFCE.sh">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

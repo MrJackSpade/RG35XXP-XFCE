@@ -144,7 +144,7 @@ namespace RG35XX_XFCE
             {
                 string payloadDirectoryPath = Path.Combine(AppContext.BaseDirectory, "payload");
 
-                await SetInternetTimeAsync();
+                await Utilities.CorrectSystemTime();
 
                 RunLogged("Updating the package list", "apt update");
 
@@ -363,59 +363,6 @@ namespace RG35XX_XFCE
             }
         }
 
-        private static async Task SetInternetTimeAsync()
-        {
-            int maxRetries = 3;
-            int currentRetry = 0;
-            int backoffMs = 1000; // Start with 1 second
-
-            while (currentRetry < maxRetries)
-            {
-                try
-                {
-                    // Create handler that ignores SSL validation
-                    using HttpClientHandler handler = new()
-                    {
-                        ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-                    };
-
-                    // Create and configure client
-                    using HttpClient client = new(handler);
-                    client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0");
-
-                    // Use HEAD request to minimize data transfer
-                    using HttpRequestMessage request = new(HttpMethod.Head, "http://google.com");
-                    using HttpResponseMessage response = await client.SendAsync(request);
-
-                    if (response.Headers.Date.HasValue)
-                    {
-                        string dateCommand = response.Headers.Date.Value.UtcDateTime.ToString("MMddHHmmyyyy.ss");
-                        RunLogged("Setting the date", $"date {dateCommand}");
-                        return; // Success - exit method
-                    }
-                    else
-                    {
-                        throw new Exception("No date header received from server");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    currentRetry++;
-                    if (currentRetry < maxRetries)
-                    {
-                        _consoleRenderer.WriteLine($"Failed to set system time (attempt {currentRetry}/{maxRetries}): {ex.Message}");
-                        _consoleRenderer.WriteLine($"Retrying in {backoffMs / 1000} seconds...");
-                        await Task.Delay(backoffMs);
-                        backoffMs *= 2; // Exponential backoff
-                    }
-                    else
-                    {
-                        _consoleRenderer.WriteLine($"Failed to set system time after {maxRetries} attempts");
-                        throw new Exception($"Failed to set system time: {ex.Message}", ex);
-                    }
-                }
-            }
-        }
         // Helper method to split the command string
         private static string[] SplitCommand(string command)
         {
