@@ -7,7 +7,10 @@ This project provides a method to install the XFCE desktop environment on RG35XX
 > 
 > "mod stock" is not stock. Its modified. I can only realistically test and resolve issues on unmodified firmware.
 
-## Installation
+## Installation - NEW
+XFCE can now be installed through the [RG35XX AppStore](https://github.com/MrJackSpade/RG35XX-Store) I am developing, along with other applications. 
+
+## Installation - ALT
 
 1. Download the repository
 2. Navigate to the Release/ARM-64 directory, then copy "payload" and "RG35XX-XFCE" to the /Roms/APPS directory on the TF1 card.
