@@ -1,8 +1,12 @@
 # QJoyPad 4.1 Layout File
 
 Joystick 1 {
-	Axis 4: gradient, maxSpeed 2, mouse+h
-	Axis 5: gradient, maxSpeed 2, mouse+v
+Axis 1: gradient, maxSpeed 2, mouse+h
+Axis 2: gradient, maxSpeed 2, mouse+v
+Axis 3: gradient, maxSpeed 2, mouse+h
+Axis 4: gradient, maxSpeed 2, mouse+v
+Axis 5: gradient, maxSpeed 2, mouse+h
+Axis 6: gradient, maxSpeed 2, mouse+v
 	Button 5: mouse 1
 	Button 6: mouse 3
 	Button 10: mouse 5
