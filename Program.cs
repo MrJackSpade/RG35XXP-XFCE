@@ -260,7 +260,7 @@ namespace RG35XX_XFCE
                 RunLogged("Modifying PulseAudio system.pa...", "sed -i 's/load-module module-native-protocol-unix/load-module module-native-protocol-unix auth-anonymous=1/' /etc/pulse/system.pa");
 
                 // Correct RetroArch configuration
-                RunLogged("Correcting RetroArch configuration...", "sed -i 's/^audio_driver =.*/audio_driver = \"sdl2\"/' ~/.config/retroarch/retroarch.cfg");
+                RunLogged("ALSA configuration...", "echo > /usr/share/alsa/alsa.conf.d/pulse.conf");
 
                 // Create new user 'user' with home directory
                 RunLogged("Creating user 'user'...", "useradd -m user");
