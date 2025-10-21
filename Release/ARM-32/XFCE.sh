@@ -1,4 +1,5 @@
 echo $0 $*
+apt install --reinstall libharfbuzz0b -y
 progdir=`dirname "$0"`
 log=$progdir/XFCE.log
 rm /var/log/Xorg*
